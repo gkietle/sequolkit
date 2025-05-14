@@ -1,0 +1,775 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 13.076105833053589,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 12.767077684402466,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 16.735894918441772,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 14.768821477890015,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 4.070963621139526,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 2,
+          "processing_time": 13.590797424316406,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 4.562955617904663,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 7.5083699226379395,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 8.788320779800415,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 18.731501817703247,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 17.921754360198975,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.43980646133423,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 27.29574179649353,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 6.458856582641602,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "enriched_tables": 1,
+          "processing_time": 11.582509517669678,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Facilities",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 5.773984909057617,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "enriched_tables": 1,
+          "processing_time": 9.546623706817627,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Buildings"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 67,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "batting",
+            "fielding_outfield",
+            "hall_of_fame",
+            "manager_award",
+            "player"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_postseason"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        }
+      ],
+      "end_time": 1745562822.5810244,
+      "enriched_columns": 11,
+      "enriched_tables": 2,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 7.055628776550293,
+        "schema_enrichment": 13.076301097869873,
+        "total": 20.212641954421997
+      },
+      "start_time": 1745562802.3683825,
+      "total_columns": 11,
+      "total_tables": 2,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage and store information about bodybuilders and their performance metrics in weightlifting competitions. The `people` table contains personal details such as name, height, weight, birth date, and place of birth for each individual, uniquely identified by a `People_ID`. The `body_builder` table records the specific achievements in weightlifting events like snatch and clean & jerk, along with the total score, linking these metrics to individuals through the `People_ID`, which serves as a foreign key referencing the `people` table. This structure facilitates tracking and analyzing bodybuilders' physical attributes alongside their performance results, providing comprehensive insights into both personal and competitive aspects of weightlifting athletes.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each entry in the table.",
+            "columnIdentifier": "Body_Builder_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking to an individual's personal details in 'people' table.",
+            "columnIdentifier": "People_ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "people",
+                "toColumn": "People_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Weight lifted by the bodybuilder in the snatch event, measured in kilograms.",
+            "columnIdentifier": "Snatch",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Weight lifted by the bodybuilder in the clean & jerk event, measured in kilograms.",
+            "columnIdentifier": "Clean_Jerk",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Combined score of snatch and clean & jerk events.",
+            "columnIdentifier": "Total",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 1, 142.5, 175.0, 317.5",
+          "2, 2, 137.5, 177.5, 315.0",
+          "3, 3, 140.0, 162.5, 312.5"
+        ],
+        "tableDescription": "Records weightlifting performance metrics for bodybuilders.",
+        "tableIdentifier": "body_builder"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each individual.",
+            "columnIdentifier": "People_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Full name of the individual.",
+            "columnIdentifier": "Name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Height of the individual in centimeters.",
+            "columnIdentifier": "Height",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Weight of the individual in kilograms.",
+            "columnIdentifier": "Weight",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date of birth of the individual.",
+            "columnIdentifier": "Birth_Date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Place where the individual was born.",
+            "columnIdentifier": "Birth_Place",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Jack Campbell, 182.0, 80.0, \"January 1, 1992\", \"Port Huron, Michigan\"",
+          "2, Ty Conklin, 192.0, 90.0, \"March 30, 1976\", \"Anchorage, Alaska\"",
+          "3, Al Montoya, 195.0, 100.0, \"February 13, 1985\", \"Glenview, Illinois\""
+        ],
+        "tableDescription": "Stores personal details of individuals, including bodybuilders.",
+        "tableIdentifier": "people"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Body_Builder_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "People_ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "people",
+                "toColumn": "People_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Snatch",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Clean_Jerk",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Total",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "body_builder"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "People_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Height",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Weight",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Birth_Date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Birth_Place",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "people"
+      }
+    ]
+  },
+  "message": "Success"
+}

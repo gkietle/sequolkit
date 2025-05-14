@@ -1,0 +1,812 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 3,
+          "processing_time": 20.69641900062561,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 4,
+          "processing_time": 88.55268406867981,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 9.811477899551392,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 17.333228588104248,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 8.834521532058716,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 20.863199472427368,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 7.658324718475342,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 7.5083699226379395,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 8.788320779800415,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 18.731501817703247,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 17.921754360198975,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.43980646133423,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 27.29574179649353,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 6.458856582641602,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "enriched_tables": 1,
+          "processing_time": 11.582509517669678,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Facilities",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 5.773984909057617,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "enriched_tables": 1,
+          "processing_time": 9.546623706817627,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Buildings"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 67,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "batting",
+            "fielding_outfield",
+            "hall_of_fame",
+            "manager_award",
+            "player"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_postseason"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        }
+      ],
+      "end_time": 1745562663.865811,
+      "enriched_columns": 18,
+      "enriched_tables": 3,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 5.546051502227783,
+        "schema_enrichment": 20.697033405303955,
+        "total": 26.348912000656128
+      },
+      "start_time": 1745562637.516899,
+      "total_columns": 18,
+      "total_tables": 3,
+      "warnings": []
+    },
+    "database_description": "The database is designed to document historical naval battles and related ship engagements. It includes information on battles, such as their names, dates, commanders, and outcomes. The \"ship\" table records details about ships involved in these battles, including tonnage, type, location, and final disposition, with a reference to the specific battle they were lost in. Additionally, it tracks casualties associated with each ship's involvement through the \"death\" table, which logs fatalities and injuries caused by individual ships. The relationships between tables are established via foreign keys: \"lost_in_battle\" in the \"ship\" table references the \"battle\" table, while \"caused_by_ship_id\" in the \"death\" table references the \"ship\" table, facilitating comprehensive data linkage across battles, ships, and casualties.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key uniquely identifying each battle.",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the naval battle.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date on which the battle occurred.",
+            "columnIdentifier": "date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Commander leading the Bulgarian forces in the battle.",
+            "columnIdentifier": "bulgarian_commander",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Commander leading the Latin (or opposing) forces in the battle.",
+            "columnIdentifier": "latin_commander",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Outcome of the battle, such as victory or truce.",
+            "columnIdentifier": "result",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Battle of Adrianople, 14 April 1205, Kaloyan, Baldwin I, Bulgarian victory",
+          "2, Battle of Serres, June 1205, Unknown, Unknown, Latin victory",
+          "3, Battle of Rusion, 31 January 1206, Boril, Thierry de Termond, Two Year Truce"
+        ],
+        "tableDescription": "Documents historical naval battles, including details like names, dates, commanders, and outcomes.",
+        "tableIdentifier": "battle"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the battle where the ship was lost.",
+            "columnIdentifier": "lost_in_battle",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "battle",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Primary key uniquely identifying each ship.",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the ship.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Tonnage measurement of the ship, indicating its size or cargo capacity.",
+            "columnIdentifier": "tonnage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Type classification of the ship (e.g., Brig).",
+            "columnIdentifier": "ship_type",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last known location of the ship.",
+            "columnIdentifier": "location",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Final status or disposition of the ship, such as captured or scuttled.",
+            "columnIdentifier": "disposition_of_ship",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "8, 1, Lettice, t, Brig, English Channel, Captured",
+          "7, 2, Bon Accord, 391, 18-gun Brig, SW Approaches, Wrecked",
+          "6, 3, Mary, 225, 8 gun Brig, Mid-Atlantic, Scuttled"
+        ],
+        "tableDescription": "Details ships involved in naval battles, including their characteristics and final dispositions.",
+        "tableIdentifier": "ship"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the ship responsible for the casualties.",
+            "columnIdentifier": "caused_by_ship_id",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "ship",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Primary key uniquely identifying each casualty record.",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional notes or context about the casualties.",
+            "columnIdentifier": "note",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of fatalities caused by the ship.",
+            "columnIdentifier": "killed",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of injuries caused by the ship.",
+            "columnIdentifier": "injured",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 1, \"Dantewada, Chhattisgarh\", 8, 0",
+          "2, 2, \"Erraboru, Chhattisgarh\", 3, 9",
+          "3, 3, \"East Champaran, Bihar\", 25, 5"
+        ],
+        "tableDescription": "Records casualties associated with ships' involvement in battles, including fatalities and injuries.",
+        "tableIdentifier": "death"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bulgarian_commander",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "latin_commander",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "result",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "battle"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "lost_in_battle",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "battle",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "tonnage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ship_type",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "location",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "disposition_of_ship",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "ship"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "caused_by_ship_id",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "ship",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "note",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "killed",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "injured",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "death"
+      }
+    ]
+  },
+  "message": "Success"
+}

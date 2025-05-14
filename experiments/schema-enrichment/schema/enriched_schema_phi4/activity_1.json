@@ -1,0 +1,580 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 12.549103498458862,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 11.215402603149414,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 5,
+          "processing_time": 19.37161874771118,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 6.43746280670166,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 6.349720239639282,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 2,
+          "processing_time": 9.704359292984009,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 7.693281888961792,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        }
+      ],
+      "end_time": 1745561889.2081568,
+      "enriched_columns": 22,
+      "enriched_tables": 5,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 4.380268573760986,
+        "schema_enrichment": 43.13669753074646,
+        "total": 47.68281435966492
+      },
+      "start_time": 1745561841.5253425,
+      "total_columns": 22,
+      "total_tables": 5,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage and track participation in various activities by students and faculty within an academic institution. The \"Activity\" table records details of each activity available for participation. Relationships are established through the \"Participates_in\" and \"Faculty_Participates_in\" tables, which link student IDs and faculty IDs to specific activities, respectively. Additionally, the \"Student\" and \"Faculty\" tables maintain comprehensive profiles for students and faculty members, including personal information and affiliations such as advisors or departments. This setup allows the institution to efficiently organize, monitor, and analyze participation in activities, facilitating administrative and reporting needs.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key uniquely identifying an activity.",
+            "columnIdentifier": "actid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the activity, providing a brief description.",
+            "columnIdentifier": "activity_name",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "770, Mountain Climbing",
+          "771, Canoeing",
+          "772, Kayaking"
+        ],
+        "tableDescription": "Records details of each activity available for participation.",
+        "tableIdentifier": "Activity"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the student, linking to the Student table.",
+            "columnIdentifier": "stuid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Student",
+                "toColumn": "StuID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the activity ID from the Activity table.",
+            "columnIdentifier": "actid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Activity",
+                "toColumn": "actid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1001, 770",
+          "1002, 771",
+          "1003, 777"
+        ],
+        "tableDescription": "Records which students are participating in specific activities.",
+        "tableIdentifier": "Participates_in"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key linking to the Faculty table, identifying the participating faculty member.",
+            "columnIdentifier": "FacID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Faculty",
+                "toColumn": "FacID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the activity ID from the Activity table.",
+            "columnIdentifier": "actid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Activity",
+                "toColumn": "actid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1082, 784",
+          "1121, 785",
+          "1193, 790"
+        ],
+        "tableDescription": "Records participation of faculty members in various activities.",
+        "tableIdentifier": "Faculty_Participates_in"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key representing a unique identifier for each student.",
+            "columnIdentifier": "StuID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the student, up to 12 characters in length.",
+            "columnIdentifier": "LName",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the student, up to 12 characters in length.",
+            "columnIdentifier": "Fname",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Current age of the student.",
+            "columnIdentifier": "Age",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender identifier for the student, typically 'M' or 'F'.",
+            "columnIdentifier": "Sex",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the major subject or field of study.",
+            "columnIdentifier": "Major",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking to the faculty member who is the student's advisor.",
+            "columnIdentifier": "Advisor",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the city, typically as a three-letter abbreviation.",
+            "columnIdentifier": "city_code",
+            "columnType": "VARCHAR(3)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1001, Smith, Linda, 18, F, 600, 1121, BAL",
+          "1002, Kim, Tracy, 19, M, 520, 7712, HKG",
+          "1003, Jones, Shiela, 21, F, 540, 7792, WAS"
+        ],
+        "tableDescription": "Contains comprehensive profiles of students including personal information and affiliations.",
+        "tableIdentifier": "Student"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key uniquely identifying each faculty member.",
+            "columnIdentifier": "FacID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the faculty member.",
+            "columnIdentifier": "Lname",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the faculty member.",
+            "columnIdentifier": "Fname",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Professional rank or title of the faculty member (e.g., Professor, Instructor).",
+            "columnIdentifier": "Rank",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender of the faculty member, represented as a single character ('M' for male, 'F' for female).",
+            "columnIdentifier": "Sex",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Contact phone number for the faculty member.",
+            "columnIdentifier": "Phone",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Office room number where the faculty member can be found.",
+            "columnIdentifier": "Room",
+            "columnType": "VARCHAR(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name or identifier of the building housing the faculty member's office.",
+            "columnIdentifier": "Building",
+            "columnType": "VARCHAR(13)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1082, Giuliano, Mark, Instructor, M, 2424, 224, NEB",
+          "1121, Goodrich, Michael, Professor, F, 3593, 219, Barton",
+          "1148, Masson, Gerald, AssocProf, M, 3402, 224B, Krieger"
+        ],
+        "tableDescription": "Stores comprehensive profiles for faculty members including personal information and affiliations.",
+        "tableIdentifier": "Faculty"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "actid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "activity_name",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Activity"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "stuid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Student",
+                "toColumn": "StuID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "actid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Activity",
+                "toColumn": "actid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Participates_in"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "FacID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Faculty",
+                "toColumn": "FacID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "actid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Activity",
+                "toColumn": "actid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Faculty_Participates_in"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "StuID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "LName",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Fname",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Age",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Sex",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Major",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Advisor",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "city_code",
+            "columnType": "VARCHAR(3)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Student"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "FacID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Lname",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Fname",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Rank",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Sex",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Phone",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Room",
+            "columnType": "VARCHAR(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Building",
+            "columnType": "VARCHAR(13)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Faculty"
+      }
+    ]
+  },
+  "message": "Success"
+}

@@ -1,0 +1,1793 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 2,
+          "processing_time": 11.531027793884277,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 13.007465600967407,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 13.650015354156494,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 18.842271089553833,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 3.4084227085113525,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 10.812764167785645,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.601712942123413,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.23597502708435,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 18.635356903076172,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 6.249369859695435,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 9.265152931213379,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 23.666844606399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        }
+      ],
+      "end_time": 1745546189.3424728,
+      "enriched_columns": 64,
+      "enriched_tables": 11,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 2.658047676086426,
+        "schema_enrichment": 75.8550009727478,
+        "total": 79.1364963054657
+      },
+      "start_time": 1745546110.2059765,
+      "total_columns": 64,
+      "total_tables": 11,
+      "warnings": []
+    },
+    "database_description": "The database tracks student and teacher information, including addresses, assessments, behavior incidents, detentions, and rental details. It uses reference tables for incident and detention types to standardize descriptions. The schema supports detailed records of interactions between students, teachers, and administrative actions, enabling comprehensive management and analysis of educational data.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code representing the type of address.",
+            "columnIdentifier": "address_type_code",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Description of the address type.",
+            "columnIdentifier": "address_type_description",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "BILL, Billing",
+          "HOME, Home or Residence"
+        ],
+        "tableDescription": "Reference table for address types, providing standardized codes and descriptions.",
+        "tableIdentifier": "Ref_Address_Types"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for each type of detention.",
+            "columnIdentifier": "detention_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Detailed description of the detention type.",
+            "columnIdentifier": "detention_type_description",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "AFTER, During Break time",
+          "BREAK , After School",
+          "LUNCH, Lunch-time"
+        ],
+        "tableDescription": "Reference table for different types of detentions with their descriptions.",
+        "tableIdentifier": "Ref_Detention_Type"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for each type of incident.",
+            "columnIdentifier": "incident_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Description of the incident type.",
+            "columnIdentifier": "incident_type_description",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "DISTURB, Noise",
+          "NOISE, Violence",
+          "VIOLENCE, Disturbance"
+        ],
+        "tableDescription": "Reference table mapping incident type codes to their descriptions.",
+        "tableIdentifier": "Ref_Incident_Type"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each address.",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "First line of the address.",
+            "columnIdentifier": "line_1",
+            "columnType": "VARCHAR(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Second line of the address, if applicable.",
+            "columnIdentifier": "line_2",
+            "columnType": "VARCHAR(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Third line of the address, if applicable.",
+            "columnIdentifier": "line_3",
+            "columnType": "VARCHAR(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the address is located.",
+            "columnIdentifier": "city",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Zip code or postcode for the address.",
+            "columnIdentifier": "zip_postcode",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State, province, or county where the address is located.",
+            "columnIdentifier": "state_province_county",
+            "columnType": "VARCHAR(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the address is located.",
+            "columnIdentifier": "country",
+            "columnType": "VARCHAR(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the address.",
+            "columnIdentifier": "other_address_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 020 Orie Canyon, North Loyceville, 197, Hawaii, USA",
+          "2, 1333 Boyle Lane, West Sean, 937, Illinois, USA",
+          "3, 027 Kim Divide Apt. 492, Beierview, 918, Texas, USA"
+        ],
+        "tableDescription": "Stores detailed address information for various entities.",
+        "tableIdentifier": "Addresses"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each student.",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Foreign key referencing the address of the student in the Addresses table.",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Addresses",
+                "toColumn": "address_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "First name of the student.",
+            "columnIdentifier": "first_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Middle name of the student.",
+            "columnIdentifier": "middle_name",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the student.",
+            "columnIdentifier": "last_name",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Mobile phone number of the student.",
+            "columnIdentifier": "cell_mobile_number",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Email address of the student.",
+            "columnIdentifier": "email_address",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the student first rented something (likely a university housing or vehicle).",
+            "columnIdentifier": "date_first_rental",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the student left the university.",
+            "columnIdentifier": "date_left_university",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the student, such as honors or special notes.",
+            "columnIdentifier": "other_student_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 19, Emma, Frederic, Rohan, 235.899.9744, derrick.jenkins@example.com, 2017-12-05 15:20:04, 2018-03-03 03:33:05, first honor",
+          "2, 9, Louvenia, Fatima, Hansen, 1-247-673-8446, rohan.clarabelle@example.org, 2017-08-08 22:30:36, 2018-02-24 11:12:11, first honor",
+          "3, 10, Rhea, Gardner, Bergnaum, 1-751-162-9676x115, kkirlin@example.org, 2017-11-15 04:57:28, 2018-03-19 12:49:20, first honor"
+        ],
+        "tableDescription": "Stores information about students, including personal details and academic records.",
+        "tableIdentifier": "Students"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each teacher.",
+            "columnIdentifier": "teacher_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the teacher to their address record.",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Addresses",
+                "toColumn": "address_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "First name of the teacher.",
+            "columnIdentifier": "first_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Middle name of the teacher.",
+            "columnIdentifier": "middle_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the teacher.",
+            "columnIdentifier": "last_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender identifier for the teacher.",
+            "columnIdentifier": "gender",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Mobile phone number of the teacher.",
+            "columnIdentifier": "cell_mobile_number",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Email address of the teacher.",
+            "columnIdentifier": "email_address",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional information or notes about the teacher.",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 15, Lyla, Wilson, Medhurst, 1, 792.333.7714, ohammes@example.com, Dean",
+          "2, 7, Sid, Tremayne, Brakus, 0, 202.626.1698x9242, deborah37@example.com, Dean",
+          "3, 8, Trystan, Alexane, Schuster, 1, 583-467-0403x647, hilll.kitty@example.com, Dean"
+        ],
+        "tableDescription": "Contains information about teachers, including personal details and contact information.",
+        "tableIdentifier": "Teachers"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each assessment note.",
+            "columnIdentifier": "notes_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the note to a specific student.",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier linking the note to a specific teacher who made the assessment.",
+            "columnIdentifier": "teacher_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Teachers",
+                "toColumn": "teacher_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Date and time when the assessment notes were recorded.",
+            "columnIdentifier": "date_of_notes",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Detailed text of the assessment or interaction notes.",
+            "columnIdentifier": "text_of_notes",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional information or comments related to the assessment notes.",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 7, 3, 1978-04-15 04:49:18",
+          "2, 11, 10, 2005-06-30 02:48:35",
+          "3, 15, 9, 1988-06-09 00:24:01"
+        ],
+        "tableDescription": "Stores notes related to student assessments, including interactions between students and teachers.",
+        "tableIdentifier": "Assessment_Notes"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each behavior incident.",
+            "columnIdentifier": "incident_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code referencing the type of incident.",
+            "columnIdentifier": "incident_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Incident_Type",
+                "toColumn": "incident_type_code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the student involved in the incident.",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Start date and time of the incident.",
+            "columnIdentifier": "date_incident_start",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "End date and time of the incident.",
+            "columnIdentifier": "date_incident_end",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Summary of the incident.",
+            "columnIdentifier": "incident_summary",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Recommendations for addressing the incident.",
+            "columnIdentifier": "recommendations",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the incident.",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, NOISE, 6, 2017-07-09 10:04:13, 2018-03-08 14:08:54, Transfer schools",
+          "2, DISTURB, 13, 2018-01-31 10:51:13, 2018-03-18 18:40:05, Transfer schools",
+          "3, VIOLENCE, 1, 2017-10-10 22:43:54, 2018-03-22 02:10:35, Transfer schools"
+        ],
+        "tableDescription": "Records of incidents involving students, including details about the incident type, date, summary, and recommendations.",
+        "tableIdentifier": "Behavior_Incident"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each detention record.",
+            "columnIdentifier": "detention_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code referencing the type of detention.",
+            "columnIdentifier": "detention_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Detention_Type",
+                "toColumn": "detention_type_code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the teacher who issued the detention.",
+            "columnIdentifier": "teacher_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Teachers",
+                "toColumn": "teacher_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Start time of the detention.",
+            "columnIdentifier": "datetime_detention_start",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "End time of the detention.",
+            "columnIdentifier": "datetime_detention_end",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Summary or brief description of the detention incident.",
+            "columnIdentifier": "detention_summary",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the detention, if any.",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, AFTER, 7, 2017-09-05 00:38:25, 2018-03-08 02:08:32",
+          "2, BREAK , 14, 2018-01-10 08:09:02, 2018-03-07 04:24:48",
+          "3, LUNCH, 11, 2017-12-14 06:40:29, 2018-03-08 09:16:38"
+        ],
+        "tableDescription": "Records of detentions issued to students, including details about the type, teacher involved, and time period.",
+        "tableIdentifier": "Detention"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the student.",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key linking to the Addresses table.",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Addresses",
+                "toColumn": "address_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Start date of the address assignment.",
+            "columnIdentifier": "date_address_from",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "End date of the address assignment.",
+            "columnIdentifier": "date_address_to",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Monthly rental cost for the address.",
+            "columnIdentifier": "monthly_rental",
+            "columnType": "DECIMAL(19,4)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the address assignment.",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "6, 12, 2017-10-16 13:56:34, 2018-03-15 10:37:19, 826.4319, house",
+          "3, 18, 2017-06-19 12:39:39, 2018-03-02 00:19:57, 1113.0996, apartment",
+          "8, 1, 2017-10-31 12:40:34, 2018-02-25 05:21:34, 1297.3186, house"
+        ],
+        "tableDescription": "Stores information about addresses assigned to students, including rental details.",
+        "tableIdentifier": "Student_Addresses"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for a student.",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier for a detention record.",
+            "columnIdentifier": "detention_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Detention",
+                "toColumn": "detention_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier for a behavior incident associated with the detention.",
+            "columnIdentifier": "incident_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Behavior_Incident",
+                "toColumn": "incident_id",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "3, 15, 1",
+          "8, 13, 3",
+          "11, 6, 11"
+        ],
+        "tableDescription": "Records of students who are involved in detentions, including the specific detention and incident details.",
+        "tableIdentifier": "Students_in_Detention"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "address_type_code",
+            "columnType": "VARCHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "address_type_description",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Ref_Address_Types"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "detention_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "detention_type_description",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Ref_Detention_Type"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "incident_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "incident_type_description",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Ref_Incident_Type"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "line_1",
+            "columnType": "VARCHAR(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "line_2",
+            "columnType": "VARCHAR(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "line_3",
+            "columnType": "VARCHAR(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "city",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "zip_postcode",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "state_province_county",
+            "columnType": "VARCHAR(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "country",
+            "columnType": "VARCHAR(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_address_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Addresses"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Addresses",
+                "toColumn": "address_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "first_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "middle_name",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "last_name",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cell_mobile_number",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "email_address",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_first_rental",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_left_university",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_student_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Students"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "teacher_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Addresses",
+                "toColumn": "address_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "first_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "middle_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "last_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gender",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cell_mobile_number",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "email_address",
+            "columnType": "VARCHAR(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Teachers"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "notes_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "teacher_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Teachers",
+                "toColumn": "teacher_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_of_notes",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "text_of_notes",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Assessment_Notes"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "incident_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "incident_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Incident_Type",
+                "toColumn": "incident_type_code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_incident_start",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_incident_end",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "incident_summary",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "recommendations",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Behavior_Incident"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "detention_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "detention_type_code",
+            "columnType": "VARCHAR(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Detention_Type",
+                "toColumn": "detention_type_code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "teacher_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Teachers",
+                "toColumn": "teacher_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "datetime_detention_start",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "datetime_detention_end",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "detention_summary",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Detention"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "address_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Addresses",
+                "toColumn": "address_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_address_from",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_address_to",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "monthly_rental",
+            "columnType": "DECIMAL(19,4)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "other_details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Student_Addresses"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "student_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Students",
+                "toColumn": "student_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "detention_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Detention",
+                "toColumn": "detention_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "incident_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Behavior_Incident",
+                "toColumn": "incident_id",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Students_in_Detention"
+      }
+    ]
+  },
+  "message": "Success"
+}

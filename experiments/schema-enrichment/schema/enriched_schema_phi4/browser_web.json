@@ -1,0 +1,824 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 3,
+          "processing_time": 14.292683124542236,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 12.767077684402466,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 16.735894918441772,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 14.768821477890015,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 4.070963621139526,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 2,
+          "processing_time": 13.590797424316406,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 4.562955617904663,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 7.5083699226379395,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 8.788320779800415,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 18.731501817703247,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 17.921754360198975,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.43980646133423,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 27.29574179649353,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 6.458856582641602,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "enriched_tables": 1,
+          "processing_time": 11.582509517669678,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Facilities",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 5.773984909057617,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "enriched_tables": 1,
+          "processing_time": 9.546623706817627,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Buildings"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 67,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "batting",
+            "fielding_outfield",
+            "hall_of_fame",
+            "manager_award",
+            "player"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_postseason"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        }
+      ],
+      "end_time": 1745562859.2810223,
+      "enriched_columns": 11,
+      "enriched_tables": 3,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 6.502614974975586,
+        "schema_enrichment": 14.293255090713501,
+        "total": 20.89028263092041
+      },
+      "start_time": 1745562838.3907397,
+      "total_columns": 11,
+      "total_tables": 3,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage information about web client accelerators and their compatibility with various browsers. The `Web_client_accelerator` table stores details of different accelerators, including their operating system requirements, associated clients, and connection methods. The `browser` table contains data on various web browsers along with their market share. The `accelerator_compatible_browser` table links these two entities by recording which browsers are compatible with specific accelerators and from what year this compatibility began. This schema facilitates tracking the relationship between client-side software tools and browser environments, enabling analysis of accelerator support across different browsers over time.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key uniquely identifying each accelerator.",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name or identifier of the web client accelerator.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Operating systems supported by the accelerator.",
+            "columnIdentifier": "Operating_system",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Type of clients that can use the accelerator.",
+            "columnIdentifier": "Client",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Types of internet connections supported by the accelerator.",
+            "columnIdentifier": "Connection",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, CACHEbox, Appliance (Linux), \"End user, ISP\", \"Broadband, Satellite, Wireless, Fiber, DSL\"",
+          "2, CProxy, Windows, user, up to 756kbit/s",
+          "3, Fasterfox, \"Windows, Mac, Linux and Mobile devices\", All, \"Dialup, Wireless, Broadband, DSL\""
+        ],
+        "tableDescription": "Stores details of web client accelerators including their operating system requirements, associated clients, and connection methods.",
+        "tableIdentifier": "Web_client_accelerator"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key uniquely identifying each browser.",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the web browser.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Current market share percentage of the browser.",
+            "columnIdentifier": "market_share",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Internet Explorer, 28.96",
+          "2, Firefox, 18.11",
+          "3, Safari, 8.54"
+        ],
+        "tableDescription": "Contains data on various web browsers and their market share.",
+        "tableIdentifier": "browser"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the id in Web_client_accelerator.",
+            "columnIdentifier": "accelerator_id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "Web_client_accelerator",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the id in browser.",
+            "columnIdentifier": "browser_id",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "browser",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The year since which the accelerator is compatible with the specified browser.",
+            "columnIdentifier": "compatible_since_year",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 1, 1995",
+          "2, 2, 1996",
+          "3, 3, 2000"
+        ],
+        "tableDescription": "Links accelerators and browsers, recording compatibility details including from which year this began.",
+        "tableIdentifier": "accelerator_compatible_browser"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Operating_system",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Client",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Connection",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Web_client_accelerator"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "market_share",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "browser"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "accelerator_id",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "Web_client_accelerator",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "browser_id",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "browser",
+                "toColumn": "id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "compatible_since_year",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "accelerator_compatible_browser"
+      }
+    ]
+  },
+  "message": "Success"
+}

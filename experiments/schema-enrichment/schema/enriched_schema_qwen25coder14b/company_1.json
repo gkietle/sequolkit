@@ -1,0 +1,1452 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 6,
+          "processing_time": 32.42258548736572,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 6,
+          "processing_time": 28.700226545333862,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.080676078796387,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 4.829437732696533,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 5.46858024597168,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 2.808849334716797,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.601712942123413,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.23597502708435,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 18.635356903076172,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 6.249369859695435,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 9.265152931213379,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 23.666844606399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "candidate",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "continents",
+            "countries"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "car_names",
+            "cars_data"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "car_makers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "model_list"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Genre",
+            "MediaType",
+            "Track"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Album",
+            "Artist"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 28,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer",
+            "Employee"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoice",
+            "InvoiceLine"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Playlist",
+            "PlaylistTrack"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "cinema",
+            "film",
+            "schedule"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 27,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "city",
+            "hosting_city",
+            "match",
+            "temperature"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "climber",
+            "mountain"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Club",
+            "Member_of_club",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "happy_hour",
+            "happy_hour_member",
+            "member",
+            "shop"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "CLASS",
+            "COURSE"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "EMPLOYEE",
+            "PROFESSOR"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "ENROLL",
+            "STUDENT"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "DEPARTMENT"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "course",
+            "department",
+            "prereq"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "classroom",
+            "section"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "instructor",
+            "teaches"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "student",
+            "takes"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "advisor"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "time_slot"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Minor_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Member_of"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Enrolled_in",
+            "Gradeconversion"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Department"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Course"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "works_on"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "employee"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "department"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "project"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "dependent"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "dept_locations"
+          ]
+        }
+      ],
+      "end_time": 1745546847.2603555,
+      "enriched_columns": 28,
+      "enriched_tables": 6,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 4.033347845077515,
+        "schema_enrichment": 79.31099462509155,
+        "total": 83.51208353042603
+      },
+      "start_time": 1745546763.748272,
+      "total_columns": 28,
+      "total_tables": 6,
+      "warnings": []
+    },
+    "database_description": "This database schema models an organization's structure and personnel management, capturing details about employees, their projects, departments, locations, and dependents. The `employee` table serves as the central repository for employee information, while the `works_on`, `dependent`, and `dept_locations` tables provide additional context such as project assignments, family relationships, and departmental locations, respectively. The `department` and `project` tables manage organizational hierarchies and projects, linked by department numbers. Together, these tables facilitate comprehensive management of an organization's human resources and operational structure.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Social Security number of the employee.",
+            "columnIdentifier": "Essn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Project number that the employee works on.",
+            "columnIdentifier": "Pno",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of hours worked by the employee on the project.",
+            "columnIdentifier": "Hours",
+            "columnType": "REAL",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "123456789, 1, 32.5",
+          "333445555, 2, 7.5",
+          "453453453, 3, 40.0"
+        ],
+        "tableDescription": "Records projects worked on by employees, including the hours spent.",
+        "tableIdentifier": "works_on"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "First name of the employee.",
+            "columnIdentifier": "Fname",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Middle initial of the employee.",
+            "columnIdentifier": "Minit",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the employee.",
+            "columnIdentifier": "Lname",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Social Security number of the employee, serving as a unique identifier.",
+            "columnIdentifier": "Ssn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Birth date of the employee.",
+            "columnIdentifier": "Bdate",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Residential address of the employee.",
+            "columnIdentifier": "Address",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender of the employee.",
+            "columnIdentifier": "Sex",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Salary amount paid to the employee.",
+            "columnIdentifier": "Salary",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Social Security number of the employee's supervisor.",
+            "columnIdentifier": "Super_ssn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Department number where the employee works.",
+            "columnIdentifier": "Dno",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "Jonh, B, Smith, 123456789, 1965-01-09, \"731 Fondren, Houston, TX\", M, 30000, 333445555, 5",
+          "Franklin, T, Wong, 333445555, 1955-12-08, \"638 Voss, Houston, TX\", F, 40000, 888665555, 1",
+          "Joyce, A, English, 453453453, 1972-07-31, \"5631 Rice, Houston, TX\", M, 25000, 987654321, 4"
+        ],
+        "tableDescription": "Stores information about employees, including personal details and job roles.",
+        "tableIdentifier": "employee"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The name of the department.",
+            "columnIdentifier": "Dname",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The unique number assigned to each department.",
+            "columnIdentifier": "Dnumber",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The social security number of the manager of the department.",
+            "columnIdentifier": "Mgr_ssn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The start date when the current manager began managing the department.",
+            "columnIdentifier": "Mgr_start_date",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "Headquarters, 1, 888665555, 1981-06-19",
+          "Administration, 4, 987654321, 1995-01-01",
+          "Research, 5, 333445555, 1988-05-22"
+        ],
+        "tableDescription": "Manages department details, including their location.",
+        "tableIdentifier": "department"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The name of the project.",
+            "columnIdentifier": "Pname",
+            "columnType": "Text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "A unique identifier for the project.",
+            "columnIdentifier": "Pnumber",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The location where the project is primarily carried out.",
+            "columnIdentifier": "Plocation",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The department number associated with the project.",
+            "columnIdentifier": "Dnum",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "ProductX, 1, Bellaire, 5",
+          "ProductY, 2, Sugarland, 4",
+          "ProductZ, 3, Houston, 1"
+        ],
+        "tableDescription": "Manages project details, including their location and department assignment.",
+        "tableIdentifier": "project"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Employee Social Security Number, primary key.",
+            "columnIdentifier": "Essn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the dependent.",
+            "columnIdentifier": "Dependent_name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender of the dependent.",
+            "columnIdentifier": "Sex",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Birth date of the dependent.",
+            "columnIdentifier": "Bdate",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Relationship between the employee and the dependent.",
+            "columnIdentifier": "Relationship",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "123456789, Alice, F, 1986-04-05, Daughter",
+          "333445555, Elizabeth, M, 1983-10-25, Son",
+          "987654321, Michael, F, 1958-05-03, Spouse"
+        ],
+        "tableDescription": "Stores information about employees' dependents, including their relationship to the employee.",
+        "tableIdentifier": "dependent"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Department number, serves as primary key.",
+            "columnIdentifier": "Dnumber",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The location of the department.",
+            "columnIdentifier": "Dlocation",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Houston",
+          "4, Stafford",
+          "5, Bellaire"
+        ],
+        "tableDescription": "Records locations where departments are situated.",
+        "tableIdentifier": "dept_locations"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Essn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Pno",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Hours",
+            "columnType": "REAL",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "works_on"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Fname",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Minit",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Lname",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Ssn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Bdate",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Address",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Sex",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Salary",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Super_ssn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dno",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "employee"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dname",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dnumber",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Mgr_ssn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Mgr_start_date",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "department"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Pname",
+            "columnType": "Text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Pnumber",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Plocation",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dnum",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "project"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Essn",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dependent_name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Sex",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Bdate",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Relationship",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "dependent"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dnumber",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dlocation",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "dept_locations"
+      }
+    ]
+  },
+  "message": "Success"
+}

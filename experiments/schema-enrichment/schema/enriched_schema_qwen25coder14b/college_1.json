@@ -1,0 +1,1625 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 2,
+          "processing_time": 11.930265188217163,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 14.686029434204102,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 16.64681100845337,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 5.818283319473267,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 9.02682614326477,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 10.812764167785645,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.601712942123413,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.23597502708435,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 18.635356903076172,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 6.249369859695435,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 9.265152931213379,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 23.666844606399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "candidate",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "continents",
+            "countries"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "car_names",
+            "cars_data"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "car_makers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "model_list"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Genre",
+            "MediaType",
+            "Track"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Album",
+            "Artist"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 28,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer",
+            "Employee"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoice",
+            "InvoiceLine"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Playlist",
+            "PlaylistTrack"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "cinema",
+            "film",
+            "schedule"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 27,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "city",
+            "hosting_city",
+            "match",
+            "temperature"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "climber",
+            "mountain"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Club",
+            "Member_of_club",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "happy_hour",
+            "happy_hour_member",
+            "member",
+            "shop"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "CLASS",
+            "COURSE"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "EMPLOYEE",
+            "PROFESSOR"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "ENROLL",
+            "STUDENT"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "DEPARTMENT"
+          ]
+        }
+      ],
+      "end_time": 1745546617.9645963,
+      "enriched_columns": 43,
+      "enriched_tables": 7,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 4.692967891693115,
+        "schema_enrichment": 49.082053661346436,
+        "total": 53.96807503700256
+      },
+      "start_time": 1745546563.9965212,
+      "total_columns": 43,
+      "total_tables": 7,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage academic records and information within an educational institution. It consists of multiple tables that capture details about courses, classes, professors, students, and departments. The CLASS table links courses with specific sections and professors, while the ENROLL table tracks student enrollment in these classes. The COURSE table provides course descriptions and credit hours, and the DEPARTMENT table manages departmental information, including contact details and employee numbers. The STUDENT table holds personal and academic data for students, and the EMPLOYEE table contains records of employees, including professors. Foreign key relationships ensure data integrity across tables, facilitating efficient retrieval and management of educational data.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each class section.",
+            "columnIdentifier": "CLASS_CODE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the course offered in the class.",
+            "columnIdentifier": "CRS_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "COURSE",
+                "toColumn": "CRS_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for a specific section of a course.",
+            "columnIdentifier": "CLASS_SECTION",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Scheduled meeting time for the class.",
+            "columnIdentifier": "CLASS_TIME",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Room where the class meets.",
+            "columnIdentifier": "CLASS_ROOM",
+            "columnType": "varchar(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Employee number of the professor teaching the class.",
+            "columnIdentifier": "PROF_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "EMPLOYEE",
+                "toColumn": "EMP_NUM",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "10012, ACCT-211, 1, MWF 8:00-8:50 a.m., BUS311, 105",
+          "10013, ACCT-212, 2, MWF 9:00-9:50 a.m., BUS200, 342",
+          "10014, CIS-220, 3, TTh 2:30-3:45 p.m., BUS252, 301"
+        ],
+        "tableDescription": "Stores information about specific class sections, including course details and professor assignments.",
+        "tableIdentifier": "CLASS"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for each course.",
+            "columnIdentifier": "CRS_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the department offering the course.",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "DEPARTMENT",
+                "toColumn": "DEPT_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Brief description of the course content.",
+            "columnIdentifier": "CRS_DESCRIPTION",
+            "columnType": "varchar(35)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of credit hours awarded for completing the course.",
+            "columnIdentifier": "CRS_CREDIT",
+            "columnType": "float(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "ACCT-211, ACCT, Accounting I, 3.0",
+          "ACCT-212, CIS, Accounting II, 4.0",
+          "CIS-220, ACCT, Intro. to Microcomputing, 3.0"
+        ],
+        "tableDescription": "Contains details about courses, including descriptions and credit hours.",
+        "tableIdentifier": "COURSE"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for each department.",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the department.",
+            "columnIdentifier": "DEPT_NAME",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the school to which the department belongs.",
+            "columnIdentifier": "SCHOOL_CODE",
+            "columnType": "varchar(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of employees in the department.",
+            "columnIdentifier": "EMP_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "EMPLOYEE",
+                "toColumn": "EMP_NUM",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Address of the department's office.",
+            "columnIdentifier": "DEPT_ADDRESS",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Phone extension for the department's main line.",
+            "columnIdentifier": "DEPT_EXTENSION",
+            "columnType": "varchar(4)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "ACCT, Accounting, BUS, 114, \"KLR 211, Box 52\", 3119",
+          "ART, Fine Arts, A&SCI, 435, \"BBG 185, Box 128\", 2278",
+          "BIOL, Biology, BUS, 387, \"AAK 230, Box 415\", 4117"
+        ],
+        "tableDescription": "Stores information about academic departments within the institution.",
+        "tableIdentifier": "DEPARTMENT"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each employee.",
+            "columnIdentifier": "EMP_NUM",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the employee.",
+            "columnIdentifier": "EMP_LNAME",
+            "columnType": "varchar(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the employee.",
+            "columnIdentifier": "EMP_FNAME",
+            "columnType": "varchar(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Middle initial of the employee.",
+            "columnIdentifier": "EMP_INITIAL",
+            "columnType": "varchar(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Job code representing the role or position of the employee.",
+            "columnIdentifier": "EMP_JOBCODE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the employee was hired.",
+            "columnIdentifier": "EMP_HIREDATE",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date of birth of the employee.",
+            "columnIdentifier": "EMP_DOB",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "100, Worley, James, F, CUST, 1978-2-23, 1950-6-12",
+          "101, Ramso, Henry, B, TECH, 1994-11-15, 1961-11-2",
+          "102, Edwards, Rosemary, D, PROF, 1990-7-23, 1953-7-3"
+        ],
+        "tableDescription": "Stores information about employees, including professors and staff.",
+        "tableIdentifier": "EMPLOYEE"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for a class section.",
+            "columnIdentifier": "CLASS_CODE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "CLASS",
+                "toColumn": "CLASS_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier for a student.",
+            "columnIdentifier": "STU_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "STUDENT",
+                "toColumn": "STU_NUM",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Grade received by the student in the class.",
+            "columnIdentifier": "ENROLL_GRADE",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "10014, 321452, C",
+          "10018, 324257, B",
+          "10021, 321452, A"
+        ],
+        "tableDescription": "Tracks student enrollment in classes, including grades.",
+        "tableIdentifier": "ENROLL"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each professor, linking to the EMPLOYEE table.",
+            "columnIdentifier": "EMP_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "EMPLOYEE",
+                "toColumn": "EMP_NUM",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Code representing the department in which the professor is affiliated.",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "DEPARTMENT",
+                "toColumn": "DEPT_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Office location of the professor.",
+            "columnIdentifier": "PROF_OFFICE",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Office extension number for the professor.",
+            "columnIdentifier": "PROF_EXTENSION",
+            "columnType": "varchar(4)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Highest academic degree obtained by the professor.",
+            "columnIdentifier": "PROF_HIGH_DEGREE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "103, HIST, DRE 156, 6783, Ph.D.",
+          "104, ENG, DRE 102, 5561, MA",
+          "105, ACCT, KLR 229D, 8665, DBA"
+        ],
+        "tableDescription": "Stores information specific to professors, including departmental affiliation and office details.",
+        "tableIdentifier": "PROFESSOR"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for a student (primary key).",
+            "columnIdentifier": "STU_NUM",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the student.",
+            "columnIdentifier": "STU_LNAME",
+            "columnType": "varchar(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the student.",
+            "columnIdentifier": "STU_FNAME",
+            "columnType": "varchar(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Middle initial of the student.",
+            "columnIdentifier": "STU_INIT",
+            "columnType": "varchar(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date of birth of the student.",
+            "columnIdentifier": "STU_DOB",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total credit hours earned by the student.",
+            "columnIdentifier": "STU_HRS",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Classification year of the student (e.g., So, Jr).",
+            "columnIdentifier": "STU_CLASS",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "GPA of the student.",
+            "columnIdentifier": "STU_GPA",
+            "columnType": "float(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates if the student is a transfer student.",
+            "columnIdentifier": "STU_TRANSFER",
+            "columnType": "numeric",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Department code associated with the student's major.",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(18)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "DEPARTMENT",
+                "toColumn": "DEPT_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Phone number of the student.",
+            "columnIdentifier": "STU_PHONE",
+            "columnType": "varchar(4)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the professor assigned to advise the student.",
+            "columnIdentifier": "PROF_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "321452, Bowser, William, C, 1975-2-12, 42, So, 2.84, 0, BIOL, 2134, 205",
+          "324257, Smithson, Anne, K, 1981-11-15, 81, Jr, 3.27, 1, CIS, 2256, 222",
+          "324258, Brewer, Juliette, , 1969-8-23, 36, Sr, 2.26, 0, ACCT, 2114, 228"
+        ],
+        "tableDescription": "Stores personal and academic information for students.",
+        "tableIdentifier": "STUDENT"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CLASS_CODE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CRS_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "COURSE",
+                "toColumn": "CRS_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CLASS_SECTION",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CLASS_TIME",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CLASS_ROOM",
+            "columnType": "varchar(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PROF_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "EMPLOYEE",
+                "toColumn": "EMP_NUM",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "CLASS"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CRS_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "DEPARTMENT",
+                "toColumn": "DEPT_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CRS_DESCRIPTION",
+            "columnType": "varchar(35)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CRS_CREDIT",
+            "columnType": "float(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "COURSE"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_NAME",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "SCHOOL_CODE",
+            "columnType": "varchar(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "EMPLOYEE",
+                "toColumn": "EMP_NUM",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_ADDRESS",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_EXTENSION",
+            "columnType": "varchar(4)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "DEPARTMENT"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_NUM",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_LNAME",
+            "columnType": "varchar(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_FNAME",
+            "columnType": "varchar(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_INITIAL",
+            "columnType": "varchar(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_JOBCODE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_HIREDATE",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_DOB",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "EMPLOYEE"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CLASS_CODE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "CLASS",
+                "toColumn": "CLASS_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "STUDENT",
+                "toColumn": "STU_NUM",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ENROLL_GRADE",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "ENROLL"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMP_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "EMPLOYEE",
+                "toColumn": "EMP_NUM",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "DEPARTMENT",
+                "toColumn": "DEPT_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PROF_OFFICE",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PROF_EXTENSION",
+            "columnType": "varchar(4)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PROF_HIGH_DEGREE",
+            "columnType": "varchar(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "PROFESSOR"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_NUM",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_LNAME",
+            "columnType": "varchar(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_FNAME",
+            "columnType": "varchar(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_INIT",
+            "columnType": "varchar(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_DOB",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_HRS",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_CLASS",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_GPA",
+            "columnType": "float(8)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_TRANSFER",
+            "columnType": "numeric",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPT_CODE",
+            "columnType": "varchar(18)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "DEPARTMENT",
+                "toColumn": "DEPT_CODE",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "STU_PHONE",
+            "columnType": "varchar(4)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PROF_NUM",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "STUDENT"
+      }
+    ]
+  },
+  "message": "Success"
+}

@@ -1,0 +1,1209 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 4,
+          "processing_time": 24.824280500411987,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 6.8632652759552,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 24.707589864730835,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 15.235886812210083,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 9.02682614326477,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 10.812764167785645,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.601712942123413,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.23597502708435,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 18.635356903076172,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 6.249369859695435,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 9.265152931213379,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 23.666844606399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "candidate",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "continents",
+            "countries"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "car_names",
+            "cars_data"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "car_makers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "model_list"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Genre",
+            "MediaType",
+            "Track"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Album",
+            "Artist"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 28,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer",
+            "Employee"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoice",
+            "InvoiceLine"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Playlist",
+            "PlaylistTrack"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "cinema",
+            "film",
+            "schedule"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 27,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "city",
+            "hosting_city",
+            "match",
+            "temperature"
+          ]
+        }
+      ],
+      "end_time": 1745546489.0079317,
+      "enriched_columns": 27,
+      "enriched_tables": 4,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 8.67146897315979,
+        "schema_enrichment": 24.824832439422607,
+        "total": 33.60676121711731
+      },
+      "start_time": 1745546455.4011705,
+      "total_columns": 27,
+      "total_tables": 4,
+      "warnings": []
+    },
+    "database_description": "The database schema comprises four tables designed to manage data related to cities, matches, temperature records, and hosting city details for specific years. The `city` table stores information about each city including its ID, name in English and Chinese characters, Hanyu Pinyin, population, and GDP. The `match` table captures details of various matches such as the match ID, date, venue, score, result, and competition type. The `temperature` table records monthly average temperatures for cities, linked to city IDs from the `city` table. Finally, the `hosting_city` table links matches to the cities hosting them, specifying the year, match ID, and host city name, with relationships established through foreign keys referencing the respective tables. Together, these tables provide a comprehensive view of cities, their associated temperatures, and historical sports events hosted in those cities.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the city.",
+            "columnIdentifier": "City_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the city in English.",
+            "columnIdentifier": "City",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the city in Chinese characters.",
+            "columnIdentifier": "Hanzi",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Pinyin representation of the city's name.",
+            "columnIdentifier": "Hanyu_Pinyin",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Population of the city's region.",
+            "columnIdentifier": "Regional_Population",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gross Domestic Product of the city.",
+            "columnIdentifier": "GDP",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Shanghai, 上海, Shànghǎi, 23019148, 1919.57",
+          "2, Nanjing ( Jiangsu ), 南京, Nánjīng, 8004680, 614.55",
+          "3, Hangzhou ( Zhejiang ), 杭州, Hángzhōu, 8700400, 701.18"
+        ],
+        "tableDescription": "Stores information about each city including its ID, name in English and Chinese characters, Hanyu Pinyin, population, and GDP.",
+        "tableIdentifier": "city"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the match.",
+            "columnIdentifier": "Match_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the match was held.",
+            "columnIdentifier": "Date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Location where the match was played.",
+            "columnIdentifier": "Venue",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Final score of the match.",
+            "columnIdentifier": "Score",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Detailed result of the match.",
+            "columnIdentifier": "Result",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Type of competition in which the match was held.",
+            "columnIdentifier": "Competition",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 18 February 1992, \"Estadio Cuscatlán , San Salvador , El Salvador\", 1-0, 2-0, Friendly match",
+          "2, 19 July 1992, \"Estadio Rigoberto López , Managua , Nicaragua\", 3-0, 5-0, 1994 FIFA World Cup qualification",
+          "3, 23 July 1992, \"Estadio Cuscatlán , San Salvador , El Salvador\", 1–0, 5-1, 2002 FIFA World Cup qualification"
+        ],
+        "tableDescription": "Captures details of various matches such as the match ID, date, venue, score, result, and competition type.",
+        "tableIdentifier": "match"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the city.",
+            "columnIdentifier": "City_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "city",
+                "toColumn": "City_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Average temperature in January.",
+            "columnIdentifier": "Jan",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in February.",
+            "columnIdentifier": "Feb",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in March.",
+            "columnIdentifier": "Mar",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in April.",
+            "columnIdentifier": "Apr",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in June.",
+            "columnIdentifier": "Jun",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in July.",
+            "columnIdentifier": "Jul",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in August.",
+            "columnIdentifier": "Aug",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in September.",
+            "columnIdentifier": "Sep",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in October.",
+            "columnIdentifier": "Oct",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in November.",
+            "columnIdentifier": "Nov",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Average temperature in December.",
+            "columnIdentifier": "Dec",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 17.8, 17.8, 18.3, 18.9, 20.0, 20.6, 20.6, 20.6, 20.0, 19.4, 18.3",
+          "2, 26.1, 26.1, 26.1, 26.1, 27.8, 27.8, 28.3, 28.3, 28.3, 27.2, 26.7",
+          "3, 18.9, 18.3, 19.4, 20.0, 22.2, 23.3, 23.9, 23.3, 22.8, 21.7, 20.0"
+        ],
+        "tableDescription": "Records monthly average temperatures for cities, linked to city IDs from the `city` table.",
+        "tableIdentifier": "temperature"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Year in which the match was hosted.",
+            "columnIdentifier": "Year",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the match.",
+            "columnIdentifier": "Match_ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "match",
+                "toColumn": "Match_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the host city.",
+            "columnIdentifier": "Host_City",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "city",
+                "toColumn": "City_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "2008, 1, 1",
+          "2009, 2, 2",
+          "2010, 3, 6"
+        ],
+        "tableDescription": "Links matches to the cities hosting them, specifying the year, match ID, and host city name.",
+        "tableIdentifier": "hosting_city"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "City_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "City",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Hanzi",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Hanyu_Pinyin",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Regional_Population",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "GDP",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "city"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Match_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Venue",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Score",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Result",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Competition",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "match"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "City_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "city",
+                "toColumn": "City_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Jan",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Feb",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Mar",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Apr",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Jun",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Jul",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Aug",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Sep",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Oct",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Nov",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Dec",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "temperature"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Year",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Match_ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "match",
+                "toColumn": "Match_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Host_City",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "city",
+                "toColumn": "City_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "hosting_city"
+      }
+    ]
+  },
+  "message": "Success"
+}

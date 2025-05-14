@@ -1,0 +1,3192 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 3,
+          "processing_time": 13.795598030090332,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 1,
+          "processing_time": 7.92161226272583,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.223334074020386,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 9.22027063369751,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 6.360416650772095,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 9,
+          "processing_time": 39.315454721450806,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 9.452086210250854,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 7.203616619110107,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 8.127381324768066,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 6,
+          "processing_time": 27.03067660331726,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 5.6964757442474365,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 5.393417119979858,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "candidate",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "continents",
+            "countries"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "car_names",
+            "cars_data"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "car_makers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "model_list"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Genre",
+            "MediaType",
+            "Track"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Album",
+            "Artist"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 28,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer",
+            "Employee"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoice",
+            "InvoiceLine"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Playlist",
+            "PlaylistTrack"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "cinema",
+            "film",
+            "schedule"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 27,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "city",
+            "hosting_city",
+            "match",
+            "temperature"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "climber",
+            "mountain"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Club",
+            "Member_of_club",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "happy_hour",
+            "happy_hour_member",
+            "member",
+            "shop"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "CLASS",
+            "COURSE"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "EMPLOYEE",
+            "PROFESSOR"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "ENROLL",
+            "STUDENT"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "DEPARTMENT"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "course",
+            "department",
+            "prereq"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "classroom",
+            "section"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "instructor",
+            "teaches"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "student",
+            "takes"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "advisor"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "time_slot"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Minor_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Member_of"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Enrolled_in",
+            "Gradeconversion"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Department"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Course"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "works_on"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "employee"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "department"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "project"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "dependent"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "dept_locations"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 16,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "company",
+            "employment",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Companies",
+            "Office_locations",
+            "buildings"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "concert",
+            "singer",
+            "singer_in_concert",
+            "stadium"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "city",
+            "county_public_safety"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "course",
+            "course_arrange",
+            "teacher"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Documents",
+            "Ref_Document_Types"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Documents_with_Expenses",
+            "Ref_Budget_Codes"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Accounts",
+            "Statements"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Projects"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Documents",
+            "Ref_Document_Status",
+            "Ref_Document_Types",
+            "Ref_Shipping_Agents"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Employees",
+            "Roles"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Documents_Mailed"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Circulation_History",
+            "Draft_Copies"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Document_Drafts"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Documents",
+            "Paragraphs",
+            "Ref_Template_Types",
+            "Templates"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "All_Documents",
+            "Ref_Document_Types"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Document_Locations",
+            "Ref_Locations"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Employees",
+            "Roles"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Calendar"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Documents_to_be_Destroyed"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Drama_Workshop_Groups",
+            "Ref_Service_Types",
+            "Services"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Addresses",
+            "Performers",
+            "Performers_in_Bookings"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoices",
+            "Ref_Payment_Methods"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Order_Items",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Marketing_Regions",
+            "Stores"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Bookings",
+            "Clients"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer_Orders",
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Bookings_Services",
+            "Invoice_Items"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Hotels",
+            "Ref_Hotel_Star_Ratings"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Visitors",
+            "Visits"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Features",
+            "Tourist_Attraction_Features"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Theme_Parks",
+            "Tourist_Attractions"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Locations"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Attraction_Types"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Street_Markets"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Shops"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Museums"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Royal_Family"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Photos"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Campuses"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "csu_fees"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "degrees"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "discipline_enrollments"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "enrollments"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "faculty"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "book_club",
+            "culture_company",
+            "movie"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Customer_Orders",
+            "Order_Items",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Customer_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer_Contact_Channels",
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 16,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customers",
+            "Orders"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Accounts",
+            "Financial_Transactions"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Product_Categories",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Invoices"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Order_Items"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Invoice_Line_Items"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Customer_Address_History"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Order_Items",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Contacts"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Customer_Orders"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer_Addresses",
+            "Premises"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Order_Items",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Mailshot_Campaigns",
+            "Mailshot_Customers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Customer_Orders"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 27,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Accounts",
+            "Customers",
+            "Customers_Cards",
+            "Financial_Transactions"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 31,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Complaints",
+            "Customers",
+            "Products",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Actual_Order_Products",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Employees"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer_Addresses",
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Regular_Order_Products",
+            "Regular_Orders"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Delivery_Route_Locations",
+            "Delivery_Routes"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Order_Deliveries",
+            "Trucks"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Actual_Orders"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "debate",
+            "debate_people",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "college",
+            "member",
+            "round"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "department",
+            "head",
+            "management"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Departments",
+            "Staff",
+            "Staff_Department_Assignments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Customer_Orders",
+            "Order_Items",
+            "Products"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Supplier_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Product_Suppliers",
+            "Suppliers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Department_Store_Chain",
+            "Department_Stores"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer_Addresses",
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "device",
+            "shop",
+            "stock"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Roles",
+            "Users"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Document_Structures",
+            "Documents"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Document_Functional_Areas",
+            "Functional_Areas"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Document_Sections_Images",
+            "Images"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Document_Sections"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Professionals",
+            "Treatment_Types",
+            "Treatments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 23,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Dogs",
+            "Owners"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Breeds"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Charges"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Sizes"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Lives_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Dorm_amenity",
+            "Has_amenity"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Dorm"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Lessons",
+            "Vehicles"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer_Payments",
+            "Customers"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "county",
+            "election",
+            "party"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "election",
+            "representative"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "employee",
+            "evaluation",
+            "hiring",
+            "shop"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "artwork",
+            "festival_detail",
+            "nomination"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "entrepreneur",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "item",
+            "review",
+            "trust",
+            "useracct"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Individuals",
+            "Organization_Contact_Individuals",
+            "Organizations"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Party_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Forms",
+            "Services"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Parties",
+            "Party_Forms"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Party_Services"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Course_Authors_and_Tutors",
+            "Courses"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Student_Course_Enrolment",
+            "Student_Tests_Taken"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Subjects"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 24,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "city",
+            "competition_record",
+            "farm",
+            "farm_competition"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "film",
+            "film_market_estimation",
+            "market"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 16,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "aircraft",
+            "certificate",
+            "employee",
+            "flight"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "airlines",
+            "airports",
+            "flights"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 24,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "airlines",
+            "airports",
+            "routes"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 20,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "airport",
+            "flight",
+            "operate_company"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "constructorResults",
+            "constructorStandings",
+            "constructors"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "circuits",
+            "races"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 16,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "drivers",
+            "pitStops"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "status"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "seasons"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "results"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "driverStandings"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "qualifying"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "lapTimes"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Plays_Games",
+            "SportsInfo",
+            "Student",
+            "Video_Games"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 20,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "game",
+            "injury_accident",
+            "stadium"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "company",
+            "gas_station",
+            "station_company"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "state"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "city"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "border_info"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "highlow"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "lake"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "mountain"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "river"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "gymnast",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Affiliated_With",
+            "Department",
+            "Physician"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Block",
+            "Room",
+            "Stay"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Procedures",
+            "Trained_In"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Nurse",
+            "On_Call"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Medication",
+            "Prescribes"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Patient"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Appointment"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Undergoes"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "countries",
+            "locations",
+            "regions"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "departments"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "jobs"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "employees"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "job_history"
+          ]
+        }
+      ],
+      "end_time": 1745549066.608448,
+      "enriched_columns": 35,
+      "enriched_tables": 7,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 4.0946877002716064,
+        "schema_enrichment": 42.52193880081177,
+        "total": 46.812196016311646
+      },
+      "start_time": 1745549019.796252,
+      "total_columns": 35,
+      "total_tables": 7,
+      "warnings": []
+    },
+    "database_description": "The described database schema is designed to manage organizational data, primarily focusing on employees, their job roles, departments, locations, and historical employment records. It includes tables for regions and countries to provide geographical context, with foreign key relationships linking these to departments and locations. The employees table centralizes information about staff members, including their job assignments and department affiliations. The job_history table captures past job positions and departments for each employee, allowing tracking of career progression. Overall, the database supports human resource management by organizing and relating various aspects of organizational structure and employee data.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each region.",
+            "columnIdentifier": "REGION_ID",
+            "columnType": "decimal(5,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the region.",
+            "columnIdentifier": "REGION_NAME",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Europe\\r",
+          "2, Americas\\r",
+          "3, Asia\\r"
+        ],
+        "tableDescription": "Stores information about regions, including their IDs and names.",
+        "tableIdentifier": "regions"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each country.",
+            "columnIdentifier": "COUNTRY_ID",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the country.",
+            "columnIdentifier": "COUNTRY_NAME",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the country to its region.",
+            "columnIdentifier": "REGION_ID",
+            "columnType": "decimal(10,0)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "regions",
+                "toColumn": "REGION_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "AR, Argentina, 2",
+          "AU, Australia, 3",
+          "BE, Belgium, 1"
+        ],
+        "tableDescription": "Stores information about countries, including their IDs, names, and associated region IDs.",
+        "tableIdentifier": "countries"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each department.",
+            "columnIdentifier": "DEPARTMENT_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the department.",
+            "columnIdentifier": "DEPARTMENT_NAME",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the manager responsible for the department.",
+            "columnIdentifier": "MANAGER_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the department to a specific location.",
+            "columnIdentifier": "LOCATION_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "10, Administration, 200, 1700",
+          "20, Marketing, 201, 1800",
+          "30, Purchasing, 114, 2400"
+        ],
+        "tableDescription": "Stores information about departments within the organization, including their names, managers, and locations.",
+        "tableIdentifier": "departments"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each job role.",
+            "columnIdentifier": "JOB_ID",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Title of the job role.",
+            "columnIdentifier": "JOB_TITLE",
+            "columnType": "varchar(35)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Minimum salary for the job role.",
+            "columnIdentifier": "MIN_SALARY",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Maximum salary for the job role.",
+            "columnIdentifier": "MAX_SALARY",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "AC_ACCOUNT, President, 20000, 40000",
+          "AC_MGR, Administration Vice President, 15000, 30000",
+          "AD_ASST, Administration Assistant, 3000, 6000"
+        ],
+        "tableDescription": "Stores information about different job roles within the organization, including their titles and salary ranges.",
+        "tableIdentifier": "jobs"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each employee.",
+            "columnIdentifier": "EMPLOYEE_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the employee.",
+            "columnIdentifier": "FIRST_NAME",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the employee.",
+            "columnIdentifier": "LAST_NAME",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Email address of the employee.",
+            "columnIdentifier": "EMAIL",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Phone number of the employee.",
+            "columnIdentifier": "PHONE_NUMBER",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the employee was hired.",
+            "columnIdentifier": "HIRE_DATE",
+            "columnType": "date",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the job role of the employee.",
+            "columnIdentifier": "JOB_ID",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "jobs",
+                "toColumn": "JOB_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Salary of the employee.",
+            "columnIdentifier": "SALARY",
+            "columnType": "decimal(8,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Commission percentage for the employee.",
+            "columnIdentifier": "COMMISSION_PCT",
+            "columnType": "decimal(2,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the manager of the employee.",
+            "columnIdentifier": "MANAGER_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the department to which the employee belongs.",
+            "columnIdentifier": "DEPARTMENT_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "departments",
+                "toColumn": "DEPARTMENT_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "100, Steven, King, SKING, 515.123.4567, 1987-06-17, AD_PRES, 24000, 0, 0, 90",
+          "101, Neena, Kochhar, NKOCHHAR, 515.123.4568, 1987-06-18, AD_VP, 17000, 0.4, 100, 60",
+          "102, Lex, De Haan, LDEHAAN, 515.123.4569, 1987-06-19, IT_PROG, 9000, 0.3, 102, 100"
+        ],
+        "tableDescription": "Stores information about employees, including their job assignments and department affiliations.",
+        "tableIdentifier": "employees"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for an employee.",
+            "columnIdentifier": "EMPLOYEE_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "employees",
+                "toColumn": "EMPLOYEE_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Date when the employee started in the current or past job role.",
+            "columnIdentifier": "START_DATE",
+            "columnType": "date",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the employee ended in the current or past job role.",
+            "columnIdentifier": "END_DATE",
+            "columnType": "date",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for a job position.",
+            "columnIdentifier": "JOB_ID",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "jobs",
+                "toColumn": "JOB_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier for a department where the employee worked.",
+            "columnIdentifier": "DEPARTMENT_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "departments",
+                "toColumn": "DEPARTMENT_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "0, 0000-00-00, 1998-07-24, IT_PROG, 60",
+          "101, 1989-09-21, 1993-10-27, AC_ACCOUNT, 110",
+          "102, 1993-10-28, 1997-03-15, AC_MGR, 20"
+        ],
+        "tableDescription": "Stores historical job positions and department affiliations for employees.",
+        "tableIdentifier": "job_history"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each location.",
+            "columnIdentifier": "LOCATION_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Street address of the location.",
+            "columnIdentifier": "STREET_ADDRESS",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Postal code of the location.",
+            "columnIdentifier": "POSTAL_CODE",
+            "columnType": "varchar(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the location is situated.",
+            "columnIdentifier": "CITY",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State or province where the location is situated.",
+            "columnIdentifier": "STATE_PROVINCE",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the location to its country.",
+            "columnIdentifier": "COUNTRY_ID",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "countries",
+                "toColumn": "COUNTRY_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1000, 1297 Via Cola di Rie, 989, Roma, , IT",
+          "1100, 93091 Calle della Testa, 10934, Venice, Tokyo Prefecture, JP",
+          "1200, 2017 Shinjuku-ku, 1689, Tokyo, Texas, US"
+        ],
+        "tableDescription": "Stores details about locations, such as addresses, postal codes, cities, and associated country IDs.",
+        "tableIdentifier": "locations"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "REGION_ID",
+            "columnType": "decimal(5,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "REGION_NAME",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "regions"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "COUNTRY_ID",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "COUNTRY_NAME",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "REGION_ID",
+            "columnType": "decimal(10,0)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "regions",
+                "toColumn": "REGION_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "countries"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "'0'",
+            "columnIdentifier": "DEPARTMENT_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "DEPARTMENT_NAME",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "MANAGER_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "LOCATION_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "departments"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "''",
+            "columnIdentifier": "JOB_ID",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "JOB_TITLE",
+            "columnType": "varchar(35)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "MIN_SALARY",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "MAX_SALARY",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "jobs"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "'0'",
+            "columnIdentifier": "EMPLOYEE_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "FIRST_NAME",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "LAST_NAME",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMAIL",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "PHONE_NUMBER",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "HIRE_DATE",
+            "columnType": "date",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "JOB_ID",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "jobs",
+                "toColumn": "JOB_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "SALARY",
+            "columnType": "decimal(8,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "COMMISSION_PCT",
+            "columnType": "decimal(2,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "MANAGER_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "DEPARTMENT_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "departments",
+                "toColumn": "DEPARTMENT_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "employees"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EMPLOYEE_ID",
+            "columnType": "decimal(6,0)",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "employees",
+                "toColumn": "EMPLOYEE_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "START_DATE",
+            "columnType": "date",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "END_DATE",
+            "columnType": "date",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "JOB_ID",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "jobs",
+                "toColumn": "JOB_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "DEPARTMENT_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "departments",
+                "toColumn": "DEPARTMENT_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "job_history"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "'0'",
+            "columnIdentifier": "LOCATION_ID",
+            "columnType": "decimal(4,0)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "STREET_ADDRESS",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "POSTAL_CODE",
+            "columnType": "varchar(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CITY",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "STATE_PROVINCE",
+            "columnType": "varchar(25)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "COUNTRY_ID",
+            "columnType": "varchar(2)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "countries",
+                "toColumn": "COUNTRY_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "locations"
+      }
+    ]
+  },
+  "message": "Success"
+}

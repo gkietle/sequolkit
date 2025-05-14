@@ -1,0 +1,1903 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 2,
+          "processing_time": 9.925898790359497,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 10.64688491821289,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 8.902775287628174,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 3.629777193069458,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.12686562538147,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 2.808849334716797,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.601712942123413,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.23597502708435,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 18.635356903076172,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 6.249369859695435,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 9.265152931213379,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 23.666844606399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "candidate",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "continents",
+            "countries"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "car_names",
+            "cars_data"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "car_makers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "model_list"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Genre",
+            "MediaType",
+            "Track"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Album",
+            "Artist"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 28,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer",
+            "Employee"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoice",
+            "InvoiceLine"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Playlist",
+            "PlaylistTrack"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "cinema",
+            "film",
+            "schedule"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 27,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "city",
+            "hosting_city",
+            "match",
+            "temperature"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "climber",
+            "mountain"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Club",
+            "Member_of_club",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "happy_hour",
+            "happy_hour_member",
+            "member",
+            "shop"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "CLASS",
+            "COURSE"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "EMPLOYEE",
+            "PROFESSOR"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "ENROLL",
+            "STUDENT"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "DEPARTMENT"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "course",
+            "department",
+            "prereq"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "classroom",
+            "section"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "instructor",
+            "teaches"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "student",
+            "takes"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "advisor"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "time_slot"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Minor_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Member_of"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Enrolled_in",
+            "Gradeconversion"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Department"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Course"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "works_on"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "employee"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "department"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "project"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "dependent"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "dept_locations"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 16,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "company",
+            "employment",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Companies",
+            "Office_locations",
+            "buildings"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "concert",
+            "singer",
+            "singer_in_concert",
+            "stadium"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "city",
+            "county_public_safety"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "course",
+            "course_arrange",
+            "teacher"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Documents",
+            "Ref_Document_Types"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Documents_with_Expenses",
+            "Ref_Budget_Codes"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Accounts",
+            "Statements"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Projects"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Documents",
+            "Ref_Document_Status",
+            "Ref_Document_Types",
+            "Ref_Shipping_Agents"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Employees",
+            "Roles"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Documents_Mailed"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Circulation_History",
+            "Draft_Copies"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Document_Drafts"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "Documents",
+            "Paragraphs",
+            "Ref_Template_Types",
+            "Templates"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "All_Documents",
+            "Ref_Document_Types"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Document_Locations",
+            "Ref_Locations"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Employees",
+            "Roles"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Calendar"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Documents_to_be_Destroyed"
+          ]
+        }
+      ],
+      "end_time": 1745547177.7854893,
+      "enriched_columns": 33,
+      "enriched_tables": 8,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 2.9841818809509277,
+        "schema_enrichment": 41.233394145965576,
+        "total": 44.572309732437134
+      },
+      "start_time": 1745547133.2131796,
+      "total_columns": 33,
+      "total_tables": 8,
+      "warnings": []
+    },
+    "database_description": "This database is designed to manage documents and their related metadata within an organization. It includes tables for storing information about document types, locations, roles, employees, document storage, and document destruction plans. The schema supports tracking of documents' movements between locations over time and records the authorization and execution of document destruction processes. The relationships between these tables enable comprehensive management and auditing of document lifecycle activities.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for each type of document.",
+            "columnIdentifier": "Document_Type_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name or label for the document type.",
+            "columnIdentifier": "Document_Type_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Description providing details about the document type.",
+            "columnIdentifier": "Document_Type_Description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "BK, CV, ",
+          "CV, Book, ",
+          "PR, Paper, "
+        ],
+        "tableDescription": "Stores reference information about different types of documents.",
+        "tableIdentifier": "Ref_Document_Types"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The specific date stored in the format of DATETIME.",
+            "columnIdentifier": "Calendar_Date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "An integer representing the day number associated with the Calendar_Date.",
+            "columnIdentifier": "Day_Number",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1972-03-31 09:47:22, 5",
+          "1976-06-15 03:40:06, 7",
+          "1985-05-13 12:19:43, 1"
+        ],
+        "tableDescription": "Stores calendar dates and their corresponding day numbers for reference.",
+        "tableIdentifier": "Ref_Calendar"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for a location.",
+            "columnIdentifier": "Location_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the location.",
+            "columnIdentifier": "Location_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Description or additional information about the location.",
+            "columnIdentifier": "Location_Description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "b, Brazil, ",
+          "c, Canada, ",
+          "e, Edinburgh, "
+        ],
+        "tableDescription": "Reference table containing details about different locations.",
+        "tableIdentifier": "Ref_Locations"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique code for each role.",
+            "columnIdentifier": "Role_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the role.",
+            "columnIdentifier": "Role_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Description of the role and its responsibilities.",
+            "columnIdentifier": "Role_Description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "ED, Manager, Vero harum corrupti odit ipsa vero et odio. Iste et recusandae temporibus maxime. Magni aspernatur fugit quis explicabo totam esse corrupti.",
+          "HR, Editor, Itaque dolor ut nemo rerum vitae provident. Vel laborum ipsum velit sint. Et est omnis dignissimos.",
+          "MG, Photo, Aut modi nihil molestias temporibus sit rerum. Sit neque eaque odio omnis incidunt."
+        ],
+        "tableDescription": "Stores information about different roles within the organization.",
+        "tableIdentifier": "Roles"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each document.",
+            "columnIdentifier": "Document_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The date and time when the document was stored.",
+            "columnIdentifier": "Date_Stored",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Code representing the type of the document, linking to Ref_Document_Types.",
+            "columnIdentifier": "Document_Type_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Document_Types",
+                "toColumn": "Document_Type_Code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Name or title of the document.",
+            "columnIdentifier": "Document_Name",
+            "columnType": "CHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "A brief description of the document's content.",
+            "columnIdentifier": "Document_Description",
+            "columnType": "CHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the document, if applicable.",
+            "columnIdentifier": "Other_Details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "7, 1976-06-15 03:40:06, CV, Robin CV",
+          "11, 1986-10-14 17:53:39, BK, Marry CV",
+          "25, 2008-06-08 12:45:38, PR, One hundred years of solitude"
+        ],
+        "tableDescription": "Stores information about all documents, including their storage details and metadata.",
+        "tableIdentifier": "All_Documents"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each employee.",
+            "columnIdentifier": "Employee_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the role of the employee, linked to the Roles table.",
+            "columnIdentifier": "Role_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Roles",
+                "toColumn": "Role_Code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Name of the employee.",
+            "columnIdentifier": "Employee_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender identifier for the employee (M/F/U).",
+            "columnIdentifier": "Gender_MFU",
+            "columnType": "CHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Birth date of the employee.",
+            "columnIdentifier": "Date_of_Birth",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional details about the employee.",
+            "columnIdentifier": "Other_Details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "25, HR, Leo, , 1973-02-15 17:16:00",
+          "30, MG, Ebba, 1, 1979-09-20 12:50:15",
+          "38, ED, Stephanie, , 2012-03-30 23:02:28"
+        ],
+        "tableDescription": "Stores information about employees within the organization.",
+        "tableIdentifier": "Employees"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for a document.",
+            "columnIdentifier": "Document_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "All_Documents",
+                "toColumn": "Document_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Code representing the location where the document is stored.",
+            "columnIdentifier": "Location_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Locations",
+                "toColumn": "Location_Code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The date when the document was moved to the current location.",
+            "columnIdentifier": "Date_in_Location_From",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The date when the document will be moved from the current location.",
+            "columnIdentifier": "Date_in_Locaton_To",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "7, e, 2017-01-06 23:17:22, 2008-06-08 12:45:38",
+          "11, x, 1972-03-31 09:47:22, 2012-07-03 09:48:46",
+          "81, c, 2008-06-08 12:45:38, 1987-11-05 06:11:22"
+        ],
+        "tableDescription": "Stores information about the locations of documents over time.",
+        "tableIdentifier": "Document_Locations"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the document.",
+            "columnIdentifier": "Document_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "All_Documents",
+                "toColumn": "Document_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the employee who authorized the destruction of the document.",
+            "columnIdentifier": "Destruction_Authorised_by_Employee_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employees",
+                "toColumn": "Employee_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the employee who executed the destruction of the document.",
+            "columnIdentifier": "Destroyed_by_Employee_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employees",
+                "toColumn": "Employee_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Scheduled date when the document is supposed to be destroyed.",
+            "columnIdentifier": "Planned_Destruction_Date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Date when the document was actually destroyed.",
+            "columnIdentifier": "Actual_Destruction_Date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Additional information or notes related to the destruction process.",
+            "columnIdentifier": "Other_Details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "7, 156, 138, 1988-02-01 14:41:52, 2017-01-06 23:17:22",
+          "11, 55, 173, 2010-11-26 19:22:50, 1986-10-14 17:53:39",
+          "25, 183, 156, 2009-08-18 03:29:08, 1995-01-01 03:52:11"
+        ],
+        "tableDescription": "Stores information about documents scheduled for destruction, including authorization and execution details.",
+        "tableIdentifier": "Documents_to_be_Destroyed"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_Type_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_Type_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_Type_Description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Ref_Document_Types"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Calendar_Date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Day_Number",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Ref_Calendar"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Location_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Location_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Location_Description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Ref_Locations"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Role_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Role_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Role_Description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Roles"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Date_Stored",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_Type_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Document_Types",
+                "toColumn": "Document_Type_Code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_Name",
+            "columnType": "CHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_Description",
+            "columnType": "CHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Other_Details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "All_Documents"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Employee_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Role_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Roles",
+                "toColumn": "Role_Code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Employee_Name",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Gender_MFU",
+            "columnType": "CHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Date_of_Birth",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Other_Details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Employees"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "All_Documents",
+                "toColumn": "Document_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Location_Code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Locations",
+                "toColumn": "Location_Code",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Date_in_Location_From",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Date_in_Locaton_To",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Document_Locations"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Document_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "All_Documents",
+                "toColumn": "Document_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Destruction_Authorised_by_Employee_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employees",
+                "toColumn": "Employee_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Destroyed_by_Employee_ID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employees",
+                "toColumn": "Employee_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Planned_Destruction_Date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Actual_Destruction_Date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Ref_Calendar",
+                "toColumn": "Calendar_Date",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Other_Details",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Documents_to_be_Destroyed"
+      }
+    ]
+  },
+  "message": "Success"
+}

@@ -1,0 +1,29 @@
+# Web Framework
+flask>=2.3.0
+flask-cors>=4.0.0
+flask[async]>=2.3.0
+
+# LLM and AI
+llama-index-core>=0.9.0
+llama-index-llms-ollama>=0.1.0
+llama-index>=0.9.0
+llama-index-utils-workflow
+# Database
+sqlalchemy-utils>=0.41.0
+sqlparse>=0.4.0
+
+# Text Processing
+pyvi>=0.1.0
+Unidecode>=1.3.0
+
+# Vector Database
+weaviate-client>=3.25.0
+
+# Graph Analysis
+networkx>=3.0
+python-louvain>=0.16
+matplotlib>=3.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0

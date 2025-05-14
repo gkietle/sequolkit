@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: slm-embed
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+  datasource:
+    hikari:
+      maximum-pool-size: 1

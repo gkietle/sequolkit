@@ -1,0 +1,604 @@
+{
+  "code": 0,
+  "data": {
+    "clusters": [
+      [
+        {
+          "columns": [
+            {
+              "columnDescription": "",
+              "columnIdentifier": "id",
+              "columnType": "INTEGER",
+              "isPrimaryKey": true,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "name",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "lat",
+              "columnType": "NUMERIC",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "long",
+              "columnType": "NUMERIC",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "dock_count",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "city",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "installation_date",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            }
+          ],
+          "sample_data": [
+            "2, San Jose Diridon Caltrain Station, 37.329732, -121.90178200000001, 27, San Jose, 8/6/2013",
+            "3, San Jose Civic Center, 37.330698, -121.888979, 15, Redwood City, 8/5/2013",
+            "4, Santa Clara at Almaden, 37.333988, -121.894902, 11, Mountain View, 8/7/2013"
+          ],
+          "tableIdentifier": "station"
+        },
+        {
+          "columns": [
+            {
+              "columnDescription": "",
+              "columnIdentifier": "station_id",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": [
+                {
+                  "tableIdentifier": "station",
+                  "toColumn": "id",
+                  "type": "OTM"
+                }
+              ]
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "bikes_available",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "docks_available",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "time",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            }
+          ],
+          "sample_data": [
+            "3, 12, 3, 2015-06-02 12:46:02",
+            "4, 6, 5, 2015-06-02 12:47:02",
+            "5, 7, 4, 2015-06-02 12:48:02"
+          ],
+          "tableIdentifier": "status"
+        }
+      ],
+      [
+        {
+          "columns": [
+            {
+              "columnDescription": "",
+              "columnIdentifier": "id",
+              "columnType": "INTEGER",
+              "isPrimaryKey": true,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "duration",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "start_date",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "start_station_name",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "start_station_id",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "end_date",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "end_station_name",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "end_station_id",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "bike_id",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "subscription_type",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "zip_code",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            }
+          ],
+          "sample_data": [
+            "900504, 384, 8/21/2015 17:03, Howard at 2nd, 63, 8/21/2015 17:10, San Francisco Caltrain 2 (330 Townsend), 69, 454, Subscriber, 94041",
+            "900505, 588, 8/21/2015 17:04, South Van Ness at Market, 66, 8/21/2015 17:13, Harry Bridges Plaza (Ferry Building), 50, 574, Customer, 95119",
+            "900506, 196, 8/21/2015 17:05, Market at Sansome, 77, 8/21/2015 17:07, 2nd at Townsend, 61, 636, Subscriber, 94925"
+          ],
+          "tableIdentifier": "trip"
+        }
+      ],
+      [
+        {
+          "columns": [
+            {
+              "columnDescription": "",
+              "columnIdentifier": "date",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_temperature_f",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "mean_temperature_f",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "min_temperature_f",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_dew_point_f",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "mean_dew_point_f",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "min_dew_point_f",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_humidity",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "mean_humidity",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "min_humidity",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_sea_level_pressure_inches",
+              "columnType": "NUMERIC",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "mean_sea_level_pressure_inches",
+              "columnType": "NUMERIC",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "min_sea_level_pressure_inches",
+              "columnType": "NUMERIC",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_visibility_miles",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "mean_visibility_miles",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "min_visibility_miles",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_wind_Speed_mph",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "mean_wind_speed_mph",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "max_gust_speed_mph",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "precipitation_inches",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "cloud_cover",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "events",
+              "columnType": "TEXT",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "wind_dir_degrees",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            },
+            {
+              "columnDescription": "",
+              "columnIdentifier": "zip_code",
+              "columnType": "INTEGER",
+              "isPrimaryKey": false,
+              "relations": []
+            }
+          ],
+          "sample_data": [
+            "8/29/2013, 74, 68, 61, 61, 58, 56, 93, 75, 57, 30.07, 30.02, 29.97, 10, 10, 10, 23, 11, 28, 0, 4, , 286, 94107",
+            "8/30/2013, 78, 69, 60, 57, 56, 54, 90, 70, 50, 30.05, 30, 29.93, 9, 9, 7, 29, 13, 35, 0.23, 2, Fog, 291, 94063",
+            "8/31/2013, 71, 64, 57, 60, 60, 53, 87, 68, 49, 30, 29.96, 29.92, 8, 8, 6, 26, 15, 31, T, 6, Rain, 284, 94301"
+          ],
+          "tableIdentifier": "weather"
+        }
+      ]
+    ],
+    "database_description": "The database appears to be designed for managing and analyzing data related to bike-sharing stations, trip activities, and weather conditions. It includes detailed information about individual bike stations, such as their location and capacity, along with real-time status updates on the availability of bikes and docks. Additionally, it captures historical trip records that include start and end station details, durations, and user subscription types. The database also integrates weather data to provide insights into how environmental factors might affect bike usage patterns.",
+    "response": [
+      [
+        {
+          "columns": [
+            {
+              "column_name": "id",
+              "description": "Unique identifier for each station."
+            },
+            {
+              "column_name": "name",
+              "description": "Name of the station."
+            },
+            {
+              "column_name": "lat",
+              "description": "Latitude coordinate of the station location."
+            },
+            {
+              "column_name": "long",
+              "description": "Longitude coordinate of the station location."
+            },
+            {
+              "column_name": "dock_count",
+              "description": "Total number of docks available at the station."
+            },
+            {
+              "column_name": "city",
+              "description": "City where the station is located."
+            },
+            {
+              "column_name": "installation_date",
+              "description": "Date when the station was installed."
+            }
+          ],
+          "description": "Stores information about bike-sharing stations including their location and capacity.",
+          "table_name": "station"
+        },
+        {
+          "columns": [
+            {
+              "column_name": "station_id",
+              "description": "Foreign key linking to the 'id' column in the 'station' table."
+            },
+            {
+              "column_name": "bikes_available",
+              "description": "Number of bikes currently available at the station."
+            },
+            {
+              "column_name": "docks_available",
+              "description": "Number of docks currently available at the station."
+            },
+            {
+              "column_name": "time",
+              "description": "Timestamp indicating when the status was recorded."
+            }
+          ],
+          "description": "Captures real-time status updates on bike and dock availability at each station.",
+          "table_name": "status"
+        }
+      ],
+      [
+        {
+          "columns": [
+            {
+              "column_name": "id",
+              "description": "Unique identifier for each trip record."
+            },
+            {
+              "column_name": "duration",
+              "description": "Duration of the bike trip in seconds."
+            },
+            {
+              "column_name": "start_date",
+              "description": "Date and time when the trip started."
+            },
+            {
+              "column_name": "start_station_name",
+              "description": "Name of the station where the bike was picked up."
+            },
+            {
+              "column_name": "start_station_id",
+              "description": "Unique identifier for the starting station."
+            },
+            {
+              "column_name": "end_date",
+              "description": "Date and time when the trip ended."
+            },
+            {
+              "column_name": "end_station_name",
+              "description": "Name of the station where the bike was returned."
+            },
+            {
+              "column_name": "end_station_id",
+              "description": "Unique identifier for the ending station."
+            },
+            {
+              "column_name": "bike_id",
+              "description": "Identifier for the bike used in the trip."
+            },
+            {
+              "column_name": "subscription_type",
+              "description": "Type of user subscription (e.g., Subscriber or Customer)."
+            },
+            {
+              "column_name": "zip_code",
+              "description": "Zip code associated with the trip's starting location."
+            }
+          ],
+          "description": "Captures historical data about bike trips including start and end station details, trip duration, user type, and geographic information.",
+          "table_name": "trip"
+        }
+      ],
+      [
+        {
+          "columns": [
+            {
+              "column_name": "date",
+              "description": "The date of the recorded weather conditions."
+            },
+            {
+              "column_name": "max_temperature_f",
+              "description": "Maximum temperature in Fahrenheit for the day."
+            },
+            {
+              "column_name": "mean_temperature_f",
+              "description": "Average temperature in Fahrenheit for the day."
+            },
+            {
+              "column_name": "min_temperature_f",
+              "description": "Minimum temperature in Fahrenheit for the day."
+            },
+            {
+              "column_name": "max_dew_point_f",
+              "description": "Maximum dew point in Fahrenheit for the day."
+            },
+            {
+              "column_name": "mean_dew_point_f",
+              "description": "Average dew point in Fahrenheit for the day."
+            },
+            {
+              "column_name": "min_dew_point_f",
+              "description": "Minimum dew point in Fahrenheit for the day."
+            },
+            {
+              "column_name": "max_humidity",
+              "description": "Maximum humidity percentage for the day."
+            },
+            {
+              "column_name": "mean_humidity",
+              "description": "Average humidity percentage for the day."
+            },
+            {
+              "column_name": "min_humidity",
+              "description": "Minimum humidity percentage for the day."
+            },
+            {
+              "column_name": "max_sea_level_pressure_inches",
+              "description": "Maximum sea level pressure in inches of mercury for the day."
+            },
+            {
+              "column_name": "mean_sea_level_pressure_inches",
+              "description": "Average sea level pressure in inches of mercury for the day."
+            },
+            {
+              "column_name": "min_sea_level_pressure_inches",
+              "description": "Minimum sea level pressure in inches of mercury for the day."
+            },
+            {
+              "column_name": "max_visibility_miles",
+              "description": "Maximum visibility in miles for the day."
+            },
+            {
+              "column_name": "mean_visibility_miles",
+              "description": "Average visibility in miles for the day."
+            },
+            {
+              "column_name": "min_visibility_miles",
+              "description": "Minimum visibility in miles for the day."
+            },
+            {
+              "column_name": "max_wind_speed_mph",
+              "description": "Maximum wind speed in miles per hour for the day."
+            },
+            {
+              "column_name": "mean_wind_speed_mph",
+              "description": "Average wind speed in miles per hour for the day."
+            },
+            {
+              "column_name": "max_gust_speed_mph",
+              "description": "Maximum gust speed in miles per hour for the day."
+            },
+            {
+              "column_name": "precipitation_inches",
+              "description": "Total precipitation in inches for the day."
+            },
+            {
+              "column_name": "cloud_cover",
+              "description": "Percentage of cloud cover for the day."
+            },
+            {
+              "column_name": "events",
+              "description": "Weather events or conditions observed during the day, such as rain, fog, etc."
+            },
+            {
+              "column_name": "wind_dir_degrees",
+              "description": "Wind direction in degrees true north for the day."
+            },
+            {
+              "column_name": "zip_code",
+              "description": "The zip code of the location where the weather data was recorded."
+            }
+          ],
+          "description": "Contains daily weather data for specific zip codes, including temperature, humidity, pressure, visibility, wind speed and direction, precipitation, cloud cover, and events.",
+          "table_name": "weather"
+        }
+      ]
+    ],
+    "schema": [
+      "station (id INTEGER [PK], name TEXT, lat NUMERIC, long NUMERIC, dock_count INTEGER, city TEXT, installation_date TEXT)\nSample Data:\n  id, name, lat, long, dock_count, city, installation_date\n  2, San Jose Diridon Caltrain Station, 37.329732, -121.90178200000001, 27, San Jose, 8/6/2013\n  3, San Jose Civic Center, 37.330698, -121.888979, 15, Redwood City, 8/5/2013\n  4, Santa Clara at Almaden, 37.333988, -121.894902, 11, Mountain View, 8/7/2013\n\nstatus (station_id INTEGER, bikes_available INTEGER, docks_available INTEGER, time TEXT)\nSample Data:\n  station_id, bikes_available, docks_available, time\n  3, 12, 3, 2015-06-02 12:46:02\n  4, 6, 5, 2015-06-02 12:47:02\n  5, 7, 4, 2015-06-02 12:48:02\n\nForeign Key Relationships:\nstatus.station_id \u2192 station.id",
+      "trip (id INTEGER [PK], duration INTEGER, start_date TEXT, start_station_name TEXT, start_station_id INTEGER, end_date TEXT, end_station_name TEXT, end_station_id INTEGER, bike_id INTEGER, subscription_type TEXT, zip_code INTEGER)\nSample Data:\n  id, duration, start_date, start_station_name, start_station_id, end_date, end_station_name, end_station_id, bike_id, subscription_type, zip_code\n  900504, 384, 8/21/2015 17:03, Howard at 2nd, 63, 8/21/2015 17:10, San Francisco Caltrain 2 (330 Townsend), 69, 454, Subscriber, 94041\n  900505, 588, 8/21/2015 17:04, South Van Ness at Market, 66, 8/21/2015 17:13, Harry Bridges Plaza (Ferry Building), 50, 574, Customer, 95119\n  900506, 196, 8/21/2015 17:05, Market at Sansome, 77, 8/21/2015 17:07, 2nd at Townsend, 61, 636, Subscriber, 94925\n",
+      "weather (date TEXT, max_temperature_f INTEGER, mean_temperature_f INTEGER, min_temperature_f INTEGER, max_dew_point_f INTEGER, mean_dew_point_f INTEGER, min_dew_point_f INTEGER, max_humidity INTEGER, mean_humidity INTEGER, min_humidity INTEGER, max_sea_level_pressure_inches NUMERIC, mean_sea_level_pressure_inches NUMERIC, min_sea_level_pressure_inches NUMERIC, max_visibility_miles INTEGER, mean_visibility_miles INTEGER, min_visibility_miles INTEGER, max_wind_Speed_mph INTEGER, mean_wind_speed_mph INTEGER, max_gust_speed_mph INTEGER, precipitation_inches INTEGER, cloud_cover INTEGER, events TEXT, wind_dir_degrees INTEGER, zip_code INTEGER)\nSample Data:\n  date, max_temperature_f, mean_temperature_f, min_temperature_f, max_dew_point_f, mean_dew_point_f, min_dew_point_f, max_humidity, mean_humidity, min_humidity, max_sea_level_pressure_inches, mean_sea_level_pressure_inches, min_sea_level_pressure_inches, max_visibility_miles, mean_visibility_miles, min_visibility_miles, max_wind_Speed_mph, mean_wind_speed_mph, max_gust_speed_mph, precipitation_inches, cloud_cover, events, wind_dir_degrees, zip_code\n  8/29/2013, 74, 68, 61, 61, 58, 56, 93, 75, 57, 30.07, 30.02, 29.97, 10, 10, 10, 23, 11, 28, 0, 4, , 286, 94107\n  8/30/2013, 78, 69, 60, 57, 56, 54, 90, 70, 50, 30.05, 30, 29.93, 9, 9, 7, 29, 13, 35, 0.23, 2, Fog, 291, 94063\n  8/31/2013, 71, 64, 57, 60, 60, 53, 87, 68, 49, 30, 29.96, 29.92, 8, 8, 6, 26, 15, 31, T, 6, Rain, 284, 94301\n"
+    ]
+  },
+  "message": "Success"
+}

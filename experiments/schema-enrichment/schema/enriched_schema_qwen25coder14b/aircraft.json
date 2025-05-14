@@ -1,0 +1,704 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 5,
+          "processing_time": 24.14702606201172,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 5,
+          "processing_time": 29.002265453338623,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 5,
+          "processing_time": 23.218556880950928,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 5.034032106399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 6.177516937255859,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 13.687478303909302,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.323533773422241,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        }
+      ],
+      "end_time": 1745545479.276942,
+      "enriched_columns": 28,
+      "enriched_tables": 5,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 6.130270004272461,
+        "schema_enrichment": 76.36838722229004,
+        "total": 82.99581503868103
+      },
+      "start_time": 1745545396.281127,
+      "total_columns": 28,
+      "total_tables": 5,
+      "warnings": []
+    },
+    "database_description": "The described database schema consists of four main tables: `pilot`, `aircraft`, `match`, and `airport`. The `pilot` table stores information about pilots, including their ID, name, and age. The `aircraft` table contains details about various aircraft types, such as their ID, model, description, and technical specifications. The `match` table records data about matches or competitions, including the round number, location, date, and results, with references to the winning pilot and aircraft through foreign keys. The `airport` table holds information about different airports, including passenger statistics and freight metrics. The `airport_aircraft` table establishes a many-to-many relationship between airports and aircraft, indicating which aircraft operate at each airport. Overall, this database appears to be designed for tracking and managing data related to pilots, aircraft, competitions, and airport operations.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each pilot.",
+            "columnIdentifier": "Pilot_Id",
+            "columnType": "int(11)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Full name of the pilot.",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Age of the pilot.",
+            "columnIdentifier": "Age",
+            "columnType": "int(11)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Prof. Zackery Collins, 23",
+          "2, Katheryn Gorczany IV, 20",
+          "3, Mr. Cristian Halvorson II, 25"
+        ],
+        "tableDescription": "Stores information about pilots, including their ID, name, and age.",
+        "tableIdentifier": "pilot"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each aircraft.",
+            "columnIdentifier": "Aircraft_ID",
+            "columnType": "int(11)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Model name of the aircraft.",
+            "columnIdentifier": "Aircraft",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Brief description of the aircraft's purpose or type.",
+            "columnIdentifier": "Description",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Maximum gross weight the aircraft can carry.",
+            "columnIdentifier": "Max_Gross_Weight",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total disk area of the aircraft's rotors.",
+            "columnIdentifier": "Total_disk_area",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Maximum loading per square foot of the aircraft's rotors.",
+            "columnIdentifier": "Max_disk_Loading",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Robinson R-22, Light utility helicopter, \"1,370 lb (635 kg)\", 497 ft² (46.2 m²), 2.6 lb/ft² (14 kg/m²)",
+          "2, Bell 206B3 JetRanger, Turboshaft utility helicopter, \"3,200 lb (1,451 kg)\", 872 ft² (81.1 m²), 3.7 lb/ft² (18 kg/m²)",
+          "3, CH-47D Chinook, Tandem rotor helicopter, \"50,000 lb (22,680 kg)\", \"5,655 ft² (526 m²)\", 8.8 lb/ft² (43 kg/m²)"
+        ],
+        "tableDescription": "Contains details about various aircraft types, such as their ID, model, description, and technical specifications.",
+        "tableIdentifier": "aircraft"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Round number of the match.",
+            "columnIdentifier": "Round",
+            "columnType": "real",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Location where the match took place.",
+            "columnIdentifier": "Location",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the match took place.",
+            "columnIdentifier": "Country",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the match was held.",
+            "columnIdentifier": "Date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Pilot with the fastest qualifying time.",
+            "columnIdentifier": "Fastest_Qualifying",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "ID of the pilot who won the match.",
+            "columnIdentifier": "Winning_Pilot",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "pilot",
+                "toColumn": "Pilot_Id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "ID of the aircraft that won the match.",
+            "columnIdentifier": "Winning_Aircraft",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "aircraft",
+                "toColumn": "Aircraft_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1.0, \"Mina' Zayid , Abu Dhabi\", United Arab Emirates, March 26–27, Hannes Arch, 1, 1",
+          "2.0, \"Swan River , Perth\", Australia, April 17–18, Paul Bonhomme, 4, 2",
+          "3.0, \"Flamengo Beach , Rio de Janeiro\", Brazil, May 8–9, Nigel Lamb, 6, 4"
+        ],
+        "tableDescription": "Records data about matches or competitions, including the round number, location, date, and results, with references to the winning pilot and aircraft through foreign keys.",
+        "tableIdentifier": "match"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each airport.",
+            "columnIdentifier": "Airport_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The name of the airport.",
+            "columnIdentifier": "Airport_Name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of passengers who passed through the airport.",
+            "columnIdentifier": "Total_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Percentage change in total passengers compared to 2007.",
+            "columnIdentifier": "%_Change_2007",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of international passengers.",
+            "columnIdentifier": "International_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of domestic passengers.",
+            "columnIdentifier": "Domestic_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of transit passengers.",
+            "columnIdentifier": "Transit_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of aircraft movements at the airport.",
+            "columnIdentifier": "Aircraft_Movements",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Amount of freight in metric tonnes handled by the airport.",
+            "columnIdentifier": "Freight_Metric_Tonnes",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, London Heathrow, 67054745.0, 1.5%, 61344438.0, 5562516.0, 147791.0, 478693.0, 1397054.0",
+          "2, London Gatwick, 34205887.0, 2.9%, 30431051.0, 3730963.0, 43873.0, 263653.0, 107702.0",
+          "3, London Stansted, 22360364.0, 6.0%, 19996947.0, 2343428.0, 19989.0, 193282.0, 197738.0"
+        ],
+        "tableDescription": "Holds information about different airports, including passenger statistics and freight metrics.",
+        "tableIdentifier": "airport"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each record in the relationship.",
+            "columnIdentifier": "ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Foreign key referencing the airport ID.",
+            "columnIdentifier": "Airport_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "airport",
+                "toColumn": "Airport_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the aircraft ID.",
+            "columnIdentifier": "Aircraft_ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "aircraft",
+                "toColumn": "Aircraft_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1, 1, 2",
+          "2, 2, 1",
+          "3, 6, 5"
+        ],
+        "tableDescription": "Establishes a many-to-many relationship between airports and aircraft, indicating which aircraft operate at each airport.",
+        "tableIdentifier": "airport_aircraft"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Pilot_Id",
+            "columnType": "int(11)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Age",
+            "columnType": "int(11)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "pilot"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Aircraft_ID",
+            "columnType": "int(11)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Aircraft",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Description",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Max_Gross_Weight",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Total_disk_area",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Max_disk_Loading",
+            "columnType": "varchar(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "aircraft"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Round",
+            "columnType": "real",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Location",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Country",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Date",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Fastest_Qualifying",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Winning_Pilot",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "pilot",
+                "toColumn": "Pilot_Id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Winning_Aircraft",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "aircraft",
+                "toColumn": "Aircraft_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "match"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Airport_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Airport_Name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Total_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "%_Change_2007",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "International_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Domestic_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Transit_Passengers",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Aircraft_Movements",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Freight_Metric_Tonnes",
+            "columnType": "real",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "airport"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Airport_ID",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "airport",
+                "toColumn": "Airport_ID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Aircraft_ID",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "aircraft",
+                "toColumn": "Aircraft_ID",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "airport_aircraft"
+      }
+    ]
+  },
+  "message": "Success"
+}

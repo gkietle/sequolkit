@@ -1,0 +1,1099 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 3,
+          "processing_time": 12.042086601257324,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 3,
+          "processing_time": 9.249904870986938,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 9.519255638122559,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 6.43746280670166,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 6.349720239639282,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 2,
+          "processing_time": 9.704359292984009,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 7.693281888961792,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        }
+      ],
+      "end_time": 1745561840.530259,
+      "enriched_columns": 42,
+      "enriched_tables": 15,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 13.835346460342407,
+        "schema_enrichment": 60.99736261367798,
+        "total": 75.2810800075531
+      },
+      "start_time": 1745561765.249179,
+      "total_columns": 42,
+      "total_tables": 15,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage and analyze academic publications, authors, conferences, journals, domains, keywords, organizations, and citation relationships within an academic environment. It tracks authorship and contributions through tables linking authors to their works, and it associates publications with various entities such as conferences, journals, domains, and keywords for comprehensive categorization and searchability. The database also captures organizational affiliations of authors and the geographical distribution of organizations. Additionally, it maintains citation metrics by recording which publications cite others, facilitating an understanding of academic impact and scholarly networks.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key representing the author's unique identifier.",
+            "columnIdentifier": "aid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Text field containing the URL of the author's personal or professional homepage.",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Text field containing the full name of the author.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Integer representing the organization ID with which the author is affiliated.",
+            "columnIdentifier": "oid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Stores information about authors, including their unique identifier, homepage URL, name, and organization affiliation.",
+        "tableIdentifier": "author"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key representing the unique identifier for each conference.",
+            "columnIdentifier": "cid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "URL of the official website or homepage for the conference.",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the academic conference.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Stores information about academic conferences.",
+        "tableIdentifier": "conference"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key representing a unique identifier for each domain.",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The name or title of the academic domain.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Stores information about different academic domains or fields of study.",
+        "tableIdentifier": "domain"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the author's unique identifier.",
+            "columnIdentifier": "aid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "author",
+                "toColumn": "aid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Primary key representing the domain's unique identifier. Links to a domain table not shown here.",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Links authors to academic domains, allowing for categorization of authors by their areas of expertise.",
+        "tableIdentifier": "domain_author"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the unique identifier for a conference from the 'conference' table.",
+            "columnIdentifier": "cid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "conference",
+                "toColumn": "cid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Primary key representing the unique identifier for each domain, used to associate with conferences.",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Associates conferences with their respective domains.",
+        "tableIdentifier": "domain_conference"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "URL of the journal's official website.",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Primary key uniquely identifying a journal.",
+            "columnIdentifier": "jid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the journal, representing its title.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Stores information about academic journals including their web presence and identity.",
+        "tableIdentifier": "journal"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key referencing a domain, indicating the field of study.",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing a journal, identifying the publication.",
+            "columnIdentifier": "jid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "journal",
+                "toColumn": "jid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Associates domains with journals, linking academic fields to specific publications.",
+        "tableIdentifier": "domain_journal"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Textual representation of a keyword.",
+            "columnIdentifier": "keyword",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Keyword ID, primary key for the keyword table.",
+            "columnIdentifier": "kid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Stores keywords used to categorize and search publications.",
+        "tableIdentifier": "keyword"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Domain ID, primary key referencing the domain table.",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Keyword ID, foreign key referencing the keyword table.",
+            "columnIdentifier": "kid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "keyword",
+                "toColumn": "kid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Associates domains with keywords to categorize publications by domain-specific terms.",
+        "tableIdentifier": "domain_keyword"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Textual abstract summarizing the content of the publication.",
+            "columnIdentifier": "abstract",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Foreign key referencing the conference ID associated with this publication.",
+            "columnIdentifier": "cid",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "conference",
+                "toColumn": "cid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Number of times this publication has been cited by other works.",
+            "columnIdentifier": "citation_num",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Foreign key referencing the journal ID where the publication is published.",
+            "columnIdentifier": "jid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "journal",
+                "toColumn": "jid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Primary key uniquely identifying each publication record.",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of references cited within this publication.",
+            "columnIdentifier": "reference_num",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Title of the academic publication.",
+            "columnIdentifier": "title",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Year when the publication was released.",
+            "columnIdentifier": "year",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Contains detailed information about academic publications.",
+        "tableIdentifier": "publication"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key linking to the domain's unique identifier.",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key linking to the publication's unique identifier.",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Associates publications with their respective domains to categorize them within specific fields.",
+        "tableIdentifier": "domain_publication"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Specifies the continent where the organization is located.",
+            "columnIdentifier": "continent",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Provides the URL to the organization's official website.",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Contains the name of the organization.",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Serves as a unique identifier for each organization (Primary Key).",
+            "columnIdentifier": "oid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Stores information about organizations affiliated with authors, including their geographical and online presence.",
+        "tableIdentifier": "organization"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Publication ID, foreign key referencing the publication table.",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Keyword ID, foreign key referencing the keyword table.",
+            "columnIdentifier": "kid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "keyword",
+                "toColumn": "kid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Links publications to keywords for better categorization and searchability.",
+        "tableIdentifier": "publication_keyword"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Primary key referencing the author's unique identifier.",
+            "columnIdentifier": "aid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "author",
+                "toColumn": "aid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the publication's unique identifier.",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Associates authors with publications they have contributed to, effectively managing authorship.",
+        "tableIdentifier": "writes"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the publication ID of the cited paper.",
+            "columnIdentifier": "cited",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the publication ID of the citing paper.",
+            "columnIdentifier": "citing",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [],
+        "tableDescription": "Tracks citation relationships between publications.",
+        "tableIdentifier": "cite"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "aid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "oid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "author"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "conference"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "domain"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "aid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "author",
+                "toColumn": "aid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "domain_author"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "conference",
+                "toColumn": "cid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "domain_conference"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "jid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "journal"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "jid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "journal",
+                "toColumn": "jid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "domain_journal"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "keyword",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "kid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "keyword"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "kid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "keyword",
+                "toColumn": "kid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "domain_keyword"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "abstract",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cid",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "conference",
+                "toColumn": "cid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "citation_num",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "jid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "journal",
+                "toColumn": "jid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "reference_num",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "title",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "publication"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "did",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "domain",
+                "toColumn": "did",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "domain_publication"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "continent",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "homepage",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "text",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "oid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "organization"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "kid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "keyword",
+                "toColumn": "kid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "publication_keyword"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "aid",
+            "columnType": "int",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "author",
+                "toColumn": "aid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pid",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "writes"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cited",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "citing",
+            "columnType": "int",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "publication",
+                "toColumn": "pid",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "cite"
+      }
+    ]
+  },
+  "message": "Success"
+}

@@ -1,0 +1,424 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 3,
+          "processing_time": 12.886464357376099,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 12.910236358642578,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 5,
+          "processing_time": 25.35876488685608,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 6.43746280670166,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 6.349720239639282,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 2,
+          "processing_time": 9.704359292984009,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 7.693281888961792,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        }
+      ],
+      "end_time": 1745561965.5137546,
+      "enriched_columns": 12,
+      "enriched_tables": 3,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 4.156251907348633,
+        "schema_enrichment": 12.8868887424469,
+        "total": 17.189186334609985
+      },
+      "start_time": 1745561948.3245683,
+      "total_columns": 12,
+      "total_tables": 3,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage information related to students and their allergies within an educational institution. The \"Student\" table stores personal details such as names, age, sex, major, advisor, and city code for each student. The \"Allergy_Type\" table categorizes different types of allergies by listing them with a unique identifier. The \"Has_Allergy\" table links students to their specific allergies through foreign key relationships, ensuring data integrity between the \"Student\" and \"Allergy_Type\" tables. This setup allows tracking which students have particular allergies, facilitating health management and safety measures within the institution.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for a specific type of allergy.",
+            "columnIdentifier": "Allergy",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Category or type of the listed allergy (e.g., food, environmental).",
+            "columnIdentifier": "AllergyType",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "Anchovies, food",
+          "Bee Stings, environmental",
+          "Cat, animal"
+        ],
+        "tableDescription": "Classifies different types of allergies with unique identifiers.",
+        "tableIdentifier": "Allergy_Type"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the student's unique identifier.",
+            "columnIdentifier": "StuID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Student",
+                "toColumn": "StuID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing a specific type of allergy.",
+            "columnIdentifier": "Allergy",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Allergy_Type",
+                "toColumn": "Allergy",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1001, Cat",
+          "1002, Shellfish",
+          "1003, Tree Pollen"
+        ],
+        "tableDescription": "Links students to their respective allergies using foreign keys.",
+        "tableIdentifier": "Has_Allergy"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each student.",
+            "columnIdentifier": "StuID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the student.",
+            "columnIdentifier": "LName",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the student.",
+            "columnIdentifier": "Fname",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Current age of the student.",
+            "columnIdentifier": "Age",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender of the student, represented by a single character.",
+            "columnIdentifier": "Sex",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the student's major field of study.",
+            "columnIdentifier": "Major",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the advisor assigned to the student.",
+            "columnIdentifier": "Advisor",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Code representing the city from which the student hails.",
+            "columnIdentifier": "city_code",
+            "columnType": "VARCHAR(3)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1001, Smith, Linda, 18, F, 600, 1121, BAL",
+          "1002, Kim, Tracy, 19, M, 520, 7712, HKG",
+          "1003, Jones, Shiela, 21, F, 540, 7792, WAS"
+        ],
+        "tableDescription": "Stores personal and academic details of students.",
+        "tableIdentifier": "Student"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Allergy",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "AllergyType",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Allergy_Type"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "StuID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Student",
+                "toColumn": "StuID",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Allergy",
+            "columnType": "VARCHAR(20)",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Allergy_Type",
+                "toColumn": "Allergy",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Has_Allergy"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "StuID",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "LName",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Fname",
+            "columnType": "VARCHAR(12)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Age",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Sex",
+            "columnType": "VARCHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Major",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Advisor",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "city_code",
+            "columnType": "VARCHAR(3)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Student"
+      }
+    ]
+  },
+  "message": "Success"
+}

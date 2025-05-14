@@ -1,0 +1,1912 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 3,
+          "processing_time": 12.421884298324585,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 6.8632652759552,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 2,
+          "processing_time": 24.707589864730835,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 15.235886812210083,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 9.02682614326477,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 10.812764167785645,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.601712942123413,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 8.23597502708435,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 18.635356903076172,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 6.249369859695435,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 9.265152931213379,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 23.666844606399536,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.428266763687134,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 5.05982780456543,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 8.664761543273926,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "enriched_tables": 1,
+          "processing_time": 8.49073576927185,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 9.947392463684082,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 72,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "fielding",
+            "fielding_postseason",
+            "player",
+            "player_award",
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 22,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "batting"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_outfield"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "hall_of_fame"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "battle",
+            "death",
+            "ship"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Detention",
+            "Ref_Detention_Type"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Behavior_Incident",
+            "Ref_Incident_Type"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Addresses",
+            "Student_Addresses"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Assessment_Notes",
+            "Teachers"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Ref_Address_Types"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Students_in_Detention"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 46,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "station",
+            "status",
+            "trip",
+            "weather"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "body_builder",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "book",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Web_client_accelerator",
+            "accelerator_compatible_browser",
+            "browser"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "candidate",
+            "people"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "continents",
+            "countries"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "car_names",
+            "cars_data"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "car_makers"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 3,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "model_list"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 13,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Genre",
+            "MediaType",
+            "Track"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Album",
+            "Artist"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 28,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Customer",
+            "Employee"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Invoice",
+            "InvoiceLine"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Playlist",
+            "PlaylistTrack"
+          ]
+        }
+      ],
+      "end_time": 1745546434.0757194,
+      "enriched_columns": 64,
+      "enriched_tables": 11,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 3.449491024017334,
+        "schema_enrichment": 68.25745987892151,
+        "total": 75.13513827323914
+      },
+      "start_time": 1745546358.940581,
+      "total_columns": 64,
+      "total_tables": 11,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage and track music-related data for an online store. It includes tables for artists, albums, tracks, genres, media types, customers, employees, invoices, invoice lines, playlists, and playlist tracks. The schema supports operations such as tracking customer purchases, managing inventory, and organizing music content by genre and artist. Relationships between tables are established through foreign keys to ensure data integrity and facilitate complex queries for business intelligence purposes.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each album.",
+            "columnIdentifier": "AlbumId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Title of the album.",
+            "columnIdentifier": "Title",
+            "columnType": "varchar(160)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Foreign key referencing the Artist table to identify the artist associated with the album.",
+            "columnIdentifier": "ArtistId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Artist",
+                "toColumn": "ArtistId",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1, For Those About To Rock We Salute You, 1",
+          "4, Balls to the Wall, 2",
+          "2, Restless and Wild, 3"
+        ],
+        "tableDescription": "Stores information about music albums, including their titles and associated artists.",
+        "tableIdentifier": "Album"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each artist.",
+            "columnIdentifier": "ArtistId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the artist.",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, AC/DC",
+          "2, Accept",
+          "3, Aerosmith"
+        ],
+        "tableDescription": "Stores information about music artists, including their names.",
+        "tableIdentifier": "Artist"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each customer.",
+            "columnIdentifier": "CustomerId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the customer.",
+            "columnIdentifier": "FirstName",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the customer.",
+            "columnIdentifier": "LastName",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the company associated with the customer, if applicable.",
+            "columnIdentifier": "Company",
+            "columnType": "varchar(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Street address of the customer.",
+            "columnIdentifier": "Address",
+            "columnType": "varchar(70)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the customer resides.",
+            "columnIdentifier": "City",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State or province where the customer resides.",
+            "columnIdentifier": "State",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the customer resides.",
+            "columnIdentifier": "Country",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Postal code for the customer's address.",
+            "columnIdentifier": "PostalCode",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Primary phone number of the customer.",
+            "columnIdentifier": "Phone",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Fax number of the customer, if available.",
+            "columnIdentifier": "Fax",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Email address of the customer.",
+            "columnIdentifier": "Email",
+            "columnType": "varchar(60)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the employee who supports this customer.",
+            "columnIdentifier": "SupportRepId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employee",
+                "toColumn": "EmployeeId",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1, Luís, Gonçalves, Embraer - Empresa Brasileira de Aeronáutica S.A., \"Av. Brigadeiro Faria Lima, 2170\", São José dos Campos, SP, Brazil, 12227-000, +55 (12) 3923-5555, +55 (12) 3923-5566, luisg@embraer.com.br, 3",
+          "3, Leonie, Köhler, JetBrains s.r.o., Theodor-Heuss-Straße 34, Stuttgart, QC, Germany, 70174, +49 0711 2842222, +420 2 4172 5555, leonekohler@surfeu.de, 4",
+          "12, François, Tremblay, Woodstock Discos, 1498 rue Bélanger, Montréal, RJ, Canada, H2G 1A7, +1 (514) 721-4711, +55 (11) 3033-4564, ftremblay@gmail.com, 5"
+        ],
+        "tableDescription": "Stores customer information for the online music store.",
+        "tableIdentifier": "Customer"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each employee.",
+            "columnIdentifier": "EmployeeId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the employee.",
+            "columnIdentifier": "LastName",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the employee.",
+            "columnIdentifier": "FirstName",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Job title of the employee.",
+            "columnIdentifier": "Title",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the employee who this employee reports to.",
+            "columnIdentifier": "ReportsTo",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employee",
+                "toColumn": "EmployeeId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Birth date of the employee.",
+            "columnIdentifier": "BirthDate",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date when the employee was hired.",
+            "columnIdentifier": "HireDate",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Street address of the employee.",
+            "columnIdentifier": "Address",
+            "columnType": "varchar(70)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the employee resides.",
+            "columnIdentifier": "City",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State or province where the employee resides.",
+            "columnIdentifier": "State",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the employee resides.",
+            "columnIdentifier": "Country",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Postal code for the employee's address.",
+            "columnIdentifier": "PostalCode",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Primary phone number of the employee.",
+            "columnIdentifier": "Phone",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Fax number of the employee, if available.",
+            "columnIdentifier": "Fax",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Email address of the employee.",
+            "columnIdentifier": "Email",
+            "columnType": "varchar(60)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Adams, Andrew, General Manager, 1, 1962-02-18 00:00:00, 2002-08-14 00:00:00, 11120 Jasper Ave NW, Edmonton, AB, Canada, T5K 2N1, +1 (780) 428-9482, +1 (780) 428-3457, andrew@chinookcorp.com",
+          "2, Edwards, Nancy, Sales Manager, 2, 1958-12-08 00:00:00, 2002-05-01 00:00:00, 825 8 Ave SW, Calgary, AB, Canada, T2P 2T3, +1 (403) 262-3443, +1 (403) 262-3322, nancy@chinookcorp.com",
+          "6, Peacock, Jane, Sales Support Agent, 6, 1973-08-29 00:00:00, 2002-04-01 00:00:00, 1111 6 Ave SW, Lethbridge, AB, Canada, T2P 5M5, +1 (403) 263-4423, +1 (403) 262-6712, jane@chinookcorp.com"
+        ],
+        "tableDescription": "Stores information about employees in the music store.",
+        "tableIdentifier": "Employee"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each genre.",
+            "columnIdentifier": "GenreId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The name of the genre.",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Rock",
+          "2, Jazz",
+          "3, Metal"
+        ],
+        "tableDescription": "Stores information about different music genres.",
+        "tableIdentifier": "Genre"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each invoice.",
+            "columnIdentifier": "InvoiceId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the customer who generated the invoice.",
+            "columnIdentifier": "CustomerId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Customer",
+                "toColumn": "CustomerId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Date when the invoice was created.",
+            "columnIdentifier": "InvoiceDate",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Street address for billing purposes.",
+            "columnIdentifier": "BillingAddress",
+            "columnType": "varchar(70)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the invoice is billed.",
+            "columnIdentifier": "BillingCity",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State or region where the invoice is billed.",
+            "columnIdentifier": "BillingState",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the invoice is billed.",
+            "columnIdentifier": "BillingCountry",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Postal code for billing purposes.",
+            "columnIdentifier": "BillingPostalCode",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total amount of the invoice.",
+            "columnIdentifier": "Total",
+            "columnType": "decimal(10,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "98, 1, 2009-01-01 00:00:00, Theodor-Heuss-Straße 34, Stuttgart, AB, Germany, 70174, 1.98",
+          "121, 2, 2009-01-02 00:00:00, Ullevålsveien 14, Oslo, MA, Norway, 0171, 3.96",
+          "143, 3, 2009-01-03 00:00:00, Grétrystraat 63, Brussels, Dublin, Belgium, 1000, 5.94"
+        ],
+        "tableDescription": "Stores information about customer invoices, including billing details and total amount.",
+        "tableIdentifier": "Invoice"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each line item in an invoice.",
+            "columnIdentifier": "InvoiceLineId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the line item to its corresponding invoice.",
+            "columnIdentifier": "InvoiceId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Invoice",
+                "toColumn": "InvoiceId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the track associated with this line item.",
+            "columnIdentifier": "TrackId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Track",
+                "toColumn": "TrackId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Price per unit of the track.",
+            "columnIdentifier": "UnitPrice",
+            "columnType": "decimal(10,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of units purchased in this line item.",
+            "columnIdentifier": "Quantity",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "579, 1, 1, 0.99, 1",
+          "1, 2, 2, 1.99, 1",
+          "1154, 3, 3, 0.99, 1"
+        ],
+        "tableDescription": "Details each line item in an invoice, including track information and pricing.",
+        "tableIdentifier": "InvoiceLine"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each media type.",
+            "columnIdentifier": "MediaTypeId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The name of the media type.",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, MPEG audio file",
+          "2, Protected AAC audio file",
+          "3, Protected MPEG-4 video file"
+        ],
+        "tableDescription": "Stores information about different media types used in tracks.",
+        "tableIdentifier": "MediaType"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each playlist.",
+            "columnIdentifier": "PlaylistId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the playlist.",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Music",
+          "2, Movies",
+          "3, TV Shows"
+        ],
+        "tableDescription": "Stores information about music playlists in the online store.",
+        "tableIdentifier": "Playlist"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Foreign key referencing the Playlist table, indicating which playlist a track belongs to.",
+            "columnIdentifier": "PlaylistId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "Playlist",
+                "toColumn": "PlaylistId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Foreign key referencing the Track table, indicating which track is associated with a playlist.",
+            "columnIdentifier": "TrackId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Track",
+                "toColumn": "TrackId",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "sample_data": [
+          "1, 1",
+          "3, 2",
+          "5, 3"
+        ],
+        "tableDescription": "Associates tracks with playlists in the online store.",
+        "tableIdentifier": "PlaylistTrack"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each track.",
+            "columnIdentifier": "TrackId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "The name of the track.",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(200)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier linking the track to its album.",
+            "columnIdentifier": "AlbumId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Album",
+                "toColumn": "AlbumId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier linking the track to its media type.",
+            "columnIdentifier": "MediaTypeId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "MediaType",
+                "toColumn": "MediaTypeId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier linking the track to its genre.",
+            "columnIdentifier": "GenreId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Genre",
+                "toColumn": "GenreId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The composer of the track.",
+            "columnIdentifier": "Composer",
+            "columnType": "varchar(220)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Duration of the track in milliseconds.",
+            "columnIdentifier": "Milliseconds",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Size of the track in bytes.",
+            "columnIdentifier": "Bytes",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Price of the track.",
+            "columnIdentifier": "UnitPrice",
+            "columnType": "decimal(10,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, For Those About To Rock (We Salute You), 1, 1, 1, \"Angus Young, Malcolm Young, Brian Johnson\", 343719, 11170334, 0.99",
+          "6, Balls to the Wall, 2, 2, 2, \"F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman\", 342562, 5510424, 1.99",
+          "7, Fast As a Shark, 3, 3, 3, \"F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman\", 230619, 3990994, 0.99"
+        ],
+        "tableDescription": "Stores information about individual music tracks.",
+        "tableIdentifier": "Track"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "AlbumId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Title",
+            "columnType": "varchar(160)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ArtistId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Artist",
+                "toColumn": "ArtistId",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Album"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ArtistId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Artist"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CustomerId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "FirstName",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "LastName",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Company",
+            "columnType": "varchar(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Address",
+            "columnType": "varchar(70)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "City",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "State",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Country",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "PostalCode",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Phone",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Fax",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Email",
+            "columnType": "varchar(60)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "SupportRepId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employee",
+                "toColumn": "EmployeeId",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "Customer"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "EmployeeId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "LastName",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "FirstName",
+            "columnType": "varchar(20)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Title",
+            "columnType": "varchar(30)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "ReportsTo",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Employee",
+                "toColumn": "EmployeeId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "BirthDate",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "HireDate",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Address",
+            "columnType": "varchar(70)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "City",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "State",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Country",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "PostalCode",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Phone",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Fax",
+            "columnType": "varchar(24)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Email",
+            "columnType": "varchar(60)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Employee"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "GenreId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Genre"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "InvoiceId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "CustomerId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Customer",
+                "toColumn": "CustomerId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "InvoiceDate",
+            "columnType": "datetime",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "BillingAddress",
+            "columnType": "varchar(70)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "BillingCity",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "BillingState",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "BillingCountry",
+            "columnType": "varchar(40)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "BillingPostalCode",
+            "columnType": "varchar(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Total",
+            "columnType": "decimal(10,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Invoice"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "InvoiceLineId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "InvoiceId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Invoice",
+                "toColumn": "InvoiceId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "TrackId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Track",
+                "toColumn": "TrackId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "UnitPrice",
+            "columnType": "decimal(10,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Quantity",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "InvoiceLine"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "MediaTypeId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "MediaType"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PlaylistId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(120)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Playlist"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "PlaylistId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "Playlist",
+                "toColumn": "PlaylistId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "TrackId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Track",
+                "toColumn": "TrackId",
+                "type": "OTM"
+              }
+            ]
+          }
+        ],
+        "tableIdentifier": "PlaylistTrack"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "TrackId",
+            "columnType": "integer",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Name",
+            "columnType": "varchar(200)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "AlbumId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Album",
+                "toColumn": "AlbumId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "MediaTypeId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "MediaType",
+                "toColumn": "MediaTypeId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "GenreId",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Genre",
+                "toColumn": "GenreId",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Composer",
+            "columnType": "varchar(220)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "Milliseconds",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "NULL",
+            "columnIdentifier": "Bytes",
+            "columnType": "integer",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "UnitPrice",
+            "columnType": "decimal(10,2)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Track"
+      }
+    ]
+  },
+  "message": "Success"
+}

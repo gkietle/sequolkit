@@ -1,0 +1,835 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 11,
+          "enriched_tables": 2,
+          "processing_time": 13.061849117279053,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "College",
+            "Player",
+            "Tryout"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 2,
+          "processing_time": 13.295854091644287,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 3.352922201156616,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 5.475659370422363,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 6.177516937255859,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 13.687478303909302,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 4.323533773422241,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 14,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Buildings",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Facilities"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        }
+      ],
+      "end_time": 1745545538.2246356,
+      "enriched_columns": 31,
+      "enriched_tables": 6,
+      "errors": [],
+      "failed_columns": 0,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 2.74780011177063,
+        "schema_enrichment": 35.18777370452881,
+        "total": 38.54031229019165
+      },
+      "start_time": 1745545499.6843233,
+      "total_columns": 31,
+      "total_tables": 6,
+      "warnings": []
+    },
+    "database_description": "The database is designed to manage and track information related to apartment buildings, apartments, guest bookings, and facility details within those apartments. It includes tables for storing building metadata, apartment configurations, guest personal data, booking records, and unit status history. The schema supports operations such as adding new guests, booking apartments, tracking facilities, and monitoring the availability of units over time.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each building.",
+            "columnIdentifier": "building_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Short name of the building.",
+            "columnIdentifier": "building_short_name",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Full name of the building.",
+            "columnIdentifier": "building_full_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Description of the building type (e.g., Studio, Flat).",
+            "columnIdentifier": "building_description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Physical address of the building.",
+            "columnIdentifier": "building_address",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the building manager.",
+            "columnIdentifier": "building_manager",
+            "columnType": "VARCHAR(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Contact phone number for the building manager.",
+            "columnIdentifier": "building_phone",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "133, Normandie Court, Normandie Court, Studio, \"7950 Casper Vista Apt. 176\nMarquiseberg, CA 70496\", Emma, (948)040-1064x387",
+          "153, Mercedes House, Mercedes House, Flat, \"354 Otto Villages\nCharliefort, VT 71664\", Brenden, 915-617-2408x832",
+          "191, The Eugene, The Eugene, Duplex, \"71537 Gorczany Inlet\nWisozkburgh, AL 08256\", Melyssa, (609)946-0491"
+        ],
+        "tableDescription": "Stores metadata for apartment buildings.",
+        "tableIdentifier": "Apartment_Buildings"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each apartment.",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Foreign key linking to the building where the apartment is located.",
+            "columnIdentifier": "building_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartment_Buildings",
+                "toColumn": "building_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Type of apartment (e.g., Flat, Studio).",
+            "columnIdentifier": "apt_type_code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Apartment number or identifier within the building.",
+            "columnIdentifier": "apt_number",
+            "columnType": "CHAR(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of bathrooms in the apartment.",
+            "columnIdentifier": "bathroom_count",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of bedrooms in the apartment.",
+            "columnIdentifier": "bedroom_count",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of rooms in the apartment.",
+            "columnIdentifier": "room_count",
+            "columnType": "CHAR(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, 808, Flat, Suite 645, 1, 3, 7",
+          "2, 624, Studio, Apt. 585, 2, 4, 5",
+          "3, 225, Duplex, Apt. 908, 3, 6, 8"
+        ],
+        "tableDescription": "Stores information about individual apartments within buildings.",
+        "tableIdentifier": "Apartments"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for an apartment.",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "Apartments",
+                "toColumn": "apt_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Code representing a specific facility available in the apartment.",
+            "columnIdentifier": "facility_code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Boardband",
+          "2, Gym",
+          "3, Swimming Pool"
+        ],
+        "tableDescription": "Stores information about facilities available in each apartment.",
+        "tableIdentifier": "Apartment_Facilities"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each guest.",
+            "columnIdentifier": "guest_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Gender code of the guest.",
+            "columnIdentifier": "gender_code",
+            "columnType": "CHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "First name of the guest.",
+            "columnIdentifier": "guest_first_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Last name of the guest.",
+            "columnIdentifier": "guest_last_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date of birth of the guest.",
+            "columnIdentifier": "date_of_birth",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1, Male, Kip, DuBuque, 1995-11-04 07:09:57",
+          "2, Unknown, Rebeca, Runolfsdottir, 1974-05-12 21:53:58",
+          "3, Female, Keon, Treutel, 1974-08-20 09:28:05"
+        ],
+        "tableDescription": "Stores personal information about guests.",
+        "tableIdentifier": "Guests"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each booking.",
+            "columnIdentifier": "apt_booking_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the apartment being booked.",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartments",
+                "toColumn": "apt_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the guest making the booking.",
+            "columnIdentifier": "guest_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Guests",
+                "toColumn": "guest_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Status of the booking (e.g., Provisional, Confirmed).",
+            "columnIdentifier": "booking_status_code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Start date and time of the booking.",
+            "columnIdentifier": "booking_start_date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "End date and time of the booking.",
+            "columnIdentifier": "booking_end_date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "258, 10, 2, Provisional, 2016-09-26 17:13:49, 2017-10-07 11:38:48",
+          "279, 15, 15, Confirmed, 2016-04-01 06:28:08, 2017-10-25 11:08:42",
+          "337, 8, 5, Provisional, 2017-03-13 16:20:14, 2018-02-19 16:59:08"
+        ],
+        "tableDescription": "Stores information about bookings made for apartments.",
+        "tableIdentifier": "Apartment_Bookings"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the apartment.",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartments",
+                "toColumn": "apt_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier for the booking record associated with the apartment.",
+            "columnIdentifier": "apt_booking_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartment_Bookings",
+                "toColumn": "apt_booking_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Date and time when the availability status was recorded.",
+            "columnIdentifier": "status_date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates whether the apartment is available (1) or not available (0).",
+            "columnIdentifier": "available_yn",
+            "columnType": "BIT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "11, 920, 1970-09-28 10:24:29, 1",
+          "15, 575, 1972-03-23 22:55:53, 0",
+          "6, 924, 1973-10-28 04:30:14, 1"
+        ],
+        "tableDescription": "Tracks the availability status of apartments over time.",
+        "tableIdentifier": "View_Unit_Status"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_short_name",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_full_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_description",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_address",
+            "columnType": "VARCHAR(255)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_manager",
+            "columnType": "VARCHAR(50)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_phone",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Apartment_Buildings"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "building_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartment_Buildings",
+                "toColumn": "building_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_type_code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_number",
+            "columnType": "CHAR(10)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bathroom_count",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bedroom_count",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "room_count",
+            "columnType": "CHAR(5)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Apartments"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": [
+              {
+                "tableIdentifier": "Apartments",
+                "toColumn": "apt_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "facility_code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Apartment_Facilities"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "guest_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gender_code",
+            "columnType": "CHAR(1)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "guest_first_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "guest_last_name",
+            "columnType": "VARCHAR(80)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "date_of_birth",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Guests"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_booking_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartments",
+                "toColumn": "apt_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "guest_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Guests",
+                "toColumn": "guest_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "booking_status_code",
+            "columnType": "CHAR(15)",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "booking_start_date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "booking_end_date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "Apartment_Bookings"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartments",
+                "toColumn": "apt_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "apt_booking_id",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "Apartment_Bookings",
+                "toColumn": "apt_booking_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "status_date",
+            "columnType": "DATETIME",
+            "isPrimaryKey": true,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "available_yn",
+            "columnType": "BIT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "View_Unit_Status"
+      }
+    ]
+  },
+  "message": "Success"
+}

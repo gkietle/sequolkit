@@ -1,0 +1,69 @@
+services:
+    embed:
+        ports:
+            - "9191:8080"
+        container_name: sequolkit-ai-embed
+        build:
+            context: ./slm-embed
+        restart: always
+        networks:
+            - slm
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:8080/health-check"]
+            interval: 30s
+            timeout: 10s
+            retries: 3
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "10m"
+                max-file: "3"
+
+    engine:
+        ports:
+            - "9393:5000"
+        container_name: sequolkit-ai-engine
+        build:
+            context: ./slm-engine
+        restart: always
+        environment:
+            - EMBED_HOST_API=embed:8080
+            - OLLAMA_HOST=http://ftisu.ddns.net:9293/ollama/
+            - OLLAMA_MODEL=qwen2.5-coder:14b
+            - LLM_PROMPT=1
+        networks:
+            - slm
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:5000/health-check"]
+            interval: 30s
+            timeout: 10s
+            retries: 3
+        depends_on:
+            embed:
+                condition: service_healthy
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "10m"
+                max-file: "3"
+    ollama:
+        tty: true
+        container_name: sequolkit-ai-ollama
+        restart: unless-stopped
+        image: docker.io/ollama/ollama:latest
+        ports:
+            - 9292:11434
+        environment:
+            - OLLAMA_KEEP_ALIVE=24h
+        networks:
+            - slm
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: all 
+                          capabilities: [gpu]
+networks:
+    slm:
+        driver: bridge

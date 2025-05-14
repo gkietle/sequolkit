@@ -1,0 +1,6061 @@
+{
+  "code": 0,
+  "data": {
+    "_workflow_logs": {
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "column_count": 8,
+          "enriched_tables": 5,
+          "processing_time": 61.28030872344971,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "author",
+            "domain_author",
+            "writes"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 6,
+          "enriched_tables": 4,
+          "processing_time": 88.55268406867981,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "domain_keyword",
+            "keyword",
+            "publication_keyword"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 5,
+          "enriched_tables": 2,
+          "processing_time": 9.811477899551392,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "conference",
+            "domain_conference"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "enriched_tables": 2,
+          "processing_time": 17.333228588104248,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain",
+            "domain_publication"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 5,
+          "enriched_tables": 1,
+          "processing_time": 8.834521532058716,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "domain_journal",
+            "journal"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 20.863199472427368,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "cite",
+            "publication"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 4,
+          "enriched_tables": 1,
+          "processing_time": 7.658324718475342,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "organization"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 7.5083699226379395,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Participates_in",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 8.788320779800415,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Faculty",
+            "Faculty_Participates_in"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 2,
+          "enriched_tables": 1,
+          "processing_time": 18.731501817703247,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Activity"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 10,
+          "enriched_tables": 1,
+          "processing_time": 17.921754360198975,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "match",
+            "pilot"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 23.43980646133423,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "airport",
+            "airport_aircraft"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 6,
+          "enriched_tables": 1,
+          "processing_time": 27.29574179649353,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "aircraft"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 12,
+          "enriched_tables": 1,
+          "processing_time": 6.458856582641602,
+          "status": "enriched",
+          "table_count": 3,
+          "tables": [
+            "Allergy_Type",
+            "Has_Allergy",
+            "Student"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 9,
+          "enriched_tables": 1,
+          "processing_time": 11.582509517669678,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Facilities",
+            "Apartments"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 11,
+          "enriched_tables": 1,
+          "processing_time": 5.773984909057617,
+          "status": "enriched",
+          "table_count": 2,
+          "tables": [
+            "Apartment_Bookings",
+            "Guests"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "enriched_tables": 1,
+          "processing_time": 9.546623706817627,
+          "status": "enriched",
+          "table_count": 1,
+          "tables": [
+            "Apartment_Buildings"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "View_Unit_Status"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "architect",
+            "bridge",
+            "mill"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 19,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Assets",
+            "Maintenance_Contracts",
+            "Third_Party_Companies"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 3,
+          "tables": [
+            "Engineer_Visits",
+            "Fault_Log",
+            "Staff"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Asset_Parts",
+            "Parts"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Skills",
+            "Skills_Required_To_Fix"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Engineer_Skills",
+            "Maintenance_Engineers"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "Fault_Log_Parts",
+            "Part_Faults"
+          ]
+        },
+        {
+          "cluster_id": 0,
+          "column_count": 67,
+          "status": "pending",
+          "table_count": 5,
+          "tables": [
+            "batting",
+            "fielding_outfield",
+            "hall_of_fame",
+            "manager_award",
+            "player"
+          ]
+        },
+        {
+          "cluster_id": 1,
+          "column_count": 90,
+          "status": "pending",
+          "table_count": 4,
+          "tables": [
+            "batting_postseason",
+            "manager",
+            "manager_half",
+            "team"
+          ]
+        },
+        {
+          "cluster_id": 2,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "college",
+            "player_college"
+          ]
+        },
+        {
+          "cluster_id": 3,
+          "column_count": 15,
+          "status": "pending",
+          "table_count": 2,
+          "tables": [
+            "home_game",
+            "park"
+          ]
+        },
+        {
+          "cluster_id": 4,
+          "column_count": 8,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "all_star"
+          ]
+        },
+        {
+          "cluster_id": 5,
+          "column_count": 21,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "appearances"
+          ]
+        },
+        {
+          "cluster_id": 6,
+          "column_count": 6,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award"
+          ]
+        },
+        {
+          "cluster_id": 7,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "manager_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 8,
+          "column_count": 7,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "player_award_vote"
+          ]
+        },
+        {
+          "cluster_id": 9,
+          "column_count": 18,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding"
+          ]
+        },
+        {
+          "cluster_id": 10,
+          "column_count": 17,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "fielding_postseason"
+          ]
+        },
+        {
+          "cluster_id": 11,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching"
+          ]
+        },
+        {
+          "cluster_id": 12,
+          "column_count": 30,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "pitching_postseason"
+          ]
+        },
+        {
+          "cluster_id": 13,
+          "column_count": 5,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "salary"
+          ]
+        },
+        {
+          "cluster_id": 14,
+          "column_count": 9,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "postseason"
+          ]
+        },
+        {
+          "cluster_id": 15,
+          "column_count": 4,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_franchise"
+          ]
+        },
+        {
+          "cluster_id": 16,
+          "column_count": 10,
+          "status": "pending",
+          "table_count": 1,
+          "tables": [
+            "team_half"
+          ]
+        }
+      ],
+      "end_time": 1745562635.800228,
+      "enriched_columns": 349,
+      "enriched_tables": 26,
+      "errors": [],
+      "failed_columns": 3,
+      "failed_tables": 0,
+      "processing_times": {
+        "database_description": 6.253059148788452,
+        "schema_enrichment": 351.3887996673584,
+        "total": 502.3692035675049
+      },
+      "start_time": 1745562133.4310246,
+      "total_columns": 352,
+      "total_tables": 26,
+      "warnings": []
+    },
+    "database_description": "This database is designed to comprehensively manage and analyze baseball player statistics, awards, historical records, and team performance data across various dimensions such as regular season games, postseason events, and individual accolades. It encompasses detailed information about players' careers, including their college education, batting, fielding, and pitching performances both in standard seasons and playoffs. The schema incorporates tables that track managerial roles and career milestones like Hall of Fame inductions, linking data through foreign keys to ensure relational integrity among entities such as teams, leagues, parks, and colleges. Overall, the database serves as a robust repository for baseball analytics, facilitating insights into player achievements, team strategies, and historical trends within the sport.",
+    "enriched_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the player, linked to the 'player' table.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The year the all-star game took place.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number indicating which all-star game it was during a given year (e.g., first or second game).",
+            "columnIdentifier": "game_num",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for each all-star game event.",
+            "columnIdentifier": "game_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team representing the player in the all-star game.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league (e.g., AL, NL) to which the player's team belongs.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player during that year's season up until the all-star game.",
+            "columnIdentifier": "gp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Fielding position where the player started in the game.",
+            "columnIdentifier": "starting_pos",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "gomezle01, 1933, 0, ALS193307060, NYA, AL, 1, 1",
+          "ferreri01, 1934, 2, NLS193407100, BOS, NL, 0, 2",
+          "gehrilo01, 1935, 1, ALS193507080, DET, AL, , 3"
+        ],
+        "tableDescription": "Tracks participation and performance of players in all-star games across various years.",
+        "tableIdentifier": "all_star"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The year of the game or season.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team to which the player belongs.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the league in which the games are played.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the player participating in the game.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Total number of games the player appeared in during the year.",
+            "columnIdentifier": "g_all",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games started by the player, indicating primary participation.",
+            "columnIdentifier": "gs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games the player participated as a batter.",
+            "columnIdentifier": "g_batting",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games the player participated in a defensive role.",
+            "columnIdentifier": "g_defense",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player as a pitcher.",
+            "columnIdentifier": "g_p",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at catcher position.",
+            "columnIdentifier": "g_c",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at first base position.",
+            "columnIdentifier": "g_1b",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at second base position.",
+            "columnIdentifier": "g_2b",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at third base position.",
+            "columnIdentifier": "g_3b",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at shortstop position.",
+            "columnIdentifier": "g_ss",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at left field position.",
+            "columnIdentifier": "g_lf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at center field position.",
+            "columnIdentifier": "g_cf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games played by the player at right field position.",
+            "columnIdentifier": "g_rf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total games played in outfield positions (left, center, right).",
+            "columnIdentifier": "g_of",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games where the player was designated hitter.",
+            "columnIdentifier": "g_dh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games as a pinch hitter.",
+            "columnIdentifier": "g_ph",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games as a pinch runner.",
+            "columnIdentifier": "g_pr",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1871, BS1, , barnero01, 31, , 31, 31, 0, 0, 0, 16, 0, 15, 0, 0, 0, 0, , , ",
+          "1872, CH1, NL, barrofr01, 18, 89, 18, 18, 31, 7, 30, 1, 1, 0, 13, 1, 4, 17, 0, 23, 0",
+          "1873, CL1, AA, birdsda01, 29, 0, 29, 29, 9, 29, 1, 0, 31, 1, 18, 9, 27, 27, 3, 0, 18"
+        ],
+        "tableDescription": "Tracks player appearances and participation across different games, including batting, fielding, and pitching roles.",
+        "tableIdentifier": "appearances"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier linking to player details.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier of the award given.",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Year when the award was received.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league where the manager worked.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates if there was a tie in receiving the award.",
+            "columnIdentifier": "tie",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional notes related to the award.",
+            "columnIdentifier": "notes",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "larusto01, BBWAA Manager of the year, 1983, AL, , ",
+          "lasorto01, TSN Manager of the Year, 1984, NL, Y, ",
+          "andersp01, BBWAA Manager of the year, 1985, ML, , "
+        ],
+        "tableDescription": "Details awards received by players for managerial roles.",
+        "tableIdentifier": "manager_award"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for a player who has been awarded.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the specific award received by the player.",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The year in which the award was received.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league where the award was conferred.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates if there was a tie for the award (e.g., 'Y' for yes, empty for no).",
+            "columnIdentifier": "tie",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional information or context about the award.",
+            "columnIdentifier": "notes",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "bondto01, Pitching Triple Crown, 1877, NL, , ",
+          "hinespa01, Triple Crown, 1878, AA, Y, 1B",
+          "heckegu01, Baseball Magazine All-Star, 1884, AL, , 2B"
+        ],
+        "tableDescription": "Records awards received by baseball players, including details of the award and context.",
+        "tableIdentifier": "player_award"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the specific award being voted on.",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The year when the voting took place.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league (e.g., American League, National League) where the player is active.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the manager who received votes.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The number of points a manager received in the voting process.",
+            "columnIdentifier": "points_won",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The maximum possible points that could be awarded in this particular voting scenario.",
+            "columnIdentifier": "points_max",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of first-place votes received by the manager.",
+            "columnIdentifier": "votes_first",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "Mgr of the year, 1983, AL, altobjo01, 7, 28, 7",
+          "Mgr of the Year, 1984, NL, coxbo01, 4, 24, 4",
+          "Mgr of the year, 1985, AL, larusto01, 17, 140, 17"
+        ],
+        "tableDescription": "Stores information about votes for managerial awards in baseball, including points and ranking details.",
+        "tableIdentifier": "manager_award_vote"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the specific award being voted on.",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Year in which the award voting took place.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league (e.g., American League or National League) related to the award voting.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the player receiving votes in the award process.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Number of points the player received during the voting process.",
+            "columnIdentifier": "points_won",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Maximum number of points possible in the award voting process.",
+            "columnIdentifier": "points_max",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of first-place votes the player received.",
+            "columnIdentifier": "votes_first",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "Cy Young, 1956, ML, fordwh01, 1, 16, 1",
+          "MVP, 1957, AL, maglisa01, 4, 18, 4",
+          "Rookie of the Year, 1958, NL, newcodo01, 10, 20, 10"
+        ],
+        "tableDescription": "Tracks player votes for various baseball awards, including details on points won and first-place votes.",
+        "tableIdentifier": "player_award_vote"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier linking to player details.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Year of the season.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number representing player's stint in a team during the year.",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team the player was part of.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league where games were played.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games played by the player.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "At bats, a measure of the number of times at bat excluding walks and sacrifices.",
+            "columnIdentifier": "ab",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Runs scored by the player.",
+            "columnIdentifier": "r",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hits achieved by the player.",
+            "columnIdentifier": "h",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of double hits.",
+            "columnIdentifier": "double",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of triple hits.",
+            "columnIdentifier": "triple",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Home runs hit by the player.",
+            "columnIdentifier": "hr",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Runs batted in, indicating how many runners a player helped to score.",
+            "columnIdentifier": "rbi",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Stolen bases count.",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Caught stealing instances.",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Base on balls or walks received by the player.",
+            "columnIdentifier": "bb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts recorded against the player.",
+            "columnIdentifier": "so",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Intentional base on balls.",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hits by pitches suffered by the player.",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sacrifice hits made by the player.",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sacrifice flies count.",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Grounds into double plays, showing defensive errors leading to outs.",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "abercda01, 1871, 1, TRO, , 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, , , , , ",
+          "addybo01, 1872, 2, RC1, NL, 25, 118, 30, 32, 6, 5, 2, 13, 8, 1, 4, 5, 0, 0, 0, 0, 0",
+          "allisar01, 1873, 3, CL1, AA, 29, 137, 28, 40, 4, 2, 3, 19, 3, 2, 2, 2, 5, 1, 5, 4, 2"
+        ],
+        "tableDescription": "Tracks detailed batting statistics for players across seasons.",
+        "tableIdentifier": "batting"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The year of the postseason event.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The specific round or series stage (e.g., World Series, Championship Series).",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the player being recorded.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the team of which the player is a part during the event.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the league to which the team belongs.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games played by the player in this round.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "At bats - number of times at bat excluding walks, hit-by-pitches, etc.",
+            "columnIdentifier": "ab",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Runs scored by the player during the series.",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hits made by the player in this round.",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of doubles hit by the player.",
+            "columnIdentifier": "double",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of triples hit by the player.",
+            "columnIdentifier": "triple",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Home runs hit by the player.",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Runs batted in by the player during this round.",
+            "columnIdentifier": "rbi",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Stolen bases achieved by the player.",
+            "columnIdentifier": "sb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Caught stealing instances for the player.",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Base on balls - number of walks drawn by the player.",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts - times the player was struck out.",
+            "columnIdentifier": "so",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Intentional base on balls granted to the player.",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Times the player was hit by a pitch.",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sacrifice hits made by the player.",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sacrifice flies completed by the player.",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games in which the player was an infield or defensive position player.",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1884, WS, becanbu01, NY4, AA, 1, 2, 0, 1, 0, 0, 0, 0, 0, , 0, 0, 0, , , , ",
+          "1885, CS, bradyst01, PRO, NL, 3, 10, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1",
+          "1886, ALCS, esterdu01, SL4, AL, 2, 3, 2, 3, 2, 2, 2, 2, 2, 1, 3, 3, 3, 1, 1, 1, 0"
+        ],
+        "tableDescription": "Stores statistics for players' performance in postseason baseball games.",
+        "tableIdentifier": "batting_postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each player, referencing the player table.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Unique identifier for the college attended by the player, referencing the college table.",
+            "columnIdentifier": "college_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "college",
+                "toColumn": "college_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Year in which the player attended the college.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "aardsda01, pennst, 2001",
+          "abadan01, rice, 2002",
+          "abbeybe01, gamiddl, 2003"
+        ],
+        "tableDescription": "Links players to their respective colleges and the years attended.",
+        "tableIdentifier": "player_college"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the player whose fielding data is recorded.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The year of the season in which the fielding statistics were gathered.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sequential number indicating a specific period or stint within the year for the player.",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team with which the player was associated during that stint.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league in which the team participated during that stint.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The defensive position played by the individual (e.g., SS, 2B, OF).",
+            "columnIdentifier": "pos",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games played by the player in that particular stint.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games started by the player during that stint.",
+            "columnIdentifier": "gs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total innings and outs completed while fielding in that stint.",
+            "columnIdentifier": "inn_outs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of putouts made by the player.",
+            "columnIdentifier": "po",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total assists achieved by the player during that period.",
+            "columnIdentifier": "a",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of errors committed by the player in fielding situations.",
+            "columnIdentifier": "e",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of double plays executed involving this player.",
+            "columnIdentifier": "dp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of putouts resulting from a force at base.",
+            "columnIdentifier": "pb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wild pitches charged to the player during games.",
+            "columnIdentifier": "wp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Stolen bases successfully completed by the player.",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Caught stealing attempts against this player.",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Zone rating, a metric assessing defensive effectiveness.",
+            "columnIdentifier": "zr",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "abercda01, 1871, 1, TRO, , SS, 1, , , 1, 3, 2, 0, , , , , ",
+          "addybo01, 1872, 2, RC1, NL, 2B, 22, 102, 2773, 67, 72, 42, 5, 0, 19, 23, 16, 5",
+          "allisar01, 1873, 3, CL1, AA, OF, 3, 113, 3093, 8, 14, 7, 1, 12, 6, 32, 15, 0"
+        ],
+        "tableDescription": "Stores detailed statistics on player fielding performance across different seasons, stints, teams, and leagues.",
+        "tableIdentifier": "fielding"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier linking to player details.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Year of the season.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number representing player's stint in a team during the year.",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games left fielded by the player.",
+            "columnIdentifier": "glf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games center fielded by the player.",
+            "columnIdentifier": "gcf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games right fielded by the player.",
+            "columnIdentifier": "grf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "allisar01, 1871, 1, 0, 29, 0",
+          "ansonca01, 1872, 2, 1, 0, 1",
+          "armstbo01, 1873, 3, 13, 11, 4"
+        ],
+        "tableDescription": "Contains fielding statistics for outfield positions.",
+        "tableIdentifier": "fielding_outfield"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the player whose statistics are recorded.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The year in which the postseason event took place.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier of the team to which the player belonged during the postseason.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the league under which the postseason event occurred.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The specific round or stage of the postseason event.",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Position played by the player during the games in this postseason.",
+            "columnIdentifier": "pos",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of games played by the player in the postseason.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games where the player was a starting player (games started).",
+            "columnIdentifier": "gs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total innings pitched or defensive outs covered by the player, depending on position.",
+            "columnIdentifier": "inn_outs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total putouts recorded for the player in postseason games.",
+            "columnIdentifier": "po",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Assists made by the player during the postseason games.",
+            "columnIdentifier": "a",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Errors committed by the player throughout the postseason events.",
+            "columnIdentifier": "e",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Double plays involved or completed by the player in the postseason.",
+            "columnIdentifier": "dp",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Triple plays involving the player during the postseason games.",
+            "columnIdentifier": "tp",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Passed balls committed by a catcher, if applicable (for catching positions).",
+            "columnIdentifier": "pb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Successful stolen bases by the player in the postseason.",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Caught stealing instances where the player was tagged out while attempting to steal.",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "colliji01, 1903, BOS, AL, WS, 3B, 8, 8, 213, 9, 18, 1, 1, 0, , , ",
+          "crigelo01, 1905, PIT, NL, ALCS, C, 4, 4, 105, 54, 7, 3, 2, 1, 0, 9, 3",
+          "dinnebi01, 1906, NY1, AL, NLCS, P, 1, 1, 6, 2, 9, 0, 0, 0, 3, 6, 1"
+        ],
+        "tableDescription": "Tracks and stores fielding performance statistics of baseball players during postseason events.",
+        "tableIdentifier": "fielding_postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier linking to player details.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Year in which induction or voting took place.",
+            "columnIdentifier": "yearid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Entity responsible for voting, e.g., BBWAA, Veterans.",
+            "columnIdentifier": "votedby",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of ballots cast.",
+            "columnIdentifier": "ballots",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of votes required for induction.",
+            "columnIdentifier": "needed",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Votes actually received by the player.",
+            "columnIdentifier": "votes",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates if the player was inducted ('Y' or 'N').",
+            "columnIdentifier": "inducted",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Category of induction, e.g., Player, Manager.",
+            "columnIdentifier": "category",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Additional notes on voting requirements.",
+            "columnIdentifier": "needed_note",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "cobbty01, 1936, BBWAA, 226, 170, 222, Y, Player, ",
+          "ruthba01, 1937, Veterans, 78, 59, 215, N, Manager, Top 20",
+          "wagneho01, 1938, Centennial, 201, 151, 205, Y, Pioneer/Executive, 1st"
+        ],
+        "tableDescription": "Records details of players' induction into the Hall of Fame.",
+        "tableIdentifier": "hall_of_fame"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The year in which the games were played.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league to which the team belongs.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the baseball team.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Reference to the park where the games were played.",
+            "columnIdentifier": "park_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "park",
+                "toColumn": "park_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "The start date of the game span in a specific format.",
+            "columnIdentifier": "span_first",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The end date of the game span in a specific format.",
+            "columnIdentifier": "span_last",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of home games played during the span.",
+            "columnIdentifier": "games",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of times the team opened their season at this park.",
+            "columnIdentifier": "openings",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total attendance for all home games in that year at the specified park.",
+            "columnIdentifier": "attendance",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1871, , BS1, BOS01, 1871-05-16, 1871-10-07, 16, 16, 32600",
+          "1872, NL, CH1, NYC01, 1871-05-27, 1871-05-27, 1, 1, 3000",
+          "1873, AA, CL1, CHI01, 1871-05-08, 1871-09-29, 2, 15, 85500"
+        ],
+        "tableDescription": "Stores data about home games played by baseball teams, including attendance and game details.",
+        "tableIdentifier": "home_game"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the manager (who is also a former player).",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The year of the management tenure.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team managed by the player.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the league in which the team competes.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Flag indicating if the management was during an active season (1) or off-season (0).",
+            "columnIdentifier": "inseason",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games managed by the player during this period.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wins achieved by the team under the player's management.",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Losses incurred by the team during the management tenure.",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Final rank of the team at the end of the season or period.",
+            "columnIdentifier": "rank",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Flag indicating if the player actively played (Y) while managing.",
+            "columnIdentifier": "plyr_mgr",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "wrighha01, 1871, BS1, , 1, 31, 20, 10, 3, Y",
+          "woodji01, 1872, CH1, NL, 2, 28, 19, 9, 2, N",
+          "paborch01, 1873, CL1, AA, 3, 29, 10, 19, 8, Y"
+        ],
+        "tableDescription": "Records managerial statistics and roles for players across teams.",
+        "tableIdentifier": "manager"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Identifier for the manager who is also a former player.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The year of the management period.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team managed by the player.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "Identifier for the league where the team competes.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Flag indicating if the management was during an active season (1) or off-season (0).",
+            "columnIdentifier": "inseason",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Denotes which half of the season this data covers (e.g., 1 for first half, 2 for second half).",
+            "columnIdentifier": "half",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games managed by the player during this half-season.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wins achieved by the team under management in this period.",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Losses incurred by the team in this half-season period.",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Rank of the team at the end of this half season.",
+            "columnIdentifier": "rank",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "hanlone01, 1892, BLN, NL, 3, 1, 56, 17, 39, 12",
+          "vanhage01, 1981, BRO, AL, 1, 2, 77, 26, 46, 10",
+          "waltzjo99, 1892, BSN, NL, 2, 1, 11, 1, 10, 2"
+        ],
+        "tableDescription": "Details management statistics for players over half-season periods.",
+        "tableIdentifier": "manager_half"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the player.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Year of birth.",
+            "columnIdentifier": "birth_year",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Month of birth.",
+            "columnIdentifier": "birth_month",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Day of birth.",
+            "columnIdentifier": "birth_day",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the player was born.",
+            "columnIdentifier": "birth_country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State or region of birth.",
+            "columnIdentifier": "birth_state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City of birth.",
+            "columnIdentifier": "birth_city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Year of death, if applicable.",
+            "columnIdentifier": "death_year",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Month of death, if applicable.",
+            "columnIdentifier": "death_month",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Day of death, if applicable.",
+            "columnIdentifier": "death_day",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country of death, if applicable.",
+            "columnIdentifier": "death_country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State or region of death, if applicable.",
+            "columnIdentifier": "death_state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City of death, if applicable.",
+            "columnIdentifier": "death_city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Player's first name.",
+            "columnIdentifier": "name_first",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Player's last name.",
+            "columnIdentifier": "name_last",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Full given name of the player.",
+            "columnIdentifier": "name_given",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Weight of the player in pounds.",
+            "columnIdentifier": "weight",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Height of the player in inches.",
+            "columnIdentifier": "height",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hand used for batting, e.g., 'R' for right-handed.",
+            "columnIdentifier": "bats",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hand used for throwing, e.g., 'R' for right-handed.",
+            "columnIdentifier": "throws",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date of the player's first game.",
+            "columnIdentifier": "debut",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Date of the player's last game.",
+            "columnIdentifier": "final_game",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier used in retrosheet databases.",
+            "columnIdentifier": "retro_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Baseball-Reference.com unique identifier.",
+            "columnIdentifier": "bbref_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "aardsda01, 1981, 12, 27, USA, CO, Denver, , , , , , , David, Aardsma, David Allan, 220, 75, R, R, 2004-04-06, 2015-08-23, aardd001, aardsda01",
+          "aaronha01, 1934, 2, 5, D.R., AL, Mobile, 1984, 8, 16, USA, GA, Atlanta, Hank, Aaron, Henry Louis, 180, 72, L, L, 1954-04-13, 1976-10-03, aaroh101, aaronha01",
+          "aaronto01, 1939, 8, 8, Venezuela, CA, Orange, 1905, 5, 17, Cuba, NJ, Pemberton, Tommie, Aase, Tommie Lee, 190, 73, , , 1962-04-10, 1971-09-26, aarot101, aaronto01"
+        ],
+        "tableDescription": "Contains personal and career information for players.",
+        "tableIdentifier": "player"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each ballpark.",
+            "columnIdentifier": "park_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Official name of the park.",
+            "columnIdentifier": "park_name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Alternative names or historical names of the park.",
+            "columnIdentifier": "park_alias",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the park is located.",
+            "columnIdentifier": "city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State in which the park is situated.",
+            "columnIdentifier": "state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the park resides.",
+            "columnIdentifier": "country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "ALB01, Riverside Park, , Albany, NY, US",
+          "ALT01, Columbia Park, Edison Field; Anaheim Stadium, Altoona, PA, MX",
+          "ANA01, Angel Stadium of Anaheim, The Ballpark in Arlington; Ameriquest Field, Anaheim, CA, CA"
+        ],
+        "tableDescription": "Details information about baseball parks, including names and locations.",
+        "tableIdentifier": "park"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the player.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The year of the season or stint.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sequence number representing different periods within a single year.",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team the player was part of during this stint.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league in which the game took place.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of wins achieved by the pitcher.",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of losses suffered by the pitcher.",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total games played by the pitcher.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games started by the pitcher.",
+            "columnIdentifier": "gs",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Complete games pitched.",
+            "columnIdentifier": "cg",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Shutouts achieved by the pitcher.",
+            "columnIdentifier": "sho",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Saves recorded by the pitcher.",
+            "columnIdentifier": "sv",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total outs pitched, used to calculate innings pitched.",
+            "columnIdentifier": "ipouts",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total hits allowed by the pitcher.",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Earned runs given up by the pitcher.",
+            "columnIdentifier": "er",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Home runs allowed by the pitcher.",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Base on balls (walks) issued by the pitcher.",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts achieved by the pitcher.",
+            "columnIdentifier": "so",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Batters faced per plate appearance, a measure of pitching efficiency.",
+            "columnIdentifier": "baopp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Earned Run Average, a key performance metric for pitchers.",
+            "columnIdentifier": "era",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Intentional walks issued by the pitcher.",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wild pitches recorded by the pitcher.",
+            "columnIdentifier": "wp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Batters hit by pitches thrown by the pitcher.",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Balks committed by the pitcher.",
+            "columnIdentifier": "bk",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total batters faced by the pitcher.",
+            "columnIdentifier": "bfp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games finished by the pitcher.",
+            "columnIdentifier": "gf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Runs allowed by the pitcher.",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Balls hit into foul territory resulting in an out.",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts with runners on base, a measure of clutch performance.",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Grounded into double plays by the pitcher's actions.",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "bechtge01, 1871, 1, PH1, , 1, 2, 3, 3, 2, 0, 0, 78, 43, 23, 0, 11, 1, , 7.96, , , , 0, , , 42, , , ",
+          "brainas01, 1872, 2, WS3, NL, 12, 15, 30, 30, 30, 1, 1, 792, 361, 132, 4, 37, 13, 0.53, 4.5, 1, 0, 0, 2, 13, 0, 292, 1, 4, 6",
+          "fergubo01, 1873, 3, NY2, AA, 0, 0, 1, 0, 0, 3, 3, 3, 8, 3, 3, 0, 0, 0.15, 27, 0, 8, 10, 1, 14, 1, 9, 3, 1, 1"
+        ],
+        "tableDescription": "Stores detailed pitching statistics for baseball players across different seasons, stints, and teams.",
+        "tableIdentifier": "pitching"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for the player.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The year the game or series took place.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The round of the postseason, such as World Series (WS) or Championship Series (CS).",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the team the player was part of during that postseason.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league in which the game took place.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of wins attributed to the pitcher in the games played.",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of losses attributed to the pitcher.",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of games the pitcher participated in.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Games started by the pitcher.",
+            "columnIdentifier": "gs",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Complete games pitched.",
+            "columnIdentifier": "cg",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Shutouts recorded by the pitcher.",
+            "columnIdentifier": "sho",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Saves made by the pitcher.",
+            "columnIdentifier": "sv",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Innings pitched, represented in outs (1 inning = 3 outs).",
+            "columnIdentifier": "ipouts",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of hits allowed by the pitcher.",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Earned runs given up by the pitcher.",
+            "columnIdentifier": "er",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Home runs allowed by the pitcher.",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Base on balls (walks) issued by the pitcher.",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts achieved by the pitcher.",
+            "columnIdentifier": "so",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Batting average against pitchers, showing how well batters performed against this pitcher.",
+            "columnIdentifier": "baopp",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Earned Run Average, a key metric to evaluate pitching performance.",
+            "columnIdentifier": "era",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Intentional walks recorded by the pitcher.",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wild pitches thrown by the pitcher.",
+            "columnIdentifier": "wp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hit batters, indicating players hit by the pitcher's throw.",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Balks committed by the pitcher.",
+            "columnIdentifier": "bk",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Batters faced by the pitcher.",
+            "columnIdentifier": "bfp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Ground balls fielded, indicating how many batted balls were grounded out. ",
+            "columnIdentifier": "gf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total runs allowed by the pitcher.",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Shutouts against the opposing team.",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Stolen bases allowed while the pitcher was on the mound.",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Ground balls induced by the pitcher, reflecting defensive plays made.",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "becanbu01, 1884, WS, NY4, AA, 0, 1, 1, 1, 1, 0, 0, 18, 9, 7, 0, 2, 1, , 10.5, , , , , , 0, 12, , , ",
+          "keefeti01, 1885, CS, PRO, NL, 3, 2, 2, 2, 2, 1, 1, 45, 10, 6, 1, 3, 12, 0.23, 3.6, 0, 0, 0, 0, 134, 1, 9, 0, 0, 0",
+          "radboch01, 1886, ALCS, CHN, AL, 1, 0, 3, 3, 3, 2, 2, 66, 11, 0, 3, 0, 17, 0.4, 0, 1, 1, 1, 1, 12, 2, 3, 3, 1, 1"
+        ],
+        "tableDescription": "This table captures detailed pitching statistics for players in postseason baseball games, providing insights into their performance during critical playoff rounds.",
+        "tableIdentifier": "pitching_postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The year for which the salary information is recorded.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team to which the player belongs during that year.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league in which the team competes.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the baseball player receiving the salary.",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "The total annual salary of the player during that year.",
+            "columnIdentifier": "salary",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1985, ATL, NL, barkele01, 870000",
+          "1986, BAL, AL, bedrost01, 550000",
+          "1987, BOS, NL, benedbr01, 545000"
+        ],
+        "tableDescription": "Records annual salaries of baseball players associated with specific teams and leagues.",
+        "tableIdentifier": "salary"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each college.",
+            "columnIdentifier": "college_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Full name of the college.",
+            "columnIdentifier": "name_full",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "City where the college is located.",
+            "columnIdentifier": "city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "State where the college is located, if applicable.",
+            "columnIdentifier": "state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Country where the college is located.",
+            "columnIdentifier": "country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "abilchrist, Abilene Christian University, Abilene, TX, USA",
+          "adelphi, Adelphi University, Garden City, NY, USA",
+          "adrianmi, Adrian College, Adrian, MI, USA"
+        ],
+        "tableDescription": "Stores information about colleges attended by baseball players.",
+        "tableIdentifier": "college"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Year in which the postseason game occurred.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Specific round or series designation within the postseason (e.g., World Series, Championship Series).",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team that won the postseason game/series.",
+            "columnIdentifier": "team_id_winner",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league to which the winning team belongs.",
+            "columnIdentifier": "league_id_winner",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the team that lost the postseason game/series.",
+            "columnIdentifier": "team_id_loser",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league to which the losing team belongs.",
+            "columnIdentifier": "league_id_loser",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games won by the winning team in the series.",
+            "columnIdentifier": "wins",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games lost by the winning team in the series.",
+            "columnIdentifier": "losses",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of tied games, if any, in the postseason series.",
+            "columnIdentifier": "ties",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1884, WS, PRO, NL, NYP, AA, 3, 0, 0",
+          "1885, CS, CHC, AA, STL, NL, 4, 3, 1",
+          "1886, ALCS, STL, AL, CHC, AL, 10, 2, 0"
+        ],
+        "tableDescription": "Tracks detailed outcomes of postseason baseball games, including rounds and results.",
+        "tableIdentifier": "postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "The year for which the data is recorded.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league in which the team competes.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the team.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the franchise associated with the team.",
+            "columnIdentifier": "franchise_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Division to which the team belongs.",
+            "columnIdentifier": "div_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Overall rank of the team at the end of the season.",
+            "columnIdentifier": "rank",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total number of games played by the team during the season.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of home games played.",
+            "columnIdentifier": "ghome",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wins achieved by the team in the season.",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Losses incurred by the team during the season.",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Flag indicating if the team won its division (Y/N).",
+            "columnIdentifier": "div_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Wildcard win flag for the team (Y/N).",
+            "columnIdentifier": "wc_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "League championship win flag (Y/N).",
+            "columnIdentifier": "lg_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "World Series win flag (Y/N).",
+            "columnIdentifier": "ws_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total runs scored by the team during the season.",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "At bats for the entire team in the season.",
+            "columnIdentifier": "ab",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total hits made by the team.",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of doubles hit by the team.",
+            "columnIdentifier": "double",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of triples hit by the team.",
+            "columnIdentifier": "triple",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total home runs hit by the team.",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Base on balls - total walks drawn by the team.",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts - total times players were struck out during at-bats.",
+            "columnIdentifier": "so",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Stolen bases achieved by the team members.",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Caught stealing instances for the team.",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Times players on the team were hit by pitches.",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Sacrifice flies made by the team.",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total runs allowed or scored against the team.",
+            "columnIdentifier": "ra",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Earned runs scored against the team's pitchers.",
+            "columnIdentifier": "er",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Earned Run Average for the team's pitching staff.",
+            "columnIdentifier": "era",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Complete games pitched by the team's pitchers.",
+            "columnIdentifier": "cg",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Shutouts achieved by the team's pitchers.",
+            "columnIdentifier": "sho",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Saves recorded by the team's relief pitchers.",
+            "columnIdentifier": "sv",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Innings pitched (in outs) for the entire pitching staff.",
+            "columnIdentifier": "ipouts",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Hits allowed by the team's pitchers.",
+            "columnIdentifier": "ha",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Home runs allowed by the team's pitchers.",
+            "columnIdentifier": "hra",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Walks (base on balls) allowed to opposing teams.",
+            "columnIdentifier": "bba",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Strikeouts achieved against opposing teams' batters.",
+            "columnIdentifier": "soa",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Errors committed by the team's fielders.",
+            "columnIdentifier": "e",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Double plays turned by the team.",
+            "columnIdentifier": "dp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Fielding percentage calculated for the team.",
+            "columnIdentifier": "fp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the team.",
+            "columnIdentifier": "name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name or identifier of the home ballpark.",
+            "columnIdentifier": "park",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Total attendance recorded at all games in the season.",
+            "columnIdentifier": "attendance",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Base runs per game for the team.",
+            "columnIdentifier": "bpf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Pitching runs per game allowed by the team.",
+            "columnIdentifier": "ppf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_br",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_lahman45",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_retro",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1871, , BS1, BNA, , 3, 31, , 20, 10, , , N, , 401, 1372, 426, 70, 37, 3, 60, 19, 73, , , , 303, 109, 3.55, 22, 1, 3, 828, 367, 2, 42, 23, 225, , 0.83, Boston Red Stockings, South End Grounds I, , 103, 98, BOS, BS1, BS1",
+          "1872, NL, CH1, CNA, W, 2, 28, 66, 19, 9, Y, N, Y, N, 302, 1196, 323, 52, 21, 10, 26, 22, 69, 15, 47, 43, 241, 77, 2.76, 25, 0, 1, 753, 308, 6, 28, 22, 218, 42, 0.82, Chicago White Stockings, Union Base-Ball Grounds, 121412, 104, 102, CHI, CH1, CH1",
+          "1873, AA, CL1, CFC, E, 8, 29, 69, 10, 19, N, Y, , Y, 249, 1186, 328, 35, 40, 7, 33, 25, 18, 4, 59, 58, 341, 116, 4.11, 23, 3, 0, 762, 346, 13, 53, 34, 223, 33, 0.81, Cleveland Forest Citys, National Association Grounds, 147539, 96, 100, CLE, CL1, CL1"
+        ],
+        "tableDescription": "Maintains comprehensive records of team performance and statistics across different seasons.",
+        "tableIdentifier": "team"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Unique identifier for each franchise.",
+            "columnIdentifier": "franchise_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Name of the baseball team franchise.",
+            "columnIdentifier": "franchise_name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates whether the franchise is currently active, with 'Y' or 'N'.",
+            "columnIdentifier": "active",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Association with a specific league, such as PNA (Pacific North Association) or BNA.",
+            "columnIdentifier": "na_assoc",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "ALT, Altoona Mountain City, N, ",
+          "ANA, Los Angeles Angels of Anaheim, Y, PNA",
+          "ARI, Arizona Diamondbacks, , BNA"
+        ],
+        "tableDescription": "Stores information about baseball team franchises, including their current status and association.",
+        "tableIdentifier": "team_franchise"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "Year of the baseball season.",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the league (e.g., NL, AL) in which the team plays.",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Unique identifier for the team.",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Specifies which half of the season is being recorded (1 or 2).",
+            "columnIdentifier": "half",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Identifier for the division within the league.",
+            "columnIdentifier": "div_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Indicates whether the team won their division ('Y' or 'N').",
+            "columnIdentifier": "div_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Ranking of the team within their division.",
+            "columnIdentifier": "rank",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of games played by the team in that half.",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of wins achieved by the team in that half.",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "Number of losses incurred by the team in that half.",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "sample_data": [
+          "1981, NL, ATL, 1, W, N, 4, 54, 25, 29",
+          "1981, AL, BAL, 2, E, N, 5, 52, 31, 27",
+          "1981, NL, BOS, 1, W, N, 2, 51, 28, 23"
+        ],
+        "tableDescription": "Tracks team performance metrics for different halves of a season within specific leagues.",
+        "tableIdentifier": "team_half"
+      }
+    ],
+    "original_schema": [
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "game_num",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "game_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "starting_pos",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "all_star"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_all",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_batting",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_defense",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_p",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_c",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_1b",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_2b",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_3b",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_ss",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_lf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_cf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_rf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_of",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_dh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_ph",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_pr",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "appearances"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "tie",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "notes",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "manager_award"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "tie",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "notes",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "player_award"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "points_won",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "points_max",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "votes_first",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "manager_award_vote"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "award_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "points_won",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "points_max",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "votes_first",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "player_award_vote"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ab",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "r",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "h",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "double",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "triple",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hr",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "rbi",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "so",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "batting"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ab",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "double",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "triple",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "rbi",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "so",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "batting_postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "college_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "college",
+                "toColumn": "college_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "player_college"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pos",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "inn_outs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "po",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "a",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "e",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "dp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "wp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "zr",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "fielding"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "glf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gcf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "grf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "fielding_outfield"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pos",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "inn_outs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "po",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "a",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "e",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "dp",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "tp",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "pb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "fielding_postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "player",
+                "toColumn": "player_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "yearid",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "votedby",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ballots",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "needed",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "votes",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "inducted",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "category",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "needed_note",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "hall_of_fame"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "park_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "park",
+                "toColumn": "park_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "span_first",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "span_last",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "games",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "openings",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "attendance",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "home_game"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "inseason",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "rank",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "plyr_mgr",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "manager"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": [
+              {
+                "tableIdentifier": "team",
+                "toColumn": "team_id",
+                "type": "OTM"
+              }
+            ]
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "inseason",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "half",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "rank",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "manager_half"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "birth_year",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "birth_month",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "birth_day",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "birth_country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "birth_state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "birth_city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "death_year",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "death_month",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "death_day",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "death_country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "death_state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "death_city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name_first",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name_last",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name_given",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "weight",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "height",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bats",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "throws",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "debut",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "final_game",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "retro_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bbref_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "player"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "park_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "park_name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "park_alias",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "park"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "stint",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gs",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cg",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sho",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sv",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ipouts",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "er",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "so",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "baopp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "era",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "wp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bk",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bfp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "pitching"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gs",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cg",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sho",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sv",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ipouts",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "er",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "so",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "baopp",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "era",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ibb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "wp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bk",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bfp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "gf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sh",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g_idp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "pitching_postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "player_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "salary",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "salary"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "college_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name_full",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "city",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "state",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "country",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "college"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "round",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_winner",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id_winner",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_loser",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id_loser",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "wins",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "losses",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ties",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "postseason"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "franchise_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "div_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "rank",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ghome",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "div_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "wc_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "lg_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ws_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "r",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ab",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "h",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "double",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "triple",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hr",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bb",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "so",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sb",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cs",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hbp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sf",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ra",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "er",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "era",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "cg",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sho",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "sv",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ipouts",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ha",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "hra",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bba",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "soa",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "e",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "dp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "fp",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "park",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "attendance",
+            "columnType": "NUMERIC",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "bpf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "ppf",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_br",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_lahman45",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id_retro",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "team"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "franchise_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "franchise_name",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "active",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "na_assoc",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "team_franchise"
+      },
+      {
+        "columns": [
+          {
+            "columnDescription": "",
+            "columnIdentifier": "year",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "league_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "team_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "half",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "div_id",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "div_win",
+            "columnType": "TEXT",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "rank",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "g",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "w",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          },
+          {
+            "columnDescription": "",
+            "columnIdentifier": "l",
+            "columnType": "INTEGER",
+            "isPrimaryKey": false,
+            "relations": []
+          }
+        ],
+        "tableIdentifier": "team_half"
+      }
+    ]
+  },
+  "message": "Success"
+}
