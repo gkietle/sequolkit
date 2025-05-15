@@ -12,6 +12,7 @@ import glob
 import shutil
 import pickle
 import traceback
+import random
 
 def set_model_settings(api_url_base, model_name, enrich_schema, prompt_routing):
     """
@@ -151,11 +152,30 @@ def generate_sql_for_question(query, db_id, sqlite_base64, schema_dir="schema/sc
 
         # Make POST request to the endpoint with shorter timeout
         response = requests.post(api_url, json=payload, timeout=timeout)
-
+        
         # Check response
         if response.status_code == 200:
             result = response.json()
             return result.get("data"), None
+        if response.status_code == 429:
+            # Extract retry delay from response if available
+            try:
+                response_json = response.json()
+                if 'error' in response_json and 'details' in response_json['error']:
+                    for detail in response_json['error']['details']:
+                        if '@type' in detail and detail['@type'] == 'type.googleapis.com/google.rpc.RetryInfo':
+                            if 'retryDelay' in detail:
+                                # Parse retry delay (format like "32s")
+                                delay_str = detail['retryDelay']
+                                if delay_str.endswith('s'):
+                                    retry_delay = int(delay_str[:-1])
+                # Sleep for the retry delay
+                print(f"Rate limit exceeded. Please retry after {retry_delay} seconds.")
+                time.sleep(retry_delay)
+            except Exception as e:
+                print(f"Error parsing retry delay: {str(e)}")
+                
+            return None, f"Rate limit exceeded. Please retry after {retry_delay} seconds.", retry_delay
         else:
             return None, f"API Error: {response.status_code}, {response.text}"
     except requests.exceptions.Timeout:
@@ -176,6 +196,9 @@ def generate_sql_for_question_with_retry(query, db_id, sqlite_base64, schema_dir
     last_error = None
     
     while retries < max_retries:
+        rand = random.randint(1, 5)
+        time.sleep(rand)
+
         sql, error = generate_sql_for_question(query, db_id, sqlite_base64, schema_dir, api_url, timeout)
         
         # If we got a valid SQL response, return it immediately
@@ -576,7 +599,10 @@ def run_spider_test_pipeline(json_file_path, database_dir, output_dir, schema_di
         print(log_message)
         with open(log_file, 'a', encoding='utf-8') as f:
             f.write(f"{log_message}\n")
-            
+        
+        rand = random.randint(1, 5)
+        time.sleep(rand)
+
         sql, error = generate_sql_for_question_with_retry(
             question, 
             db_id,

@@ -4,7 +4,12 @@ import base64
 import io
 from enums.response_enum import ResponseEnum
 from exceptions.app_exception import AppException
+from llama_index.core import PromptTemplate
+from llama_index.llms.ollama import Ollama
+from llama_index.llms.google_genai import GoogleGenAI
 import logging
+import time
+import re
 
 logging.basicConfig(
     level=logging.INFO,
@@ -296,3 +301,30 @@ def get_sample_data(connection_payload, table_details, limit=3):
         # Ghi lại lỗi và trả về danh sách rỗng
         print(f"Error getting sample data: {str(e)}")
         return [str(e)]
+    
+def llm_chat(llm: Ollama | GoogleGenAI, fmt_messages: PromptTemplate):
+   
+    max_retries = 3
+    retry_count = 0
+    
+    while retry_count < max_retries:
+        try:
+            chat_response = llm.chat(fmt_messages)
+            return chat_response
+        except Exception as e:
+            error_str = str(e)
+            print(f"\033[91mError in llm_chat: {error_str}\033[0m")
+            
+            # Check for Google API rate limit with retry delay
+            retry_delay_match = re.search(r"'retryDelay': '(\d+)s'", error_str)
+            if retry_delay_match:
+                retry_seconds = int(retry_delay_match.group(1))
+                retry_count += 1
+                
+                if retry_count < max_retries:
+                    print(f"\033[93mRate limit exceeded. Waiting for {retry_seconds} seconds before retry {retry_count}/{max_retries}...\033[0m")
+                    time.sleep(retry_seconds)
+                    continue
+            
+            # If we get here, either it's not a rate limit error or we've exhausted retries
+            raise e

@@ -14,6 +14,8 @@ from core.utils import (
 # from core.templates import TEXT_TO_SQL_PROMPT_TMPL
 from llama_index.core import PromptTemplate
 from llama_index.llms.ollama import Ollama
+from llama_index.llms.google_genai import GoogleGenAI
+from core.services import llm_chat
 import logging
 from datetime import datetime
 
@@ -33,11 +35,11 @@ class BaselineWorkflow(Workflow):
 
     def __init__(
         self,
-        llm: Ollama,
+        llm: Ollama | GoogleGenAI,
         text2sql_prompt: PromptTemplate,
         *args, **kwargs
     ) -> None:
-        """Initialize the SQLAgent Workflow."""
+        """Initialize the SQLAgent Workflow.""" 
         super().__init__(*args, **kwargs)
         self.llm = llm
         self.text2sql_prompt = text2sql_prompt
@@ -89,7 +91,7 @@ class BaselineWorkflow(Workflow):
         
         logger.info("\033[93m[GENERATE] Querying LLM for SQL generation...\033[0m")
         llm_start_time = datetime.now()
-        chat_response = self.llm.chat(fmt_messages)
+        chat_response = llm_chat(self.llm, fmt_messages)
         llm_end_time = datetime.now()
         
         logger.info(f"\033[93m[GENERATE] LLM response time: {(llm_end_time - llm_start_time).total_seconds():.2f} seconds\033[0m")

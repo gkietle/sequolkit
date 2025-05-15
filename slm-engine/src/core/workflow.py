@@ -24,9 +24,10 @@ from core.templates import (
 )
 from exceptions.app_exception import AppException
 from enums.response_enum import ResponseEnum
-from core.services import execute_sql, get_sample_data
+from core.services import execute_sql, get_sample_data, llm_chat
 from llama_index.core import PromptTemplate
 from llama_index.llms.ollama import Ollama
+from llama_index.llms.google_genai import GoogleGenAI
 import re
 import logging
 import json
@@ -74,7 +75,7 @@ class SQLAgentWorkflow(Workflow):
         self,
         text2sql_prompt: PromptTemplate,
         table_retrieval_prompt: PromptTemplate,
-        llm: Ollama,
+        llm: Ollama | GoogleGenAI,
         *args, **kwargs
     ) -> None:
         """Initialize the SQLAgent Workflow."""
@@ -156,7 +157,7 @@ class SQLAgentWorkflow(Workflow):
         
         logger.info("\033[93m[RETRIEVE] Querying LLM for relevant tables...\033[0m")
         llm_start_time = datetime.now()
-        chat_response = self.llm.chat(fmt_messages)
+        chat_response = llm_chat(self.llm, fmt_messages)
         llm_end_time = datetime.now()
         
         logger.info(f"\033[93m[RETRIEVE] LLM response time: {(llm_end_time - llm_start_time).total_seconds():.2f} seconds\033[0m")
@@ -211,7 +212,7 @@ class SQLAgentWorkflow(Workflow):
         
         logger.info("\033[93m[GENERATE] Querying LLM for SQL generation...\033[0m")
         llm_start_time = datetime.now()
-        chat_response = self.llm.chat(fmt_messages)
+        chat_response = llm_chat(self.llm, fmt_messages)
         llm_end_time = datetime.now()
         
         logger.info(f"\033[93m[GENERATE] LLM response time: {(llm_end_time - llm_start_time).total_seconds():.2f} seconds\033[0m")
@@ -364,7 +365,7 @@ class SQLAgentWorkflow(Workflow):
         
         logger.info("\033[93m[REFLECT] Querying LLM for SQL correction...\033[0m")
         llm_start_time = datetime.now()
-        chat_response = self.llm.chat(fmt_messages)
+        chat_response = llm_chat(self.llm, fmt_messages)
         llm_end_time = datetime.now()
         
         logger.info(f"\033[93m[REFLECT] LLM response time: {(llm_end_time - llm_start_time).total_seconds():.2f} seconds\033[0m")
@@ -450,7 +451,7 @@ class SchemaEnrichmentWorkflow(Workflow):
                 schema=brief_schema_presentation
             )
             log_prompt(fmt_messages, "GENERATE")
-            chat_response = self.llm.chat(fmt_messages)
+            chat_response = llm_chat(self.llm, fmt_messages)
             database_description = chat_response.message.content
             logger.info(f"\033[92m[GENERATE] Database description: {database_description}\033[0m")
             self.workflow_logs["processing_times"]["database_description"] = time.time() - desc_start_time
@@ -535,7 +536,7 @@ class SchemaEnrichmentWorkflow(Workflow):
                 retries = 3
                 enriched_data = []
                 for i in range(retries):
-                    chat_response = self.llm.chat(fmt_messages)
+                    chat_response = llm_chat(self.llm, fmt_messages)
                     enriched_data = parse_schema_enrichment(chat_response)
 
                     if len(enriched_data) > 0:

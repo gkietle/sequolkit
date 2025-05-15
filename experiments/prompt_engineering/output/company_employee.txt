@@ -28,32 +28,32 @@ employment.People_ID → people.People_ID
 
 ========= Questions and Gold SQL Queries =========
 
-Example 1: Show all the locations where no cinema has capacity over 800.
-Gold SQL: SELECT LOCATION FROM cinema EXCEPT SELECT LOCATION FROM cinema WHERE capacity  >  800
+Example 1: How many companies are headquartered in the US?
+Gold SQL: SELECT count(*) FROM company WHERE Headquarters  =  'USA'
 
-Example 2: Show all the locations where some cinemas were opened in both year 2010 and year 2011.
-Gold SQL: SELECT LOCATION FROM cinema WHERE openning_year  =  2010 INTERSECT SELECT LOCATION FROM cinema WHERE openning_year  =  2011
+Example 2: List the names of companies by ascending number of sales.
+Gold SQL: SELECT Name FROM company ORDER BY Sales_in_Billion ASC
 
-Example 3: How many cinema do we have?
-Gold SQL: SELECT count(*) FROM cinema
+Example 3: What are the headquarters and industries of all companies?
+Gold SQL: SELECT Headquarters ,  Industry FROM company
 
-Example 4: Count the number of cinemas.
-Gold SQL: SELECT count(*) FROM cinema
+Example 4: Show the names of companies in the banking or retailing industry?
+Gold SQL: SELECT Name FROM company WHERE Industry  =  "Banking" OR Industry  =  "Retailing"
 
-Example 5: Show name, opening year, and capacity for each cinema.
-Gold SQL: SELECT name ,  openning_year ,  capacity FROM cinema
+Example 5: What is the maximum and minimum market value of companies?
+Gold SQL: SELECT max(Market_Value_in_Billion) ,  min(Market_Value_in_Billion) FROM company
 
-Example 6: Show the cinema name and location for cinemas with capacity above average.
-Gold SQL: SELECT name ,  LOCATION FROM cinema WHERE capacity  >  (SELECT avg(capacity) FROM cinema)
+Example 6: What is the headquarter of the company with the largest sales?
+Gold SQL: SELECT Headquarters FROM company ORDER BY Sales_in_Billion DESC LIMIT 1
 
-Example 7: What are all the locations with a cinema?
-Gold SQL: SELECT DISTINCT LOCATION FROM cinema
+Example 7: Show the different headquarters and number of companies at each headquarter.
+Gold SQL: SELECT Headquarters ,  COUNT(*) FROM company GROUP BY Headquarters
 
-Example 8: Find the distinct locations that has a cinema.
-Gold SQL: SELECT DISTINCT LOCATION FROM cinema
+Example 8: Show the most common headquarter for companies.
+Gold SQL: SELECT Headquarters FROM company GROUP BY Headquarters ORDER BY COUNT(*) DESC LIMIT 1
 
-Example 9: Show all the cinema names and opening years in descending order of opening year.
-Gold SQL: SELECT name ,  openning_year FROM cinema ORDER BY openning_year DESC
+Example 9: Show the headquarters that have at least two companies.
+Gold SQL: SELECT Headquarters FROM company GROUP BY Headquarters HAVING COUNT(*)  >=  2
 
-Example 10: What are the name and location of the cinema with the largest capacity?
-Gold SQL: SELECT name ,  LOCATION FROM cinema ORDER BY capacity DESC LIMIT 1
+Example 10: Show the headquarters that have both companies in banking industry and companies in oil and gas industry.
+Gold SQL: SELECT Headquarters FROM company WHERE Industry  =  "Banking" INTERSECT SELECT Headquarters FROM company WHERE Industry  =  "Oil and gas"
