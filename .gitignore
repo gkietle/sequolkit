@@ -43,6 +43,9 @@ ENV/
 
 # Logs
 *.log
+evaluation/logs/
+evaluation/logs/*
+
 
 # Large files
 *.sqlite

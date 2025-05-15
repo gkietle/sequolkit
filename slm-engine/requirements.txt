@@ -6,6 +6,7 @@ flask[async]>=2.3.0
 # LLM and AI
 llama-index-core>=0.9.0
 llama-index-llms-ollama>=0.1.0
+llama-index-llms-google-genai
 llama-index>=0.9.0
 llama-index-utils-workflow
 # Database

@@ -346,7 +346,7 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
             # Generate synthesis description
             column_descriptions = []
             for column in columns:
-                description = column.get("columnDescription", "No description available")
+                description = column.get("columnDescription", None)
                 pk_info = " (Primary Key)" if column.get("isPrimaryKey") else ""
                 
                 # Collect foreign key relationships separately
@@ -355,11 +355,14 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
                         fk_relation = f"{table_name}.{column['columnIdentifier']} → {relation['tableIdentifier']}.{relation['toColumn']}"
                         fk_relationships.append(fk_relation)
                 
-                column_descriptions.append(
-                    f"{column['columnIdentifier']} ({column['columnType']}){pk_info}: {description}")
+                if description:
+                    column_descriptions.append(
+                        f"- {column['columnIdentifier']} ({column['columnType']}){pk_info}: {description}")
+                else:
+                    column_descriptions.append(
+                        f"- {column['columnIdentifier']} ({column['columnType']}){pk_info}")
 
-            synthesis = f"Table: {table_name}\nColumns:\n    " + \
-                "\n    ".join(column_descriptions)
+            synthesis = f"\nTable: {table_name}\n" + "\n".join(column_descriptions)
             synthesis_statements.append(synthesis)
             
             # Add sample data if available and requested

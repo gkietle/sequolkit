@@ -7,7 +7,7 @@ from core.workflow import SQLAgentWorkflow, SchemaEnrichmentWorkflow
 from core.baseline_workflow import BaselineWorkflow
 from core.templates import text2sql_prompt_routing, TABLE_RETRIEVAL_TMPL
 from core.services import get_schema, get_sample_data
-from core.llm import llm_config
+from core.llm import llm_config, LLMFactory
 from core.services import validate_connection_payload
 from exceptions.global_exception_handler import register_error_handlers
 from exceptions.app_exception import AppException
@@ -29,6 +29,7 @@ logger.info("Starting application initialization...")
 env_path = Path('.env')
 load_dotenv(dotenv_path=env_path)
 logger.info(f"Looking for .env file at: {env_path.absolute()}")
+logger.info(f"{os.getenv('ENV')}")
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -38,6 +39,7 @@ logger.info("Flask app initialized with CORS support")
 # Register error handlers
 register_error_handlers(app)
 logger.info("Error handlers registered")
+
 
 # Initialize workflows with the centralized LLM
 TEXT_TO_SQL_PROMPT_TMPL = text2sql_prompt_routing(llm_config.settings["prompt_routing"])
@@ -317,7 +319,10 @@ def get_settings():
     """Get current LLM settings"""
     logger.info("Received request to view current LLM settings")
     try:
-        return ResponseWrapper.success(llm_config.get_settings())
+        settings = llm_config.get_settings()
+        # Add current provider to the response
+        settings["provider"] = os.getenv("LLM_PROVIDER", "ollama").lower()
+        return ResponseWrapper.success(settings)
     except Exception as e:
         logger.error(f"Error retrieving settings: {str(e)}", exc_info=True)
         raise AppException(str(e), 500)
@@ -329,26 +334,73 @@ def update_settings():
     try:
         data = request.json
         
-        # Extract settings from request
-        host = data.get("ollama_host")
-        model = data.get("ollama_model")
-        additional_kwargs = data.get("additional_kwargs")
+        # Get current provider and check if it's being changed
+        current_provider = os.getenv("LLM_PROVIDER", "ollama").lower()
+        new_provider = data.get("provider", current_provider).lower()
+        
+        # If provider is changing, validate the new provider
+        if new_provider != current_provider:
+            if new_provider not in ["ollama", "google"]:
+                raise ValueError(f"Unsupported LLM provider: {new_provider}")
+            
+            # Update the environment variable
+            os.environ["LLM_PROVIDER"] = new_provider
+            logger.info(f"LLM provider changed from {current_provider} to {new_provider}")
+            
+            # Create new LLM config with the new provider
+            global llm_config
+            llm_config = LLMFactory.create_llm_config(new_provider)
+        
+        # Extract common settings
         prompt_routing = data.get("prompt_routing")
         enrich_schema = data.get("enrich_schema")
         
+        # Extract provider-specific settings
+        if new_provider == "ollama":
+            settings = {
+                "host": data.get("ollama_host"),
+                "model": data.get("ollama_model"),
+                "additional_kwargs": data.get("additional_kwargs"),
+                "prompt_routing": prompt_routing,
+                "enrich_schema": enrich_schema
+            }
+            # {
+            #     "provider": "ollama",
+            #     "ollama_host": "http://localhost:9292/",
+            #     "ollama_model": "llama3.1:8b",
+            #     "additional_kwargs": {
+            #         "num_predict": 8192,
+            #         "temperature": 0.7
+            #     },
+            #     "prompt_routing": 0,
+            #     "enrich_schema": true
+            # }
+        elif new_provider == "google":
+            settings = {
+                "model": data.get("model"),
+                "api_key": data.get("api_key"),
+                "temperature": data.get("temperature"),
+                "max_tokens": data.get("max_tokens"),
+                "prompt_routing": prompt_routing,
+                "enrich_schema": enrich_schema
+            }
+            # {
+            #     "provider": "google",
+            #     "model": "gemini-2.0-flash",
+            #     "api_key": "your-api-key",
+            #     "temperature": 0.7,
+            #     "max_tokens": 8192,
+            #     "prompt_routing": 0,
+            #     "enrich_schema": true
+            # }
+        
         # Validate that at least one setting is provided
-        if host is None and model is None and additional_kwargs is None and prompt_routing is None and enrich_schema is None:
+        if all(v is None for v in settings.values()):
             logger.warning("No settings provided in request")
             return jsonify({"error": "At least one setting must be provided"}), 400
         
         # Update settings using the centralized LLM config
-        llm_config.update_settings(
-            host=host,
-            model=model,
-            additional_kwargs=additional_kwargs,
-            prompt_routing=prompt_routing,
-            enrich_schema=enrich_schema
-        )
+        llm_config.update_settings(**settings)
         
         # Reinitialize workflows with new LLM
         TEXT_TO_SQL_PROMPT_TMPL = text2sql_prompt_routing(llm_config.settings["prompt_routing"])
@@ -359,7 +411,8 @@ def update_settings():
         logger.info("LLM settings updated successfully")
         return ResponseWrapper.success({
             "message": "Settings updated successfully",
-            "current_settings": llm_config.get_settings()
+            "current_settings": llm_config.get_settings(),
+            "provider": new_provider
         })
     except Exception as e:
         logger.error(f"Error updating settings: {str(e)}", exc_info=True)

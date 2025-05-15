@@ -1051,13 +1051,13 @@ if __name__ == "__main__":
                       help="Directory containing JSON files to process")
     parser.add_argument("--json-file", type=str, required=False,
                       help="Single JSON file to process")
-    parser.add_argument("--database-dir", type=str, default="./database", 
+    parser.add_argument("--database-dir", type=str, default="../database", 
                       help="Directory containing subdirectories with SQLite files")
     parser.add_argument("--schema-dir", type=str, default="schema/schema_qwen25",
                       help="Directory containing schema JSON files")
     parser.add_argument("--output-dir", type=str, default=None,
                       help="Directory to store output files (defaults to timestamped directory in 'logs')")
-    parser.add_argument("--api-url", type=str, default="http://localhost:8383/query", 
+    parser.add_argument("--api-url", type=str, default="http://localhost:9393/query", 
                       help="API endpoint URL")
     parser.add_argument("--start-idx", type=int, default=0, 
                       help="Start index in JSON files")

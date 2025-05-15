@@ -6,6 +6,8 @@ services:
         build:
             context: ./slm-embed
         restart: always
+        env_file:
+            - .env
         networks:
             - slm
         healthcheck:
@@ -26,10 +28,12 @@ services:
         build:
             context: ./slm-engine
         restart: always
-        environment:
-            - EMBED_HOST_API=embed:8080
-            - OLLAMA_HOST=ollama
-            - OLLAMA_MODEL=qwen2.5-coder:14b
+        env_file:
+            - .env
+        # environment:
+        #     - EMBED_HOST_API=embed:8080
+        #     - OLLAMA_HOST=ollama
+        #     - OLLAMA_MODEL=qwen2.5-coder:14b
         networks:
             - slm
         healthcheck:
@@ -52,6 +56,8 @@ services:
         image: docker.io/ollama/ollama:latest
         ports:
             - 9292:11434
+        env_file:
+            - .env
         environment:
             - OLLAMA_KEEP_ALIVE=24h
         networks:

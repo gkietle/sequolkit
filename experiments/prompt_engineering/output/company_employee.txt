@@ -1,0 +1,59 @@
+
+Table: people
+- People_ID (int) (Primary Key)
+- Age (int)
+- Name (text)
+- Nationality (text)
+- Graduation_College (text)
+
+Table: company
+- Company_ID (real) (Primary Key)
+- Name (text)
+- Headquarters (text)
+- Industry (text)
+- Sales_in_Billion (real)
+- Profits_in_Billion (real)
+- Assets_in_Billion (real)
+- Market_Value_in_Billion (real)
+
+Table: employment
+- Company_ID (int) (Primary Key)
+- People_ID (int)
+- Year_working (int)
+
+
+Foreign Key Relationships:
+employment.Company_ID → company.Company_ID
+employment.People_ID → people.People_ID
+
+========= Questions and Gold SQL Queries =========
+
+Example 1: Show all the locations where no cinema has capacity over 800.
+Gold SQL: SELECT LOCATION FROM cinema EXCEPT SELECT LOCATION FROM cinema WHERE capacity  >  800
+
+Example 2: Show all the locations where some cinemas were opened in both year 2010 and year 2011.
+Gold SQL: SELECT LOCATION FROM cinema WHERE openning_year  =  2010 INTERSECT SELECT LOCATION FROM cinema WHERE openning_year  =  2011
+
+Example 3: How many cinema do we have?
+Gold SQL: SELECT count(*) FROM cinema
+
+Example 4: Count the number of cinemas.
+Gold SQL: SELECT count(*) FROM cinema
+
+Example 5: Show name, opening year, and capacity for each cinema.
+Gold SQL: SELECT name ,  openning_year ,  capacity FROM cinema
+
+Example 6: Show the cinema name and location for cinemas with capacity above average.
+Gold SQL: SELECT name ,  LOCATION FROM cinema WHERE capacity  >  (SELECT avg(capacity) FROM cinema)
+
+Example 7: What are all the locations with a cinema?
+Gold SQL: SELECT DISTINCT LOCATION FROM cinema
+
+Example 8: Find the distinct locations that has a cinema.
+Gold SQL: SELECT DISTINCT LOCATION FROM cinema
+
+Example 9: Show all the cinema names and opening years in descending order of opening year.
+Gold SQL: SELECT name ,  openning_year FROM cinema ORDER BY openning_year DESC
+
+Example 10: What are the name and location of the cinema with the largest capacity?
+Gold SQL: SELECT name ,  LOCATION FROM cinema ORDER BY capacity DESC LIMIT 1

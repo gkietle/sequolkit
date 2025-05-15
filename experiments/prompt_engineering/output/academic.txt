@@ -1,0 +1,125 @@
+
+Table: author
+- aid (int) (Primary Key)
+- homepage (text)
+- name (text)
+- oid (int)
+
+Table: conference
+- cid (int) (Primary Key)
+- homepage (text)
+- name (text)
+
+Table: domain
+- did (int) (Primary Key)
+- name (text)
+
+Table: domain_author
+- aid (int)
+- did (int) (Primary Key)
+
+Table: domain_conference
+- cid (int)
+- did (int) (Primary Key)
+
+Table: journal
+- homepage (text)
+- jid (int) (Primary Key)
+- name (text)
+
+Table: domain_journal
+- did (int) (Primary Key)
+- jid (int)
+
+Table: keyword
+- keyword (text)
+- kid (int) (Primary Key)
+
+Table: domain_keyword
+- did (int) (Primary Key)
+- kid (int)
+
+Table: publication
+- abstract (text)
+- cid (text)
+- citation_num (int)
+- jid (int)
+- pid (int) (Primary Key)
+- reference_num (int)
+- title (text)
+- year (int)
+
+Table: domain_publication
+- did (int) (Primary Key)
+- pid (int)
+
+Table: organization
+- continent (text)
+- homepage (text)
+- name (text)
+- oid (int) (Primary Key)
+
+Table: publication_keyword
+- pid (int)
+- kid (int) (Primary Key)
+
+Table: writes
+- aid (int) (Primary Key)
+- pid (int)
+
+Table: cite
+- cited (int)
+- citing (int)
+
+
+Foreign Key Relationships:
+domain_author.aid → author.aid
+domain_author.did → domain.did
+domain_conference.cid → conference.cid
+domain_conference.did → domain.did
+domain_journal.did → domain.did
+domain_journal.jid → journal.jid
+domain_keyword.did → domain.did
+domain_keyword.kid → keyword.kid
+publication.cid → conference.cid
+publication.jid → journal.jid
+domain_publication.did → domain.did
+domain_publication.pid → publication.pid
+publication_keyword.pid → publication.pid
+publication_keyword.kid → keyword.kid
+writes.aid → author.aid
+writes.pid → publication.pid
+cite.cited → publication.pid
+cite.citing → publication.pid
+
+========= Questions and Gold SQL Queries =========
+
+Example 1: Show all the locations where no cinema has capacity over 800.
+Gold SQL: SELECT LOCATION FROM cinema EXCEPT SELECT LOCATION FROM cinema WHERE capacity  >  800
+
+Example 2: Show all the locations where some cinemas were opened in both year 2010 and year 2011.
+Gold SQL: SELECT LOCATION FROM cinema WHERE openning_year  =  2010 INTERSECT SELECT LOCATION FROM cinema WHERE openning_year  =  2011
+
+Example 3: How many cinema do we have?
+Gold SQL: SELECT count(*) FROM cinema
+
+Example 4: Count the number of cinemas.
+Gold SQL: SELECT count(*) FROM cinema
+
+Example 5: Show name, opening year, and capacity for each cinema.
+Gold SQL: SELECT name ,  openning_year ,  capacity FROM cinema
+
+Example 6: Show the cinema name and location for cinemas with capacity above average.
+Gold SQL: SELECT name ,  LOCATION FROM cinema WHERE capacity  >  (SELECT avg(capacity) FROM cinema)
+
+Example 7: What are all the locations with a cinema?
+Gold SQL: SELECT DISTINCT LOCATION FROM cinema
+
+Example 8: Find the distinct locations that has a cinema.
+Gold SQL: SELECT DISTINCT LOCATION FROM cinema
+
+Example 9: Show all the cinema names and opening years in descending order of opening year.
+Gold SQL: SELECT name ,  openning_year FROM cinema ORDER BY openning_year DESC
+
+Example 10: What are the name and location of the cinema with the largest capacity?
+Gold SQL: SELECT name ,  LOCATION FROM cinema ORDER BY capacity DESC LIMIT 1

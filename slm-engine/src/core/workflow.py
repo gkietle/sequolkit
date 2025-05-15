@@ -137,7 +137,7 @@ class SQLAgentWorkflow(Workflow):
         
         tables = []
         for table in ev.tables:
-            if table["tableIdentifier"] is not None:
+            if table["tableDescription"] is not None:
                 formatted_table = f"- {table['tableIdentifier']} ({table['tableDescription']})"
             else:
                 formatted_table = f"- {table['tableDescription']}"
