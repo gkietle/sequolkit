@@ -1,10 +1,10 @@
-# SequolKit: Semantic Query Understanding and Optimization Toolkit
+# SequolKit: Enhancing Text-to-SQL Capabilities of Open-Source Small Language Models via Schema Context Enrichment and Self-Correction
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/)
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 
-A research implementation for semantic database query understanding and optimization using Large Language Models (LLMs).
+A research implementation for semantic database query understanding and SQL generation using Large Language Models (LLMs).
 
 ## 📚 Abstract
 
