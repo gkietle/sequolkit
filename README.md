@@ -8,12 +8,12 @@ A research implementation for semantic database query understanding and optimiza
 
 ## 📚 Abstract
 
-SequolKit is a novel research toolkit that leverages state-of-the-art Large Language Models to enhance database query understanding and optimization through semantic analysis. Our system introduces a unique approach to database interaction by combining semantic schema enrichment, natural language processing, and query optimization techniques. The toolkit demonstrates significant improvements in query understanding accuracy and optimization efficiency through its innovative use of LLMs.
+Translating natural language into SQL is critical for intuitive database access, yet open-source Small Language Models (SLMs) often struggle with complex schemas, limited context windows, and lower query accuracy. This paper introduces a two-phase workflow designed to enhance the Text-to-SQL capabilities of SLMs. The methodology first involves offline Database Schema Context Enrichment, where the schema is modeled as a graph, partitioned using Louvain community detection, and each cluster is enriched with metadata, relationships, and sample data. The second phase, SQL Generation and Self-Correction, occurs at query time, employing LLM-based table selection and an execution-driven feedback loop to iteratively refine the generated SQL query until successful execution. While involving multiple steps, evaluations on the Spider benchmark using Qwen2.5-Coder:14b and Phi-4:14b models demonstrate the framework’s effectiveness, achieving comparable or significantly improved Execution Accuracy (EX) over baseline performance, with Qwen reaching up to 83.8% EX on the test set despite running on consumer-grade hardware. Ablation studies confirmed the positive contributions of both enrichment and self-correction phases. The study concludes that this workflow provides a practical methodology for deploying resource-efficient open-source SLMs in Text-to-SQL applications, effectively mitigating common challenges. An open-source implementation is released to support further research.
 
 ## 🎯 Key Features
 
 - **Semantic Schema Enrichment**: Advanced analysis of database schemas to provide rich semantic descriptions of tables and columns
-- **Natural Language to SQL Translation**: State-of-the-art conversion of natural language queries to optimized SQL
+- **Natural Language to SQL Translation**: SQL generation and self-correction using LLMs
 - **Baseline Comparison**: Comprehensive evaluation framework for comparing semantic enhancements
 - **Docker-based Deployment**: Easy deployment with containerized services
 

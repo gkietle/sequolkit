@@ -768,7 +768,7 @@ def run_schema_enrichment(sqlite_path, llm):
 # Example usage
 if __name__ == "__main__":
     # Path to SQLite file
-    sqlite_path = r"E:\Workspace\Repositories\thesis\test\pipeline\SPIDER\database\bike_1\bike_1.sqlite"
+    sqlite_path = r"PUT_YOUR_PATH to database ./database"
     
     # Run the workflow using the centralized LLM configuration
     result = run_schema_enrichment(sqlite_path, llm_config.get_llm())

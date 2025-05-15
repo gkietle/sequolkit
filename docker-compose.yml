@@ -28,9 +28,8 @@ services:
         restart: always
         environment:
             - EMBED_HOST_API=embed:8080
-            - OLLAMA_HOST=http://ftisu.ddns.net:9293/ollama/
+            - OLLAMA_HOST=ollama
             - OLLAMA_MODEL=qwen2.5-coder:14b
-            - LLM_PROMPT=1
         networks:
             - slm
         healthcheck:

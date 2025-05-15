@@ -86,7 +86,7 @@ def extract_tables_from_sql(sql_query: str) -> list[str]:
             cte_tables.append(cte_segment.group(1).lower())
     
     # Step 2: Extract tables from FROM and JOIN clauses
-    # Pattern for FROM clause
+    # Pattern for FROM clause - look for table names after FROM keyword
     from_pattern = r"FROM\s+([^\s,();]*)(?:\s+AS\s+\w+)?(?:\s*,\s*([^\s,();]*)(?:\s+AS\s+\w+)?)*"
     
     # Pattern for JOIN clauses
@@ -123,9 +123,17 @@ def extract_tables_from_sql(sql_query: str) -> list[str]:
                 table_name = table_name.split('.')[-1]
             table_names.append(table_name.lower())
     
-    # Step 3: Filter out CTE tables and SQL keywords
+    # Step 3: Filter out CTE tables, SQL keywords, and SQL functions
     sql_keywords = {'select', 'where', 'group', 'order', 'limit', 'offset', 'having', 'union', 'intersect', 'except'}
+    sql_functions = {'extract', 'sum', 'count', 'avg', 'min', 'max', 'date', 'year', 'month', 'day'}
     filtered_tables = []
+    
+    # First, identify all column references in EXTRACT functions
+    extract_column_refs = set()
+    extract_pattern = r'extract\s*\(\s*\w+\s+from\s+(\w+)'
+    for match in re.finditer(extract_pattern, sql_query, re.IGNORECASE):
+        if match.group(1):
+            extract_column_refs.add(match.group(1).lower())
     
     for table in table_names:
         # Skip empty strings
@@ -140,8 +148,16 @@ def extract_tables_from_sql(sql_query: str) -> list[str]:
         if table.lower() in sql_keywords:
             continue
             
+        # Skip if it's a SQL function
+        if table.lower() in sql_functions:
+            continue
+            
         # Skip if it's a subquery (likely starts with SELECT)
         if table.lower().startswith('select'):
+            continue
+            
+        # Skip if it's a column reference in an EXTRACT function
+        if table.lower() in extract_column_refs:
             continue
             
         filtered_tables.append(table)
