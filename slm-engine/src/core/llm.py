@@ -1,3 +1,4 @@
+from ast import Tuple
 import os
 import logging
 from typing import Dict, Any, Optional, Union
@@ -5,6 +6,8 @@ from abc import ABC, abstractmethod
 from llama_index.llms.ollama import Ollama
 from llama_index.llms.google_genai import GoogleGenAI
 from llama_index.core.llms import LLM
+from pydantic import BaseModel
+from typing import Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -39,6 +42,10 @@ class BaseLLMConfig(ABC):
         """Get the current LLM instance."""
         return self.llm
 
+    def get_health_check(self) -> Tuple[bool, str]:
+        """Get the health check result."""
+        return self._health_check()
+
 class OllamaConfig(BaseLLMConfig):
     """Ollama-specific LLM configuration."""
     
@@ -51,7 +58,7 @@ class OllamaConfig(BaseLLMConfig):
                 "temperature": 0.7,
             },
             "prompt_routing": 0,
-            "enrich_schema": True
+            "enrich_schema": False
         }
 
     def _initialize_llm(self) -> None:
@@ -68,9 +75,20 @@ class OllamaConfig(BaseLLMConfig):
             base_url=self.settings["ollama_host"],
             request_timeout=300.0,
             keep_alive=30*60,
-            additional_kwargs=self.settings["additional_kwargs"]
+            # additional_kwargs=self.settings["additional_kwargs"]
         )
+        
         logger.info("Ollama LLM client initialized successfully")
+    
+    def _health_check(self) -> Tuple[bool, str]:
+        """Check if the LLM is healthy."""
+        try:
+            response = self.llm.complete("Say 'Hi'")
+            logger.info(f"Test response: {response}")
+            return True, response
+        except Exception as e:
+            logger.error(f"Failed to connect to Ollama: {e}")
+            return False, str(e)
 
     def update_settings(
         self,
@@ -104,10 +122,11 @@ class GoogleGenAIConfig(BaseLLMConfig):
         return {
             "model": os.getenv("GOOGLE_MODEL", "gemini-2.0-flash"),
             "api_key": os.getenv("GOOGLE_API_KEY", ""),
-            "temperature": float(os.getenv("GOOGLE_TEMPERATURE", "0.7")),
+            "temperature": float(os.getenv("GOOGLE_TEMPERATURE", "0.5")),
             "max_tokens": int(os.getenv("GOOGLE_MAX_TOKENS", "8192")),
+            "thinking_budget": int(os.getenv("GOOGLE_THINKING_BUDGET", "1024")),
             "prompt_routing": 0,
-            "enrich_schema": True
+            "enrich_schema": False
         }
 
     def _initialize_llm(self) -> None:
@@ -116,6 +135,7 @@ class GoogleGenAIConfig(BaseLLMConfig):
         logger.info(f"Model: {self.settings['model']}")
         logger.info(f"Temperature: {self.settings['temperature']}")
         logger.info(f"Max tokens: {self.settings['max_tokens']}")
+        logger.info(f"Thinking budget: {self.settings['thinking_budget']}")
         logger.info(f"Prompt routing: {self.settings['prompt_routing']}")
         logger.info(f"Enrich schema: {self.settings['enrich_schema']}")
         
@@ -124,15 +144,31 @@ class GoogleGenAIConfig(BaseLLMConfig):
             api_key=self.settings["api_key"],
             temperature=self.settings["temperature"],
             max_tokens=self.settings["max_tokens"]
+            # generation_config={
+            #     "thinking_config": {
+            #         "thinking_budget": self.settings["thinking_budget"]
+            #     }
+            # }
         )
         logger.info("Google Gemini LLM client initialized successfully")
 
+    def _health_check(self) -> Tuple[bool, str]:
+        """Check if the LLM is healthy."""
+        try:
+            response = self.llm.complete("Say 'Hi'")
+            logger.info(f"Test response: {response}")
+            return True, response
+        except Exception as e:
+            logger.error(f"Failed to connect to Google Gemini: {e}")
+            return False, str(e)
+        
     def update_settings(
         self,
         model: Optional[str] = None,
         api_key: Optional[str] = None,
         temperature: Optional[float] = None,
         max_tokens: Optional[int] = None,
+        thinking_budget: Optional[int] = None,
         prompt_routing: Optional[int] = None,
         enrich_schema: Optional[bool] = None
     ) -> None:
@@ -145,6 +181,8 @@ class GoogleGenAIConfig(BaseLLMConfig):
             self.settings["temperature"] = float(temperature)
         if max_tokens is not None:
             self.settings["max_tokens"] = int(max_tokens)
+        if thinking_budget is not None:
+            self.settings["thinking_budget"] = int(thinking_budget)
         if prompt_routing is not None:
             self.settings["prompt_routing"] = int(prompt_routing)
         if enrich_schema is not None:

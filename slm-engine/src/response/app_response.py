@@ -27,3 +27,8 @@ class ResponseWrapper(Generic[T]):
     @classmethod
     def success(cls, data: Optional[T] = None):
         return cls(ResponseEnum.SUCCESS.code, ResponseEnum.SUCCESS.message, data).to_json()
+
+    @classmethod
+    def error_with_code(cls, code: int, message: str):
+        return cls(code, message).to_json()
+

@@ -18,6 +18,7 @@ class ResponseEnum(Enum):
     FAILED_TO_REFLECT_QUERY = (4, "Failed to reflect on generated SQL Query")
     TIMEOUT_ERROR = (5, "Query execution timed out after 200 seconds")
     FAILED_TO_EXECUTE_QUERY = (6, "Failed to execute query")
+    WORKFLOW_FAILED = (7, "Workflow failed")
     
     def __init__(self, code, message):
         self._code = code

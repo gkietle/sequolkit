@@ -5,6 +5,12 @@ from typing import List, Any
 from llama_index.core.llms import ChatResponse
 import networkx as nx
 import community as community_louvain
+from sqlglot import parse_one, exp, transpile
+import sqlglot
+import sqlglot.expressions as exp
+from typing import Tuple, Optional, Union
+
+
 # Configure logging
 logger = logging.getLogger(__name__)
 
@@ -48,9 +54,11 @@ def extract_table_list(response: ChatResponse) -> list:
         # If no quotes found, split by commas and clean up
         items = [item.strip().strip("'\"") for item in cleaned_response.split(',')]
         return [item for item in items if item]
+    
 
 
-def extract_tables_from_sql(sql_query: str) -> list[str]:
+
+def extract_tables_from_sql(sql_query: str, dialect: str) -> list[str]:
     """
     Extract all table names from a SQL query, excluding tables defined in CTEs.
     
@@ -60,115 +68,24 @@ def extract_tables_from_sql(sql_query: str) -> list[str]:
     Returns:
         List[str]: List of table names referenced in the query (excluding CTE tables)
     """
-    # Normalize whitespace and line breaks
-    sql_query = " ".join(sql_query.split())
+    # Parse the SQL
+    parsed = sqlglot.parse_one(sql_query, read=dialect)
     
-    # Step 1: Identify and extract all CTE names to exclude them later
-    cte_pattern = r"WITH\s+(?:RECURSIVE\s+)?([^(].*?)\s+AS\s*\("
-    cte_tables = []
+    # Get all CTE names
+    cte_names = set()
+    for cte in parsed.find_all(exp.CTE):
+        cte_names.add(cte.alias)
     
-    # Find CTEs at the start of the query
-    cte_match = re.search(cte_pattern, sql_query, re.IGNORECASE)
-    if cte_match:
-        cte_part = cte_match.group(1)
-        # Handle multiple CTEs separated by commas
-        cte_sections = cte_part.split(',')
-        for section in cte_sections:
-            # Extract the CTE name
-            cte_name_match = re.search(r"^\s*(\w+)(?:\s*\(.*?\))?\s*$", section.strip())
-            if cte_name_match:
-                cte_tables.append(cte_name_match.group(1).lower())
+    # Extract all table references
+    tables = set()
+    for table in parsed.find_all(exp.Table):
+        table_name = table.name
+        # Only add if it's not a CTE
+        if table_name not in cte_names:
+            tables.add(table_name)
     
-    # Also handle the case of multiple CTEs defined using comma and the AS keyword
-    cte_segments_pattern = r"WITH(?:\s+RECURSIVE)?\s+.*?(?:,\s*(\w+)\s+AS\s*\()"
-    for cte_segment in re.finditer(cte_segments_pattern, sql_query, re.IGNORECASE):
-        if cte_segment.group(1):
-            cte_tables.append(cte_segment.group(1).lower())
-    
-    # Step 2: Extract tables from FROM and JOIN clauses
-    # Pattern for FROM clause - look for table names after FROM keyword
-    from_pattern = r"FROM\s+([^\s,();]*)(?:\s+AS\s+\w+)?(?:\s*,\s*([^\s,();]*)(?:\s+AS\s+\w+)?)*"
-    
-    # Pattern for JOIN clauses
-    join_pattern = r"JOIN\s+([^\s,();]*)(?:\s+AS\s+\w+)?"
-    
-    # Find all tables in FROM clauses
-    table_names = []
-    for match in re.finditer(from_pattern, sql_query, re.IGNORECASE):
-        # The first group contains the first table
-        if match.group(1) and match.group(1).strip():
-            table_name = re.sub(r'^\(|\)$', '', match.group(1).strip())
-            if "." in table_name:
-                # Extract just the table name if schema.table format is used
-                table_name = table_name.split('.')[-1]
-            table_names.append(table_name.lower())
-        
-        # Check if we have multiple tables in the FROM clause
-        rest_of_from = match.group(0)[len("FROM ") + len(match.group(1)):].strip()
-        if rest_of_from.startswith(','):
-            # Split by comma to get additional tables
-            additional_tables = re.findall(r',\s*([^\s,();]*)', rest_of_from)
-            for table in additional_tables:
-                if table and table.strip():
-                    table_name = re.sub(r'^\(|\)$', '', table.strip())
-                    if "." in table_name:
-                        table_name = table_name.split('.')[-1]
-                    table_names.append(table_name.lower())
-    
-    # Find all tables in JOIN clauses
-    for match in re.finditer(join_pattern, sql_query, re.IGNORECASE):
-        if match.group(1) and match.group(1).strip():
-            table_name = re.sub(r'^\(|\)$', '', match.group(1).strip())
-            if "." in table_name:
-                table_name = table_name.split('.')[-1]
-            table_names.append(table_name.lower())
-    
-    # Step 3: Filter out CTE tables, SQL keywords, and SQL functions
-    sql_keywords = {'select', 'where', 'group', 'order', 'limit', 'offset', 'having', 'union', 'intersect', 'except'}
-    sql_functions = {'extract', 'sum', 'count', 'avg', 'min', 'max', 'date', 'year', 'month', 'day'}
-    filtered_tables = []
-    
-    # First, identify all column references in EXTRACT functions
-    extract_column_refs = set()
-    extract_pattern = r'extract\s*\(\s*\w+\s+from\s+(\w+)'
-    for match in re.finditer(extract_pattern, sql_query, re.IGNORECASE):
-        if match.group(1):
-            extract_column_refs.add(match.group(1).lower())
-    
-    for table in table_names:
-        # Skip empty strings
-        if not table:
-            continue
-            
-        # Skip CTEs
-        if table.lower() in cte_tables:
-            continue
-            
-        # Skip if it's just a SQL keyword
-        if table.lower() in sql_keywords:
-            continue
-            
-        # Skip if it's a SQL function
-        if table.lower() in sql_functions:
-            continue
-            
-        # Skip if it's a subquery (likely starts with SELECT)
-        if table.lower().startswith('select'):
-            continue
-            
-        # Skip if it's a column reference in an EXTRACT function
-        if table.lower() in extract_column_refs:
-            continue
-            
-        filtered_tables.append(table)
-    
-    # Remove duplicates while preserving order
-    unique_tables = []
-    for table in filtered_tables:
-        if table not in unique_tables:
-            unique_tables.append(table)
-    
-    return unique_tables
+    return list(tables)
+
 
 def schema_clustering(table_details: list, resolution_value = 1.0) -> list:
     """
@@ -305,7 +222,7 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
                 if "relations" in column and column["relations"]:
                     for relation in column["relations"]:
                         if relation.get("type") == "OTM":  # One-to-Many relationship
-                            fk_relation = f"{table_name}.{column['columnIdentifier']} →  {relation['tableIdentifier']}.{relation['toColumn']}"
+                            fk_relation = f"-- {table_name}.{column['columnIdentifier']} can be joined with  {relation['tableIdentifier']}.{relation['toColumn']}"
                             fk_relationships.append(fk_relation)
 
             # Remove trailing comma from the last column definition
@@ -319,13 +236,13 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
             
             # Add sample data if available and requested
             if include_sample_data and "sample_data" in table and table["sample_data"]:
-                ddl_statements.append("\n-- Sample Data:")
+                ddl_statements.append("-- Sample Data:")
                 # Add column headers
                 column_headers = ", ".join([column["columnIdentifier"] for column in columns])
-                ddl_statements.append(f"{column_headers}")
+                ddl_statements.append(f"--\t{column_headers}")
                 # Add data rows
                 for data_row in table["sample_data"]:
-                    ddl_statements.append(f"{data_row}")
+                    ddl_statements.append(f"--\t{data_row}")
                 ddl_statements.append("")  # Empty line for better readability
 
         # Add all foreign key relationships at the end
@@ -352,7 +269,7 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
                 # Collect foreign key relationships separately
                 if "relations" in column and column["relations"]:
                     for relation in column["relations"]:
-                        fk_relation = f"{table_name}.{column['columnIdentifier']} → {relation['tableIdentifier']}.{relation['toColumn']}"
+                        fk_relation = f"{table_name}.{column['columnIdentifier']} can be joined with {relation['tableIdentifier']}.{relation['toColumn']}"
                         fk_relationships.append(fk_relation)
                 
                 if description:
@@ -367,19 +284,19 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
             
             # Add sample data if available and requested
             if include_sample_data and "sample_data" in table and table["sample_data"]:
-                synthesis_statements.append("\nSample Data:")
+                synthesis_statements.append("- Sample Data:")
                 # Add column headers
                 column_headers = ", ".join([column["columnIdentifier"] for column in columns])
-                synthesis_statements.append(f"    {column_headers}")
+                synthesis_statements.append(f"\t{column_headers}")
                 # Add data rows
                 for data_row in table["sample_data"]:
-                    synthesis_statements.append(f"    {data_row}")
+                    synthesis_statements.append(f"\t{data_row}")
                 synthesis_statements.append("")  # Empty line for better readability
 
         # Add all foreign key relationships at the end
         if fk_relationships:
-            synthesis_statements.append("\n\nForeign Key Relationships:")
-            synthesis_statements.append("\n".join(fk_relationships))
+            synthesis_statements.append("# Foreign Key Relationships:")
+            synthesis_statements.append("\n".join([f"- {relation}" for relation in fk_relationships]))
 
         return "\n".join(synthesis_statements)
     
@@ -425,7 +342,7 @@ def schema_parser(tables: list, type: str, include_sample_data: bool = False):
 
         return "\n".join(simple_statements)
 
-def log_prompt(prompt_messages: List[Any], step_name: str) -> None:
+def log_prompt(prompt_messages: str, step_name: str) -> None:
     """
     Logs the formatted prompt messages with detailed formatting.
     
@@ -434,15 +351,8 @@ def log_prompt(prompt_messages: List[Any], step_name: str) -> None:
         step_name (str): The name of the current workflow step
     """
     logger.info(f"\033[95m===== {step_name} PROMPT =====\033[0m")
-    for i, message in enumerate(prompt_messages):
-        logger.info(f"\033[96mRole: {message.role}\033[0m")
-        for block in message.blocks:
-            if block.block_type == "text":
-                # Truncate very long content for log readability
-                content = block.text
-                logger.info(f"\033[97mContent:\n{content}\033[0m")
-        if i < len(prompt_messages) - 1:
-            logger.info("\033[95m---------------------\033[0m")
+    logger.info(f"\033[97m{prompt_messages}\033[0m")
+    logger.info("\033[95m---------------------\033[0m")
     logger.info(f"\033[95m===== END {step_name} PROMPT =====\033[0m")
 
 def show_prompt(prompt_messages: List[Any]) -> None:
@@ -685,6 +595,62 @@ def extract_sql_query(response_text):
             
         return sql
 
+def is_valid_sql_query(sql_query: str, dialect: str = "postgres") -> Tuple[bool, Optional[Exception]]:
+
+    DIALECTS = [
+        "Athena",
+        "BigQuery",
+        "ClickHouse",
+        "Databricks",
+        "Doris",
+        "Drill",
+        "Druid",
+        "DuckDB",
+        "Dune",
+        "Hive",
+        "Materialize",
+        "MySQL",
+        "Oracle",
+        "Postgres",
+        "Presto",
+        "PRQL",
+        "Redshift",
+        "RisingWave",
+        "Snowflake",
+        "Spark",
+        "Spark2",
+        "SQLite",
+        "StarRocks",
+        "Tableau",
+        "Teradata",
+        "Trino",
+        "TSQL",
+    ]
+    dialect = dialect.lower()
+    if dialect not in [d.lower() for d in DIALECTS]:
+        raise ValueError(f"Invalid dialect: {dialect}. Must be one of: {', '.join([d.lower() for d in DIALECTS])}")
+    try:
+        # 1) Transpile will parse & re-generate; it raises on any syntax error
+        transpiled_stmts = sqlglot.transpile(sql_query, read=dialect)
+    except Exception as e:
+        return False, e
+
+    # 2) Must be exactly one statement
+    if len(transpiled_stmts) != 1:
+        return False, ValueError("Only a single statement is allowed.")
+
+    try:
+        # 3) Parse that one statement into an AST
+        root = sqlglot.parse_one(sql_query, read=dialect)
+    except Exception as e:
+        # This is unlikely if transpile passed, but just in case
+        return False, e
+    allowed_roots = (exp.Select, exp.Union, exp.Intersect, exp.Except)
+    # 4) Enforce a SELECT root
+    if not isinstance(root, allowed_roots):
+        return False, ValueError("Only SELECT queries are allowed (no DDL or INSERT/UPDATE/DELETE).")
+
+    return True, None
 
 def parse_llm_json_response(response: str) -> dict:
     """
@@ -798,3 +764,82 @@ def parse_schema_enrichment(response: ChatResponse) -> list:
     except Exception as e:
         print(f"Lỗi khi phân tích phản hồi làm phong phú schema: {str(e)}")
         return []
+    
+
+def enrich_schema_with_info(table_details: list, connection_payload: dict):
+    """
+    Enrich schema with additional information from schema_enrich_info.
+    
+    Args:
+        table_details (list): List of table details from database schema
+        connection_payload (dict): Connection payload containing schema enrichment info
+        
+    Returns:
+        tuple: (enriched_table_details, database_description)
+    """
+    database_description = ""
+    
+    # First check if schema enrichment is enabled and schema_enrich_info exists
+    schema_enrich_info = connection_payload.get("schema_enrich_info")
+    should_enrich = (
+        schema_enrich_info is not None and 
+        isinstance(schema_enrich_info, dict) and
+        schema_enrich_info != {}
+    )
+    
+    if should_enrich:
+        logger.info(f"Enrich schema is enabled: {should_enrich}")
+
+        # Next, check if enriched_schema exists
+        if "enrich_schema" in schema_enrich_info and schema_enrich_info["enrich_schema"] is not None:
+            logger.info(f"Retrieved schema with {len(table_details)} tables and enrichment information")
+            
+            # Create mapping from tableIdentifier to enriched table for faster lookup
+            enriched_tables_map = {
+                table["tableIdentifier"]: table 
+                for table in schema_enrich_info["enrich_schema"]
+            }
+            
+            # Add database description to response data if available
+            if "database_description" in schema_enrich_info:
+                database_description = schema_enrich_info['database_description']
+                logger.info(f"Database description: {database_description}")
+            
+            for table in table_details:
+                table_id = table["tableIdentifier"]
+                
+                # Check if table exists in mapping
+                if table_id in enriched_tables_map:
+                    enriched_table = enriched_tables_map[table_id]
+                    
+                    # Update table description
+                    table["tableDescription"] = enriched_table.get("tableDescription", "")
+                    logger.info(f"Table [{table_id}] description: {table['tableDescription']}")
+                    
+                    # Create mapping from columnIdentifier to enriched column
+                    enriched_columns_map = {
+                        col["columnIdentifier"]: col 
+                        for col in enriched_table["columns"]
+                    }
+                    
+                    # Update column descriptions
+                    for column in table["columns"]:
+                        column_id = column["columnIdentifier"]
+                        
+                        # Check update conditions and if column exists in mapping
+                        is_empty_description = (
+                            column.get("columnDescription") in ["", "NULL", "''"] or
+                            column.get("columnDescription") is None or
+                            len(str(column.get("columnDescription", ""))) <= 1
+                        )
+                        
+                        if is_empty_description and column_id in enriched_columns_map:
+                            enriched_column = enriched_columns_map[column_id]
+                            column["columnDescription"] = enriched_column.get("columnDescription", "")
+                            logger.info(f"\t- Column [{column_id}] description: {column['columnDescription']}")
+        else:
+            logger.info("Schema enrichment is enabled but 'enrich_schema' is not present or is None")
+    else:
+        logger.info("Schema enrichment is disabled or no enrichment info available")
+    
+    return table_details, database_description

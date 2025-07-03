@@ -1,30 +1,32 @@
 # Web Framework
-flask>=2.3.0
-flask-cors>=4.0.0
-flask[async]>=2.3.0
+flask[async]==3.1.1
+flask-cors==6.0.1
+flask-restx==1.3.0
 
 # LLM and AI
-llama-index-core>=0.9.0
-llama-index-llms-ollama>=0.1.0
-llama-index-llms-google-genai
-llama-index>=0.9.0
-llama-index-utils-workflow
+llama-index-core==0.12.43
+llama-index-llms-ollama==0.6.2
+llama-index-llms-google-genai==0.2.2
+llama-index==0.12.43
+llama-index-utils-workflow==0.3.5
+
+# Observability
+langfuse==2.60.5
+
 # Database
-sqlalchemy-utils>=0.41.0
-sqlparse>=0.4.0
+sqlalchemy-utils==0.41.2
+sqlparse==0.5.3
 
 # Text Processing
-pyvi>=0.1.0
-Unidecode>=1.3.0
-
-# Vector Database
-weaviate-client>=3.25.0
+pyvi==0.1.1
+Unidecode==1.4.0
+sqlglot[rs]==26.30.0
 
 # Graph Analysis
-networkx>=3.0
-python-louvain>=0.16
-matplotlib>=3.7.0
+networkx==3.4.2
+python-louvain==0.16
+matplotlib==3.10.3
 
 # Utilities
-python-dotenv>=1.0.0
-requests>=2.31.0
+python-dotenv==1.1.1
+requests==2.32.4

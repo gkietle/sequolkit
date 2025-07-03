@@ -10,6 +10,7 @@ from llama_index.llms.google_genai import GoogleGenAI
 import logging
 import time
 import re
+from pydantic import BaseModel
 
 logging.basicConfig(
     level=logging.INFO,
@@ -158,7 +159,7 @@ def get_sample_data(connection_payload, table_details, limit=3):
             column_name = column.get('columnIdentifier')
             if column_name:  # Đảm bảo cột có tên
                 column_names.append(column_name)
-        print("Column names: ", column_names)
+        print(f"Get sample data for table: {table_name} with column names: {column_names}")
         if not column_names:
             return []
             
@@ -302,6 +303,119 @@ def get_sample_data(connection_payload, table_details, limit=3):
         print(f"Error getting sample data: {str(e)}")
         return [str(e)]
     
+def get_sample_data_simple(connection_payload, table_details, limit=3):
+    """
+    A simplified function to get sample data from a database table.
+    
+    Args:
+        connection_payload: Database connection information
+        table_details: Table information including name and columns
+        limit: Number of sample rows to retrieve (default: 3)
+        
+    Returns:
+        List of sample data rows
+    """
+    try:
+        table_name = table_details['tableIdentifier']
+        
+        # Simple query to get a few rows
+        query = f"SELECT * FROM {table_name} LIMIT {limit}"
+        
+        # Execute the query
+        result = execute_sql(connection_payload, query)
+        
+        # Check for errors
+        if result.get("error"):
+            return []
+            
+        # Format the results as simple strings
+        formatted_rows = []
+        if result.get("data"):
+            for row in result.get("data", []):
+                # Convert all values to strings and join with commas
+                values = [str(val) if val is not None else "NULL" for val in row.values()]
+                formatted_row = ", ".join(values)
+                formatted_rows.append(formatted_row)
+        
+        return formatted_rows
+    except Exception as e:
+        print(f"Error in get_sample_data_simple: {str(e)}")
+        return []
+
+def get_sample_data_improved(connection_payload, table_details, limit=3):
+    """
+    An improved but still simple function to get sample data from a database table.
+    Handles different database types correctly with proper identifier quoting.
+    
+    Args:
+        connection_payload: Database connection information
+        table_details: Table information including name and columns
+        limit: Number of sample rows to retrieve (default: 3)
+        
+    Returns:
+        List of sample data rows
+    """
+    try:
+        # Get database type from connection payload
+        db_type = connection_payload.get('dbType', '').lower()
+        table_name = table_details['tableIdentifier']
+        
+        # Determine proper quoting based on database type
+        if db_type == 'mysql':
+            quoted_table = f"`{table_name}`"
+        elif db_type in ['postgresql', 'postgres', 'sqlite']:
+            quoted_table = f'"{table_name}"'
+        else:
+            quoted_table = table_name
+        
+        # Build a simple query that works across most database types
+        query = f"SELECT * FROM {quoted_table} LIMIT {limit}"
+        
+        # Execute the query
+        result = execute_sql(connection_payload, query)
+        
+        # If the first query fails, try without quoting
+        if result.get("error"):
+            query = f"SELECT * FROM {table_name} LIMIT {limit}"
+            result = execute_sql(connection_payload, query)
+            
+            # If still failing, return empty list
+            if result.get("error"):
+                return []
+        
+        # Format the results into readable rows
+        formatted_rows = []
+        if result.get("data"):
+            # Get column names to ensure consistent order
+            if result.get("data") and len(result.get("data")) > 0:
+                columns = list(result.get("data")[0].keys())
+                
+                # Create header row with column names
+                header = ", ".join(columns)
+                formatted_rows.append(header)
+                
+                # Format each data row
+                for row in result.get("data"):
+                    values = []
+                    for col in columns:
+                        val = row.get(col)
+                        if val is None:
+                            values.append("NULL")
+                        elif isinstance(val, str):
+                            # Escape commas and quotes in string values
+                            if ',' in val or '"' in val:
+                                val = '"' + val.replace('"', '""') + '"'
+                            values.append(val)
+                        else:
+                            values.append(str(val))
+                    
+                    formatted_rows.append(", ".join(values))
+        
+        return formatted_rows
+    except Exception as e:
+        print(f"Error in get_sample_data_improved: {str(e)}")
+        return []
+
 def llm_chat(llm: Ollama | GoogleGenAI, fmt_messages: PromptTemplate):
    
     max_retries = 3
@@ -328,3 +442,24 @@ def llm_chat(llm: Ollama | GoogleGenAI, fmt_messages: PromptTemplate):
             
             # If we get here, either it's not a rate limit error or we've exhausted retries
             raise e
+        
+def llm_chat_with_pydantic(llm: Ollama | GoogleGenAI, prompt: PromptTemplate, pydantic_model: BaseModel):
+    llm_kwargs = {
+        "generation_config": {
+            "thinking_config": {
+                "thinking_budget": 0
+            }
+        }
+    }
+
+    try:
+        chat_response = llm.structured_predict(
+            output_cls=pydantic_model,
+            prompt=prompt,
+            llm_kwargs=llm_kwargs
+        )
+        return chat_response
+    except Exception as e:
+        error_str = str(e)
+        print(f"\033[91mError in llm_chat_with_pydantic: {error_str}\033[0m")
+        raise AppException(error_str, 500)
